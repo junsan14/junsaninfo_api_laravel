@@ -23,6 +23,7 @@ Route::put('/admin/blog/post/visible', [PostController::class, 'visible']);
 Route::delete('/admin/blog/post/delete', [PostController::class, 'destroy']);
 
 
+
 //Route::post('/blog/create', [BlogController::class, 'store']);
 /*
 Route::middleware(['auth:sanctum'])->group(function () {

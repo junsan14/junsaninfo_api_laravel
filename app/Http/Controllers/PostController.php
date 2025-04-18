@@ -21,16 +21,33 @@ class PostController extends Controller
         
        return response()->json($posts);    
     }
-    public function show($category, $postId)
+    public function show($category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
         $post = Post::where('category', intval($category))->find(intval($postId));
+       
+        $tag = "";
+        $relevantPosts = "";
+        if($post){
+            $tag = $post->tag;
+            $relevantNextPostId = Post::where([
+                ['tag', 'like', "%{$tag}%"],['is_show', '=',1],['category','=' ,$post->category],
+                ['id','!=',$post->id], ['id','>',$post->id], ])->min('id');
+            $relevantPrevPostId = Post::where([
+                ['tag', 'like', "%{$tag}%"],['is_show', '=',1],['category','=' ,$post->category],
+                ['id','!=',$post->id], ['id','<',$post->id], ])->max('id');
+            $relevantPosts =  Post::where(['id'=>$relevantNextPostId])->orWhere(['id'=>$relevantPrevPostId])->get();
+        }
+
+
+       
+        
         if (!$post) {
             return response()->json(['message' => 'Post not found'], 404);
         }
 
         // 投稿を返す
-        return response()->json($post);
+        return response()->json(['post'=>$post, 'relevantPosts'=>$relevantPosts]);
     }
     public function create()
     {
@@ -38,13 +55,9 @@ class PostController extends Controller
         $tags = Post::groupBy('tag')->get(['tag']);
 
         return response()->json([
-            'post'=>[
-                'keywords'=>$keywords,
-                'category'=>5,
-                'is_show'=>1,
-                'is_top'=>1
-            ],
+            'keywords'=>$keywords,
             'tags'=>$tags,
+            'isNew'=>true,
     ]);
     
     }
@@ -57,7 +70,11 @@ class PostController extends Controller
         //dd(isset($thumbnailPath));
         //サムネイル格納
         if(!isset($thumbnailPath)){
-            $thumbnailPath ='<img src="/userfiles/images/noImage.png" alt="">';
+            //$thumbnailPath ='<img src="/userfiles/images/noImage.png" alt="">';
+            $url = 'https://api.example.com?key=' . env('url');
+            $thumbnailPath = '<figure class="image"><img style="aspect-ratio:1200/1200;" src="'.config('app.url').'/userfiles/images/noImage.png" width="1200" height="1200"></figure>';
+
+            //$thumbnailPath ='<figure class="image"><img style="aspect-ratio:1200/1200;" src="http://localhost:8000/userfiles/images/noImage.png" width="1200" height="1200"></figure>';
         }
         if($request->is_show == 0){
        
