@@ -17,6 +17,7 @@ class Post extends Model
         'keywords',
         'category',
         'tag',
+        'slug',
         'thumbnail',
         'is_show',
         'is_top',

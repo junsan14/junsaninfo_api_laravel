@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
+
 class PostController extends Controller
 {
     public function index(Request $request)
@@ -17,7 +19,6 @@ class PostController extends Controller
         }else{
             $posts = Post::where('is_show',1)->latest()->paginate($limit);
         }
-        
        return response()->json($posts);    
     }
     public function show($category,$postId)
@@ -71,18 +72,15 @@ class PostController extends Controller
        
         $content= $request->content;
         $thumbnailPath = $request->thumbnail;
-       //dd($request);
-        //dd(isset($thumbnailPath));
+        $isshow = filter_var($request->is_show, FILTER_VALIDATE_BOOLEAN);
+
         //サムネイル格納
         if(!isset($thumbnailPath)){
             //$thumbnailPath ='<img src="/userfiles/images/noImage.png" alt="">';
             $url = 'https://api.example.com?key=' . env('url');
             $thumbnailPath = '<figure class="image"><img style="aspect-ratio:1200/1200;" src="'.config('app.url').'/userfiles/images/noImage.png" width="1200" height="1200"></figure>';
-
-            //$thumbnailPath ='<figure class="image"><img style="aspect-ratio:1200/1200;" src="http://localhost:8000/userfiles/images/noImage.png" width="1200" height="1200"></figure>';
         }
         if($request->is_show == 0){
-       
             $publish_at = null;
         }else{
             if($request->published_at){
@@ -106,9 +104,10 @@ class PostController extends Controller
             'keywords'=>$request->keywords,
             'category'=>$request->category,
             'tag'=>$request->tag,
+            'slug'=>$request->slug,
             'published_at'=>$publish_at,
             'thumbnail'=> $thumbnailPath,
-            'is_show'=>$request->is_show,
+            'is_show'=>$isshow,
             'is_top'=>$request->is_top,
         ]);
        return response()->json($request);
