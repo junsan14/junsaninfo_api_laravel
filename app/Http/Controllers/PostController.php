@@ -11,9 +11,8 @@ class PostController extends Controller
     public function index(Request $request)
     {
         $limit = $request->query('limit', 10);
-        $isAdmin = $request->query('all',false);
-        //dd($isAdmin);
-        if($isAdmin && auth()->check()){
+        $isAdmin = filter_var($request->query('all'), FILTER_VALIDATE_BOOLEAN);
+        if($isAdmin ){
             $posts = Post::latest()->paginate($limit);
         }else{
             $posts = Post::where('is_show',1)->latest()->paginate($limit);
@@ -24,8 +23,14 @@ class PostController extends Controller
     public function show($category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
-        $post = Post::where('category', intval($category))->find(intval($postId));
-       
+
+        $post = Post::where([
+            ['category', intval($category)],
+            ['id',intval($postId) ],
+            ['is_show', 1]
+            ])->first();
+            
+
         $tag = "";
         $relevantPosts = "";
         if($post){
