@@ -5,7 +5,7 @@ use CKSource\CKFinderBridge\Controller\CKFinderController;
 use App\Http\Middleware\ExcludeCkfinderFromCsrf;
 
 Route::get('/', function () {
-    return response()->json(['message' => 'Laravel Root OK']);
+    return response()->json(['message' => 'Welcome to junsan14']);
 
 });
 
