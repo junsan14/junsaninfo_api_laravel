@@ -7,26 +7,48 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
+use App\Models\BlogCategory;
 
 class PostController extends Controller
 {
     public function index(Request $request)
     {
+        $blogCategories = BlogCategory::where('is_active', true)->get();
+       
         $limit = $request->query('limit', 10);
         $isAdmin = filter_var($request->query('all'), FILTER_VALIDATE_BOOLEAN);
-        if($isAdmin ){
-            $posts = Post::latest()->paginate($limit);
-        }else{
-            $posts = Post::where('is_show',1)->latest()->paginate($limit);
+        $selectedCategory = $request->query('category');
+        $inputKeywords = $request->query('keywords');
+        $categroy_id = null;
+        if ($selectedCategory) {
+            $categroy_id = BlogCategory::where('name', $selectedCategory)->first()->id;
         }
-       return response()->json($posts);    
+       
+        $query = Post::query();
+
+        if (!$isAdmin) {
+            $query->where('is_show', 1);
+        }
+        $query->when($categroy_id, function ($q) use ($categroy_id) {
+            $q->where('category', $categroy_id);
+        });
+        $query->when($inputKeywords, function ($q) use ($inputKeywords) {
+            $q->where(function ($subQuery) use ($inputKeywords) {
+                $subQuery->where('title', 'like', '%' . $inputKeywords . '%')
+                         ->orWhere('keywords', 'like', '%' . $inputKeywords . '%');
+            });
+        });
+        $posts = $query->latest()->paginate($limit);
+        //dd($posts);
+       return response()->json(['posts'=>$posts, 'blogCategories'=>$blogCategories]);    
     }
     public function show($category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
-
+        $categroy_id = BlogCategory::where('name', $category)->first()->id;
+       // dd($categroy_id);
         $post = Post::where([
-            ['category', intval($category)],
+            ['category', $categroy_id],
             ['id',intval($postId) ],
             ['is_show', 1]
             ])->first();

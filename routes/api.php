@@ -20,7 +20,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 });
 
 Route::post('/contact/send', [ContactFormController::class, 'store']);
-Route::get('/blog/posts', [PostController::class, 'index']);
+Route::get('/blog', [PostController::class, 'index']);
 Route::get('/blog/{category}/{postId}', [PostController::class, 'show']);
 
 
