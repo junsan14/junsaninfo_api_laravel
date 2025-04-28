@@ -12,9 +12,7 @@ use App\Models\BlogCategory;
 class PostController extends Controller
 {
     public function index(Request $request)
-    {
-        $blogCategories = BlogCategory::where('is_active', true)->get();
-       
+    {  
         $limit = $request->query('limit', 10);
         $isAdmin = filter_var($request->query('all'), FILTER_VALIDATE_BOOLEAN);
         $selectedCategory = $request->query('category');
@@ -40,7 +38,13 @@ class PostController extends Controller
         });
         $posts = $query->latest()->paginate($limit);
         //dd($posts);
-       return response()->json(['posts'=>$posts, 'blogCategories'=>$blogCategories]);    
+       return response()->json($posts);    
+    }
+    public function getCategories ()
+    {
+        $blogCategories = BlogCategory::where('is_active', true)->get();
+      
+        return response()->json($blogCategories);    
     }
     public function show($category,$postId)
     {
