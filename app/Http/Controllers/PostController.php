@@ -121,7 +121,7 @@ class PostController extends Controller
             [
             'title' => $request->title,
             'content' => $content,
-            'author_id'=>Auth::id(),
+            'author_id'=>$request->author_id,
             'excerpt'=>$request->excerpt,
             'keywords'=>$request->keywords,
             'category'=>$request->category,
