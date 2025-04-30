@@ -36,7 +36,9 @@ class PostController extends Controller
                          ->orWhere('keywords', 'like', '%' . $inputKeywords . '%');
             });
         });
-        $posts = $query->latest()->paginate($limit);
+        $posts = $query->orderByDesc('is_featured')  // is_featured が true の記事を先頭に
+                   ->latest()                   // 最新の記事順に並べる
+                   ->paginate($limit);
         //dd($posts);
        return response()->json($posts);    
     }
@@ -58,22 +60,22 @@ class PostController extends Controller
             ])->first();
             
 
-        $tag = "";
-        $relevantPosts = "";
-        if($post){
-            $tag = $post->tag;
-            $relevantNextPostId = Post::where([
-                ['tag', 'like', "%{$tag}%"],['is_show', '=',1],['category','=' ,$post->category],
-                ['id','!=',$post->id], ['id','>',$post->id], ])->min('id');
-            $relevantPrevPostId = Post::where([
-                ['tag', 'like', "%{$tag}%"],['is_show', '=',1],['category','=' ,$post->category],
-                ['id','!=',$post->id], ['id','<',$post->id], ])->max('id');
-            $relevantPosts =  Post::where(['id'=>$relevantNextPostId])->orWhere(['id'=>$relevantPrevPostId])->get();
-        }
+        $tag = $post->tag;
+        $relevantIds = collect([
+            Post::where('tag', 'like', "%{$tag}%")
+                ->where('is_show', 1)
+                ->where('category', $post->category)
+                ->where('id', '>', $post->id)
+                ->min('id'),
+            
+            Post::where('tag', 'like', "%{$tag}%")
+                ->where('is_show', 1)
+                ->where('category', $post->category)
+                ->where('id', '<', $post->id)
+                ->max('id')
+        ])->filter()->all();
+        $relevantPosts = Post::whereIn('id', $relevantIds)->get();
 
-
-       
-        
         if (!$post) {
             return response()->json(['message' => 'Post not found'], 404);
         }
