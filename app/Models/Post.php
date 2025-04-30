@@ -21,6 +21,7 @@ class Post extends Model
         'thumbnail',
         'is_show',
         'is_top',
+        'is_featured',
         'published_at'
        
     ];

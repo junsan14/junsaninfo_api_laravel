@@ -137,6 +137,7 @@ class PostController extends Controller
             'thumbnail'=> $thumbnailPath,
             'is_show'=>$isshow,
             'is_top'=>$request->is_top,
+            'is_featured'=>$request->is_featured,
         ]);
        return response()->json($request);
     }
