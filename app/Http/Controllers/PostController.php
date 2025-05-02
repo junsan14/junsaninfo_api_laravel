@@ -51,7 +51,7 @@ class PostController extends Controller
     public function show(Request $request,$category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
-        $category_id = BlogCategory::where('name', $category)->first()->id;
+        $category_id = BlogCategory::where('slug', $category)->first()->id;
 
        $query = Post::where([
         ['category', $category_id],
