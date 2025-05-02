@@ -52,7 +52,7 @@ class PostController extends Controller
     {
         // 投稿をカテゴリとIDに基づいて取得
         $category_id = BlogCategory::where('name', $category)->first()->id;
-       
+
        $query = Post::where([
         ['category', $category_id],
         ['id', intval($postId)],
@@ -81,7 +81,7 @@ class PostController extends Controller
                 ->max('id')
         ])->filter()->all();
         $relevantPosts = Post::whereIn('id', $relevantIds)->get();
-       
+ 
 
         // 投稿を返す
         return response()->json(['post'=>$post, 'relevantPosts'=>$relevantPosts]);
