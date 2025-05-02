@@ -48,18 +48,24 @@ class PostController extends Controller
       
         return response()->json($blogCategories);    
     }
-    public function show($category,$postId)
+    public function show(Request $request,$category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
-        $categroy_id = BlogCategory::where('name', $category)->first()->id;
-       // dd($categroy_id);
-        $post = Post::where([
-            ['category', $categroy_id],
-            ['id',intval($postId) ],
-            ['is_show', 1]
-            ])->first();
-            
-
+        $category_id = BlogCategory::where('name', $category)->first()->id;
+       
+       $query = Post::where([
+        ['category', $category_id],
+        ['id', intval($postId)],
+        ]);
+      
+        if (!$request->boolean('preview')) {
+            $query->where('is_show', 1);
+        }
+        $post = $query->first();
+       
+        if (!$post) {
+            return response()->json(['message' => 'Post not found'], 404);
+        }
         $tag = $post->tag;
         $relevantIds = collect([
             Post::where('tag', 'like', "%{$tag}%")
@@ -75,10 +81,7 @@ class PostController extends Controller
                 ->max('id')
         ])->filter()->all();
         $relevantPosts = Post::whereIn('id', $relevantIds)->get();
-
-        if (!$post) {
-            return response()->json(['message' => 'Post not found'], 404);
-        }
+       
 
         // 投稿を返す
         return response()->json(['post'=>$post, 'relevantPosts'=>$relevantPosts]);
