@@ -70,54 +70,44 @@ class PostController extends Controller
         
         $relevantIds = collect();
 
-        /// 自分が最新記事か判定
-        $isLatest = Post::where('is_show', 1)->max('id') === $post->id;
+// 1. タグで関連投稿（前後4件）を取得（自分は除く）
+$relevantIds = Post::where('tag', 'like', "%{$tag}%")
+    ->where('is_show', 1)
+    ->where('category', $post->category)
+    ->where('id', '<>', $post->id) // 自分を除く
+    ->orderBy('id', 'desc')
+    ->limit(4)
+    ->pluck('id');
 
-        if ($isLatest) {
-            // 最新記事：自分 + 前の記事3件
-                // 最新記事：前の記事3件のみ取得（自分は除く）
-                $relevantIds = Post::where('is_show', 1)
-                ->where('category', $post->category)
-                ->where('id', '<', $post->id)
-                ->orderBy('id', 'desc')
-                ->limit(4)
-                ->pluck('id');
-        } else {
-            // 自分より前の4件
-            $relevantIds = Post::where('is_show', 1)
-                ->where('category', $post->category)
-                ->where('id', '<', $post->id)
-                ->orderBy('id', 'desc')
-                ->limit(4)
-                ->pluck('id');
+// 2. タグで1件も見つからなければ、キーワード検索
+if ($relevantIds->isEmpty()) {
+    $keywords = explode(',', $post->keywords); // 例: "Laravel,React,API"
+
+    $relevantQuery = Post::query()
+        ->where('is_show', 1)
+        ->where('id', '<>', $post->id)
+        ->where('category', $post->category);
+
+    $relevantQuery->where(function ($query) use ($keywords) {
+        foreach ($keywords as $keyword) {
+            $trimmed = trim($keyword);
+            if (!empty($trimmed)) {
+                $query->orWhere('keywords', 'like', "%{$trimmed}%");
+            }
         }
-       
-        // 2. タグで1件も見つからなければ、キーワード検索
-        if ($relevantIds->isEmpty()) {
-            // キーワードをカンマで分割
-            $keywords = explode(',', $post->keywords); // 例: "Laravel,React,API"
-            // 条件を1つずつ追加する
-            $relevantQuery = Post::query()
-                ->where('is_show', 1)
-                ->where('id', '<>', $post->id)
-                ->where('category', $post->category);
+    });
 
-            $relevantQuery->where(function ($query) use ($keywords) {
-                foreach ($keywords as $keyword) {
-                    $trimmed = trim($keyword); // 空白除去
-                    if (!empty($trimmed)) {
-                        $query->orWhere('keywords', 'like', "%{$trimmed}%");
-                    }
-                }
-            });
+    $relevantIds = $relevantQuery
+        ->orderBy('id', 'desc')
+        ->limit(4)
+        ->pluck('id');
+}
 
-            $relevantIds = $relevantQuery
-                ->orderBy('id', 'desc')
-                ->limit(4)
-                ->pluck('id');
+// 最終取得
+$relevantPosts = Post::whereIn('id', $relevantIds)
+    ->orderBy('id', 'desc')
+    ->get();
 
-        }
-        $relevantPosts = Post::whereIn('id', $relevantIds)->latest()->get();
  
         //dd($relevantPosts);
         // 投稿を返す
