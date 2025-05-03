@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->json('tags')->default(DB::raw('(JSON_ARRAY())'))->nullable()->after('sub_category');
+            $table->json('tags')->nullable()->after('sub_category');
 
         });
     }
