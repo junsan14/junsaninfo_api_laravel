@@ -48,6 +48,13 @@ class PostController extends Controller
       
         return response()->json($blogCategories);    
     }
+    public function getSubCategories ()
+    {
+        //$blogSubCategories = BlogCategory::get();
+        $blogSubCategories = Post::groupBy('sub_category')->get(['sub_category']);
+        //dd($blogSubCategories);
+        return response()->json($blogSubCategories);    
+    }
     public function show(Request $request,$category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
@@ -66,47 +73,46 @@ class PostController extends Controller
         if (!$post) {
             return response()->json(['message' => 'Post not found'], 404);
         }
-        $tag = $post->tag;
-        
+        $sub_category = $post->sub_category;
         $relevantIds = collect();
 
-// 1. タグで関連投稿（前後4件）を取得（自分は除く）
-$relevantIds = Post::where('tag', 'like', "%{$tag}%")
-    ->where('is_show', 1)
-    ->where('category', $post->category)
-    ->where('id', '<>', $post->id) // 自分を除く
-    ->orderBy('id', 'desc')
-    ->limit(4)
-    ->pluck('id');
+        // 1. サブカテゴリで関連投稿（前後4件）を取得（自分は除く）
+        $relevantIds = Post::where('sub_category', 'like', "%{$sub_category}%")
+            ->where('is_show', 1)
+            ->where('category', $post->category)
+            ->where('id', '<>', $post->id) // 自分を除く
+            ->orderBy('id', 'desc')
+            ->limit(4)
+            ->pluck('id');
 
-// 2. タグで1件も見つからなければ、キーワード検索
-if ($relevantIds->isEmpty()) {
-    $keywords = explode(',', $post->keywords); // 例: "Laravel,React,API"
+        // 2. サブカテゴリで1件も見つからなければ、タグ検索
+   
+        if ($relevantIds->isEmpty() && !empty($post->tags)) {
+           $tags = $post->tags;
+            $relevantQuery = Post::query()
+                ->where('is_show', 1)
+                ->where('id', '<>', $post->id)
+                ->where('category', $post->category);
 
-    $relevantQuery = Post::query()
-        ->where('is_show', 1)
-        ->where('id', '<>', $post->id)
-        ->where('category', $post->category);
+            $relevantQuery->where(function ($query) use ($tags) {
+                foreach ($tags as $tag) {
+                    $trimmed = trim($tag);
+                    if (!empty($trimmed)) {
+                        $query->orWhere('tags', 'like', "%{$trimmed}%");
+                    }
+                }
+            });
 
-    $relevantQuery->where(function ($query) use ($keywords) {
-        foreach ($keywords as $keyword) {
-            $trimmed = trim($keyword);
-            if (!empty($trimmed)) {
-                $query->orWhere('keywords', 'like', "%{$trimmed}%");
-            }
+            $relevantIds = $relevantQuery
+                ->orderBy('id', 'desc')
+                ->limit(4)
+                ->pluck('id');
         }
-    });
 
-    $relevantIds = $relevantQuery
-        ->orderBy('id', 'desc')
-        ->limit(4)
-        ->pluck('id');
-}
-
-// 最終取得
-$relevantPosts = Post::whereIn('id', $relevantIds)
-    ->orderBy('id', 'desc')
-    ->get();
+        // 最終取得
+        $relevantPosts = Post::whereIn('id', $relevantIds)
+            ->orderBy('id', 'desc')
+            ->get();
 
  
         //dd($relevantPosts);
@@ -116,18 +122,15 @@ $relevantPosts = Post::whereIn('id', $relevantIds)
     public function create()
     {
         $keywords = Post::latest('updated_at')->first(['keywords']);
-        $tags = Post::groupBy('tag')->get(['tag']);
 
         return response()->json([
             'keywords'=>$keywords,
-            'tags'=>$tags,
             'isNew'=>true,
     ]);
     
     }
     public function store(Request $request)
     {
-       
         $content= $request->content;
         $thumbnailPath = $request->thumbnail;
         $isshow = filter_var($request->is_show, FILTER_VALIDATE_BOOLEAN);
@@ -161,7 +164,8 @@ $relevantPosts = Post::whereIn('id', $relevantIds)
             'excerpt'=>$request->excerpt,
             'keywords'=>$request->keywords,
             'category'=>$request->category,
-            'tag'=>$request->tag,
+            'sub_category'=>$request->sub_category,
+            'tags'=>$request->tags,
             'slug'=>$request->slug,
             'published_at'=>$publish_at,
             'thumbnail'=> $thumbnailPath,
@@ -178,11 +182,7 @@ $relevantPosts = Post::whereIn('id', $relevantIds)
         $keywords = Post::latest('updated_at')->first(['keywords']);
         $post =Post::where('id', $id)->first();
         
-        $tags = Post::groupBy('tag')->get(['tag']);
-        return response()->json([
-            'post'=>$post,
-            'tags'=>$tags
-        ]);
+        return response()->json(['post'=>$post,]);
     }
     public function visible(Request $request){
 

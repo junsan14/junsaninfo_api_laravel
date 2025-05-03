@@ -23,6 +23,7 @@ Route::post('/contact/send', [ContactFormController::class, 'store']);
 Route::get('/blog', [PostController::class, 'index']);
 Route::get('/blog/{category}/{postId}/{slug}', [PostController::class, 'show']);
 Route::get('/blog/blog-categories', [PostController::class, 'getCategories']);
+Route::get('/blog/blog-sub-categories', [PostController::class, 'getSubCategories']);
 
 //Route::middleware('auth:sanctum')->get('/blog/create', [PostController::class, 'create']);
 

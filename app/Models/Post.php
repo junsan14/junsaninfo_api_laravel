@@ -16,7 +16,8 @@ class Post extends Model
         'excerpt',
         'keywords',
         'category',
-        'tag',
+        'sub_category',
+        'tags',
         'slug',
         'thumbnail',
         'is_show',
@@ -24,5 +25,8 @@ class Post extends Model
         'is_featured',
         'published_at'
        
+    ];
+    protected $casts = [
+        'tags' => 'array',
     ];
 }
