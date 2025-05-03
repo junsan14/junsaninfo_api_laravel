@@ -55,6 +55,22 @@ class PostController extends Controller
         //dd($blogSubCategories);
         return response()->json($blogSubCategories);    
     }
+    public function getTags()
+    {
+        $tags = Post::whereNotNull('tags')->pluck('tags');
+        $uniqueTags = collect();
+
+        foreach ($tags as $tagArray) {
+            if (is_array($tagArray)) {
+                $uniqueTags = $uniqueTags->merge($tagArray);
+            }
+        }
+
+        $uniqueTags = $uniqueTags->unique()->values();
+        return response()->json($uniqueTags);
+    }
+
+
     public function show(Request $request,$category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
