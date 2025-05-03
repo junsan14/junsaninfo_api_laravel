@@ -33,6 +33,7 @@ class PostController extends Controller
         $query->when($inputKeywords, function ($q) use ($inputKeywords) {
             $q->where(function ($subQuery) use ($inputKeywords) {
                 $subQuery->where('title', 'like', '%' . $inputKeywords . '%')
+                         ->orWhere('sub_category', 'like', '%' . $inputKeywords . '%')
                          ->orWhere('keywords', 'like', '%' . $inputKeywords . '%');
             });
         });
@@ -142,54 +143,40 @@ class PostController extends Controller
         return response()->json([
             'keywords'=>$keywords,
             'isNew'=>true,
-    ]);
+        ]);
     
     }
     public function store(Request $request)
     {
-        $content= $request->content;
-        $thumbnailPath = $request->thumbnail;
-        $isshow = filter_var($request->is_show, FILTER_VALIDATE_BOOLEAN);
+        $post = Post::find($request->id) ?? new Post();
 
-        //サムネイル格納
-        if(!isset($thumbnailPath)){
-            //$thumbnailPath ='<img src="/userfiles/images/noImage.png" alt="">';
-            $url = 'https://api.example.com?key=' . env('url');
-            $thumbnailPath = '<figure class="image"><img style="aspect-ratio:1200/1200;" src="'.config('app.url').'/userfiles/images/noImage.png" width="1200" height="1200"></figure>';
+        if (!$request->is_update) {
+            $post->timestamps = false; // 自動で updated_at を書き換えない
         }
-        if($request->is_show == 0){
-            $publish_at = null;
-        }else{
-            if($request->published_at){
-                $publish_at = $request->published_at;
-            }else{
-                //dd(Carbon::now()->toDateTimeString());
-                $today = Carbon::now()->toDateTimeString();
-                $publish_at = $today;
-                //dd($publish_at);
-            }
-            
-        }
-       //dd($publish_at);
-       Post::updateOrCreate(
-            ['id'=> $request->id],
-            [
+        $post->updated_at = $request->is_update
+            ? Carbon::now()->toDateTimeString()
+            : $post->updated_at;
+        
+        $post->fill([
             'title' => $request->title,
-            'content' => $content,
-            'author_id'=>$request->author_id,
-            'excerpt'=>$request->excerpt,
-            'keywords'=>$request->keywords,
-            'category'=>$request->category,
-            'sub_category'=>$request->sub_category,
-            'tags'=>$request->tags,
-            'slug'=>$request->slug,
-            'published_at'=>$publish_at,
-            'thumbnail'=> $thumbnailPath,
-            'is_show'=>$isshow,
-            'is_top'=>$request->is_top,
-            'is_featured'=>$request->is_featured,
+            'content' => $request->content,
+            'author_id' => $request->author_id,
+            'excerpt' => $request->excerpt,
+            'keywords' => $request->keywords,
+            'category' => $request->category,
+            'sub_category' => $request->sub_category,
+            'tags' => $request->tags,
+            'slug' => $request->slug,
+            'published_at' => $request->is_show == 0 ? null : ($request->published_at ?? now()->toDateTimeString()),
+            'thumbnail' => $request->thumbnail ?? '<figure class="image"><img style="aspect-ratio:1200/1200;" src="' . config('app.url') . '/userfiles/images/noImage.png" width="1200" height="1200"></figure>',
+            'is_show' => filter_var($request->is_show, FILTER_VALIDATE_BOOLEAN),
+            'is_top' => $request->is_top,
+            'is_featured' => $request->is_featured,
         ]);
-       return response()->json($request);
+        
+        $post->save();
+        return response()->json($request);
+        
     }
     public function edit(Request $request) 
     {
