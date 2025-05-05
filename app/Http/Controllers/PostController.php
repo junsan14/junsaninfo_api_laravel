@@ -15,13 +15,14 @@ class PostController extends Controller
     {  
         $limit = $request->query('limit', 10);
         $isAdmin = filter_var($request->query('all'), FILTER_VALIDATE_BOOLEAN);
+        $isTop = filter_var($request->query('isTop'), FILTER_VALIDATE_BOOLEAN);
         $selectedCategory = $request->query('category');
         $inputKeywords = $request->query('keywords');
         $categroy_id = null;
         if ($selectedCategory) {
             $categroy_id = BlogCategory::where('name', $selectedCategory)->first()->id;
         }
-       
+      
         $query = Post::query();
 
         if (!$isAdmin) {
@@ -37,11 +38,23 @@ class PostController extends Controller
                          ->orWhere('keywords', 'like', '%' . $inputKeywords . '%');
             });
         });
-        $posts = $query->orderByDesc('is_featured')  // is_featured が true の記事を先頭に
-                   ->latest()                   // 最新の記事順に並べる
-                   ->paginate($limit);
+        if ($isTop) {
+            $posts = Post::where('is_top', 1)
+                         ->where('is_show', 1)
+                         ->orderByDesc('is_featured')
+                         ->latest()
+                         ->paginate($limit);
+    
+            return response()->json($posts);
+        }else{
+            $posts = $query->orderByDesc('is_featured')  // is_featured が true の記事を先頭に
+            ->latest()                   // 最新の記事順に並べる
+            ->paginate($limit);
+            return response()->json($posts);
+        }
+ 
         //dd($posts);
-       return response()->json($posts);    
+       //return response()->json($posts);    
     }
     public function getCategories ()
     {
