@@ -35,7 +35,7 @@ class PostController extends Controller
             $q->where(function ($subQuery) use ($inputKeywords) {
                 $subQuery->where('title', 'like', '%' . $inputKeywords . '%')
                          ->orWhere('sub_category', 'like', '%' . $inputKeywords . '%')
-                         ->orWhere('keywords', 'like', '%' . $inputKeywords . '%');
+                         ->orWhere('tags', 'like', '%' . $inputKeywords . '%');
             });
         });
         if ($isTop) {
