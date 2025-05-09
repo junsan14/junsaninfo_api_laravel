@@ -34,7 +34,6 @@ class PostController extends Controller
         $query->when($inputKeywords, function ($q) use ($inputKeywords) {
             $q->where(function ($subQuery) use ($inputKeywords) {
                 $subQuery->where('title', 'like', '%' . $inputKeywords . '%')
-                         ->orWhere('sub_category', 'like', '%' . $inputKeywords . '%')
                          ->orWhere('tags', 'like', '%' . $inputKeywords . '%');
             });
         });
