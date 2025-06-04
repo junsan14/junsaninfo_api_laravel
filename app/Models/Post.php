@@ -23,7 +23,7 @@ class Post extends Model
         'is_show',
         'is_top',
         'is_featured',
-        'published_at'
+        'published_at',
        
     ];
     protected $casts = [

@@ -82,8 +82,6 @@ class PostController extends Controller
         $uniqueTags = $uniqueTags->unique()->values();
         return response()->json($uniqueTags);
     }
-
-
     public function show(Request $request,$category,$postId)
     {
         // 投稿をカテゴリとIDに基づいて取得
