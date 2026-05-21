@@ -1,0 +1,105 @@
+.header {
+  display: grid;
+  grid-template-columns: 33mm 1fr 61mm;
+  gap: 7mm;
+  align-items: center;
+  margin-bottom: 6mm;
+}
+
+.photoWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 31mm;
+  height: 31mm;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.2mm solid #eef3ff;
+}
+
+.profile {
+  padding-top: 1mm;
+}
+
+.nameRow {
+  display: flex;
+  align-items: baseline;
+  gap: 5mm;
+}
+
+.nameRow h1 {
+  margin: 0;
+  font-size: 25pt;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: #0b2a6f;
+  font-weight: 900;
+}
+
+.nameRow span {
+  color: #6b7280;
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.role {
+  margin: 3mm 0 0;
+  font-size: 11pt;
+  color: #0b2a6f;
+  font-weight: 900;
+}
+
+.catch {
+  margin: 3mm 0 0;
+  font-size: 9.5pt;
+  color: #0b2a6f;
+  font-weight: 900;
+}
+
+.description {
+  margin: 2mm 0 0;
+  font-size: 8pt;
+  line-height: 1.65;
+  font-weight: 600;
+}
+
+.contact {
+  border-left: 1px solid #9aa8c4;
+  padding-left: 7mm;
+  padding-top: 1mm;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  margin-bottom: 2.6mm;
+  font-size: 8.2pt;
+  font-weight: 600;
+}
+
+.contactIcon {
+  width: 5.8mm;
+  height: 5.8mm;
+  border-radius: 50%;
+  background: #0b2a6f;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  flex-shrink: 0;
+}
+
+.updated {
+  margin-top: 7mm;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5mm;
+  font-size: 7.4pt;
+  color: #6b7280;
+  font-weight: 700;
+}

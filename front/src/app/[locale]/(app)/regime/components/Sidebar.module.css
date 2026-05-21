@@ -1,0 +1,90 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+}
+
+.box,
+.mission {
+  border: 1px solid #dbe3f1;
+  background: #f8fafc;
+  box-shadow: 0 2px 7px rgba(15, 47, 120, 0.06);
+}
+
+.boxTitle {
+  margin: 0;
+  height: 8mm;
+  padding: 0 3mm;
+  background: linear-gradient(90deg, #061f61, #0f3b8f);
+  color: #fff;
+  font-size: 10pt;
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.boxBody {
+  padding: 3mm 3mm 2mm;
+}
+
+.skillBlock {
+  padding-bottom: 3mm;
+  margin-bottom: 3mm;
+  border-bottom: 1px solid #d1d9e8;
+}
+
+.skillBlock:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.skillBlock h3 {
+  margin: 0 0 1.5mm;
+  color: #0b2a6f;
+  font-size: 8.3pt;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 1.5mm;
+}
+
+.skillBlock ul {
+  margin: 0;
+  padding-left: 4mm;
+  font-size: 7.3pt;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.skillBlock li {
+  margin-bottom: 1mm;
+}
+
+.checkItem {
+  list-style: none;
+  margin-left: -4mm;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4mm;
+}
+
+.checkItem svg {
+  color: #0b2a6f;
+  margin-top: 0.5mm;
+  flex-shrink: 0;
+}
+
+.missionBody {
+  min-height: 54mm;
+  padding: 6mm 4mm;
+  background: linear-gradient(145deg, #ffffff, #eef4ff);
+  font-size: 7.8pt;
+  line-height: 1.9;
+  font-weight: 700;
+}
+
+.missionBody p {
+  margin: 0 0 5mm;
+}
