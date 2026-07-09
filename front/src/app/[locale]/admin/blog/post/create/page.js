@@ -1,7 +1,7 @@
 'use client'
 import useSWR from 'swr'
 //import BlogEditor from '@/components/BlogEditor'
-import BlogEditor from '@/components/BlogEditor'
+import BlogEditor from '@/components/posts/BlogEditor'
 
 const fetcher = (url) =>
     fetch(url, {

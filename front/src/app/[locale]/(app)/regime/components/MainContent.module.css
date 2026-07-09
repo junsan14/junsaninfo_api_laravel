@@ -305,3 +305,14 @@
 .valueBox {
   display: none;
 }
+.dutyBlock ul,
+.achievement ul {
+  list-style: disc;
+  padding-left: 4mm;
+}
+
+.dutyBlock li::marker,
+.achievement li::marker {
+  color: #0b2a6f;
+  font-size: 0.9em;
+}

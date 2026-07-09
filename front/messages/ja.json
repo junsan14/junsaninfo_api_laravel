@@ -6,91 +6,421 @@
     "title": "こんにちは",
     "about": "ABOUTへいきます"
   },
+  "Top": {
+    "FeaturedWorks": {
+      "title": "Works",
+      "lead": "これまでに制作したWebサイト・Webアプリの一部を紹介します。",
+      "more": "実績をもっと見る",
+      "aria": {
+        "open": "{title}を開く",
+        "thumbnail": "{title} のサムネイル"
+      },
+      "items": [
+        {
+          "id": "shimonada-shoten",
+          "title": "下灘商店",
+          "category": "Website",
+          "tech": ["React", "Multilingual", "Instagram"],
+          "url": "https://shimonada-shoten.com/",
+          "image": "/images/works/shimonada-shoten.webp",
+          "description": "愛媛県伊予市の観光名所・下灘駅近くにオープンした小売店のPRサイト。日本語・英語・中国語に対応し、Instagram連携による販促導線も意識して制作。"
+        },
+        {
+          "id": "dqx-tool",
+          "title": "DQX Tool",
+          "category": "Web App",
+          "tech": ["Next.js", "Laravel", "MySQL"],
+          "url": "https://www.dqx-tool.com/",
+          "image": "/images/works/dqx-tool.webp",
+          "description": "ドラゴンクエストX オンライン向けの便利ツール集。自分や友人がゲーム中に不便に感じたことをもとに、検索・比較・計算を効率化するWebアプリとして制作。"
+        },
+        {
+          "id": "lindaterraza",
+          "title": "Lindaterraza",
+          "category": "Website",
+          "tech": ["WordPress", "PHP", "MySQL"],
+          "url": "https://lindaterraza.com/",
+          "image": "/images/works/lindaterraza.webp",
+          "description": "オリーブ専門店のWebサイト。オーナー自身が記事追加や内容修正を行えるよう、WordPressの自作テーマとして制作。"
+        },
+        {
+          "id": "mieko-noguchi",
+          "title": "Mieko Noguchi",
+          "category": "Portfolio",
+          "tech": ["HTML", "CSS", "JavaScript"],
+          "url": "https://miekonoguchi.com/",
+          "image": "/images/works/noguchi-mieko.webp",
+          "description": "個人アーティストの活動や作品を国内外に向けて発信するポートフォリオサイト。日本語・英語・中国語に対応し、作品の世界観が伝わる構成。"
+        }
+      ]
+    },
+    "HomeAbout": {
+    "title": "Skills",
+    "lead": "フロントエンド、バックエンド、デザインツール、業務改善まで、Web制作・開発に必要なスキルを幅広く扱っています。",
+    "more": "詳しく見る",
+    "skillCategories": [
+      {
+        "title": "Frontend",
+        "skills": [
+          { "name": "JavaScript", "iconKey": "JavaScript" },
+          { "name": "TypeScript", "iconKey": "TypeScript" },
+          { "name": "React", "iconKey": "React" },
+          { "name": "Next.js", "iconKey": "Next.js" },
+          { "name": "HTML", "iconKey": "HTML" },
+          { "name": "CSS", "iconKey": "CSS" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          { "name": "PHP", "iconKey": "PHP" },
+          { "name": "Laravel", "iconKey": "Laravel" },
+          { "name": "MySQL", "iconKey": "MySQL" },
+          { "name": "REST API", "iconKey": "REST API" }
+        ]
+      },
+      {
+        "title": "Design / Tools",
+        "skills": [
+          { "name": "Figma", "iconKey": "Figma" },
+          { "name": "Adobe XD", "iconKey": "Adobe XD" },
+          { "name": "Photoshop", "iconKey": "Photoshop" },
+          { "name": "GitHub", "iconKey": "GitHub" },
+          { "name": "Vercel", "iconKey": "Vercel" },
+          { "name": "Google Apps", "iconKey": "Google Apps" }
+        ]
+      }
+    ]
+  },
+  "HomeBlog": {
+    "title": "Notes",
+    "lead": "Web開発、教育活動、ルワンダでの経験を記録しています。",
+    "more": "記事をもっと見る"
+  }
+  },
   "About": {
-    "title": "ABOUT",
-    "name": "junsan14",
-    "job": "元ホテルマン / WEBエンジニア",
-    "jica": "JICA海外協力隊 2024年度1次隊ルワンダ",
-    "likes_title": "好きなもの",
-    "likes": "バスケ, Mac, ドラクエ, 自然, 海, お酒, 温泉",
-    "biography": {
-      "1992": {
-        "title": "1992",
-        "value": "大阪で生まれ､高校まで過ごす"
+  "title": "ABOUT",
+  "name": "junsan14",
+  "job": "元ホテルマン / Webエンジニア",
+  "jica": "JICA海外協力隊",
+  "likes_title": "好きなもの",
+  "likes": "バスケ, Mac, ドラクエ, 自然, 海, お酒, 温泉",
+  "biography": {
+    "1992": {
+      "title": "1992",
+      "value": "関西で生まれ、学生時代まで地元で過ごす"
+    },
+    "2011": {
+      "title": "2011",
+      "value": "大学進学を機に関東へ移り、情報システム分野を学び始める"
+    },
+    "2014": {
+      "title": "2014",
+      "value": "海外や異文化交流への関心が高まり、国際系の学部へ進路を変更"
+    },
+    "2016": {
+      "title": "2016",
+      "value": "ヨーロッパへ留学し、日本語・日本文化を通じた交流コミュニティの運営に携わる"
+    },
+    "2018": {
+      "title": "2018",
+      "value": "観光・宿泊業界に入り、現場業務と社内システム改善に関わる"
+    },
+    "2022": {
+      "title": "2022",
+      "value": "Web制作・開発の分野へ転向し、企画から実装まで幅広く担当"
+    },
+    "2024 Jan-Mar": {
+      "title": "2024.01-03",
+      "value": "地域課題に取り組む国内研修プログラムに参加し、地方での活動を経験"
+    },
+    "2024 April-July": {
+      "title": "2024.04-07",
+      "value": "JICA海外協力隊員研修に参加"
+    },
+    "2024 Sep-Now": {
+      "title": "2024.09-",
+      "value": "アフリカの専門学校にて、プログラミングやICT活用を支援する活動に従事"
+    }
+  },
+  "skills": {
+    "skillLevel": "Skill Level",
+    "groups": {
+      "front": {
+        "label": "Frontend",
+        "desc": [
+          "HTML/CSS、JavaScript、React、Next.jsを中心に、実務に近いWeb UIの実装を行っています。",
+          "見た目だけでなく、レスポンシブ対応、多言語対応、SEO、保守しやすいコンポーネント設計を意識しています。"
+        ]
       },
-      "2011": {
-        "title": "2011",
-        "value": "大学入学を機に上京､工学部情報システム専攻"
+      "back": {
+        "label": "Backend",
+        "desc": [
+          "Laravel、MySQL、REST APIを中心に、管理画面やデータ登録・編集機能の実装経験があります。",
+          "フロントエンドとバックエンドをつなぎ、実際に使えるWebアプリとして形にすることを得意としています。"
+        ]
       },
-      "2014": {
-        "title": "2014",
-        "value": "留学への強い憧れがあり､国際教養学部へ転部"
+      "tools": {
+        "label": "DevOps / Tools",
+        "desc": [
+          "GitHub、Vercel、サーバー環境、Google Workspaceなど、開発から運用までに必要なツールを扱っています。",
+          "特にGoogle Apps Scriptを使った業務改善・自動化は、ホテル業界での社内システム改善経験と相性の良い強みです。"
+        ]
       },
-      "2016": {
-        "title": "2016",
-        "value": "ロンドンに留学し、日本の言語/文化交流のコミュニティJLCE設立し2年弱滞在"
-      },
-      "2018": {
-        "title": "2018",
-        "value": "某リゾート会社へ@河口湖"
-      },
-      "2022": {
-        "title": "2022",
-        "value": "WEBエンジニアへ@東京"
-      },
-      "2024 Jan-Mar": {
-        "title": "2024 Jan-Mar",
-        "value": "JICAグローカルプログラム@愛媛県伊予市"
-      },
-      "2024 April-July": {
-        "title": "2024 April-July",
-        "value": "JICA海外協力隊訓練@二本松"
-      },
-      "2024 Sep-Now": {
-        "title": "2024 Sep-Now",
-        "value": "JICA海外協力隊24年第1期コンピュータ技術@ルワンダ東部ガツィボ郡ムフラセクター セント・アレクサンドレ・サウリ技術高等学校 活動中"
+      "education": {
+        "label": "Education / Direction",
+        "desc": [
+          "プログラミングを教える経験、教材作成、進行管理、課題整理など、開発以外の部分にも強みがあります。",
+          "技術をわかりやすく伝え、学習者やチームが前に進めるように支援することを大切にしています。"
+        ]
       }
     },
-    "skills":{
-      "front":{
-        "5": "5: どんな処理も基本的に対応可能",
-        "4": "4: 実務経験が豊富にあり､人に指南可能",
-        "3": "3: 1人でリファレンスみながら実装可能",
-        "2": "2: 基本的な処理の理解あるが､1人では対応困難",
-        "1": "1: 少し触れたレベルで､スキル向上の余地多くあり"
+    "items": {
+      "htmlCss": {
+        "label": "HTML / CSS / Sass",
+        "note": "セマンティックなHTML、レスポンシブ対応、CSS Modules、Sass、アニメーション実装に対応できます。"
       },
-      "other":{
-        "5": "5: Toolマスター",
-        "4": "4: 実務使用経験があり、複雑な機能も使用可能",
-        "3": "3: 機能の多くを理解、ある程度1人で操作可能",
-        "2": "2: 基本的な機能は使用しているが、それまで",
-        "1": "1: 少し触れたレベルで､機能理解の余地多くあり"
+      "javascript": {
+        "label": "JavaScript",
+        "note": "DOM操作、イベント処理、非同期処理、API連携、フォーム処理など実用的なUI実装ができます。"
       },
-      "comment":{
-        "html": "HTML5のセマンティック要素を活用し、SEOやパフォーマンスを考慮した構造を意識。CSSはSassを使って効率的にスタイルを管理し、変数やミックスイン、ネストなどを活用して可読性の高いコード また、FlexboxやGridを使ったレイアウト、アニメーションやトランジションの実装も経験済",
-        "JavaScript": "JavaScriptを使ったWebフロントエンド開発を普段からやっていて、DOM操作やイベント処理、非同期処理(async-await)など経験あり。配列、オブジェクト、ES6以降のモダンな書き方 (Map、Set、デストラクチャリング、スプレッド構文など)にも対応",
-        "GAS": "Google スプレッドシートや Google フォームと連携した業務自動化,時間ベースのトリガーを活用して、定期的なレポート生成やメール通知の自動化など経験あり。またdoGet / doPost を利用した Web アプリの開発にも取り組み、GAS と HTML/CSS/JavaScript を組み合わせた UI 付きの業務ツールを構築",
-        "Reactjs": "JSX / Babel / useState / useEffect / SPA / Render クラスコンポーネントの理解もあるが、v16.8以降は基本的にフックを使用 fetch / axios / SWRでAPIと連携し、非同期処理やキャッシュ管理を実装 React Router v6でページ遷移・動的ルーティングを構築した経験あり",
-        "Nextjs": "Next.js(App Router)を用いた開発経験があり、サーバーコンポーネントとクライアントコンポーネントの使い分け、動的・静的ルーティングの実装に精通。useSWRやfetchを活用し、Laravel Breezeを用いた認証付きAPI連携も対応。画像最適化にはnext/imageを用い、Headやmetadata APIによるSEO対応も実施。Vercelへのデプロイ経験あり。",
-        "API": "JavaScriptのfetchやaxiosを用いて外部APIと連携し、データの取得や送信 また、非同期処理に関してはasync-awaitやPromiseを活用し、データ処理の効率化。",
-        "CI/CO": "Gitを使用したバージョン管理に加え、Vercelを活用してのデプロイ, Laravelのプロジェクトでは、Webサーバに手動でのデプロイした経験あり",
-        "PHP": "一度フルスクラッチで､ユーザのCRUD処理を一から実装経験あり(一応セキュリティ実装も)   ",
-        "Laravel": "Inetia, Reactjs, Nextjsの実装経験あり。",
-        "Wordpress": "自作テーマ作成の経験あり。基本的なWP特有のPHPの書き方の理解",
-        "mySQL": "SQL構文/ Laravel Eloquentの操作経験あり ",
-        "firebase": "React NativeのDBとして連携経験あり ",
-        "API2": "Twitter/ Instagramのapi組み込み経験あり",
-        "psd": "レイヤーの理解､スライスなど基本的な操作理解あり",
-        "xd": "アニメーション/レイヤー/コンポーネントなどある程度複雑な操作理解あり",
-        "ai": "PSDより操作経験なし",
-        "gulp": "Frameworkなしの際､関数を作成しホットリロードやSass/jsコンパイルなどの理解あり ",
-        "webpack": "gulpより理解は低いが､リファレンス見ながら操作経験あり",
-        "git": "sourcetree/コマンドどちらも操作経験あり。"
+      "react": {
+        "label": "React",
+        "note": "コンポーネント設計、props、state、hooksを使った再利用しやすいUI実装ができます。"
+      },
+      "nextjs": {
+        "label": "Next.js",
+        "note": "App Router、metadata、Server / Client Components、next-intl、Vercelデプロイに対応できます。"
+      },
+      "i18n": {
+        "label": "i18n",
+        "note": "日本語・英語のルーティング、翻訳ファイル管理、多言語UIの実装経験があります。"
+      },
+      "uiDesign": {
+        "label": "UI Design",
+        "note": "ダークモード、カードUI、余白設計、アニメーションなど、見やすく使いやすいUIを意識しています。"
+      },
+      "php": {
+        "label": "PHP",
+        "note": "フォーム処理、CRUD、基本的な認証処理など、Webアプリに必要な処理を実装できます。"
+      },
+      "laravel": {
+        "label": "Laravel",
+        "note": "ルーティング、Controller、Eloquent、バリデーション、管理画面、API実装の経験があります。"
+      },
+      "mysql": {
+        "label": "MySQL",
+        "note": "テーブル設計、SQL、リレーション、Laravel Eloquentを使ったデータ操作に対応できます。"
+      },
+      "restApi": {
+        "label": "REST API",
+        "note": "Next.jsとLaravelを連携し、データ取得・登録・更新を行うAPI連携の実装経験があります。"
+      },
+      "auth": {
+        "label": "Authentication",
+        "note": "Laravel BreezeやSanctumを使ったログイン、認証付きAPI、管理画面の保護に対応できます。"
+      },
+      "wordpress": {
+        "label": "WordPress",
+        "note": "自作テーマ作成、テンプレート編集、CMSとしての基本的な運用・カスタマイズ経験があります。"
+      },
+      "gitGithub": {
+        "label": "Git / GitHub",
+        "note": "コマンド操作、ブランチ管理、GitHubへのpush、複数環境での開発管理に対応できます。"
+      },
+      "vercel": {
+        "label": "Vercel",
+        "note": "Next.jsアプリのデプロイ、環境変数設定、本番公開、ビルドエラー対応の経験があります。"
+      },
+      "linuxServer": {
+        "label": "Linux / Server",
+        "note": "LaravelをWebサーバーへ配置し、環境設定やトラブル対応を行った経験があります。"
+      },
+      "googleWorkspace": {
+        "label": "Google Workspace",
+        "note": "Google Apps Scriptを使った自動化、フォーム・スプレッドシート連携、業務効率化ツールの作成経験があります。"
+      },
+      "cicd": {
+        "label": "CI / CD",
+        "note": "GitHubとVercelを使ったデプロイフロー、ビルド、公開までの基本的な流れを理解しています。"
+      },
+      "figmaXd": {
+        "label": "Figma / XD",
+        "note": "デザインデータを読み取り、レイアウト・余白・コンポーネント構造を意識して実装できます。"
+      },
+      "teaching": {
+        "label": "Teaching",
+        "note": "英語でHTML、CSS、JavaScript、React、PHP、Laravelなどを教えた経験があります。"
+      },
+      "curriculum": {
+        "label": "Curriculum Design",
+        "note": "授業資料、演習問題、クイズアプリ、復習教材など、学習者向けコンテンツを設計できます。"
+      },
+      "direction": {
+        "label": "Project Direction",
+        "note": "企画、進行管理、課題整理、スケジュール調整など、Web制作のディレクション経験があります。"
+      },
+      "documentation": {
+        "label": "Documentation",
+        "note": "技術メモ、教材、操作マニュアル、説明資料などをわかりやすく整理できます。"
+      },
+      "problemSolving": {
+        "label": "Problem Solving",
+        "note": "ネットワークや端末環境が限られる中でも、代替案を考えながら開発・教育活動を進めてきました。"
+      },
+      "english": {
+        "label": "English",
+        "note": "英語での授業、メール、基本的な業務連絡、技術説明に対応できます。"
       }
     }
+  }
   },
   "Blog":{
     "title":"ハロー"
+  },
+  "Works": {
+  "title": "WORKS",
+  "lead": "これまでに制作した個人実績を紹介します",
+  "meta": {
+    "title": "junsan14｜WORKS",
+    "description": "Webサイト制作、Webアプリ開発、教育現場でのツール制作など、これまでに制作した実績を紹介します。"
+  },
+  "aria": {
+    "navigation": "制作実績ナビゲーション",
+    "swipe": "スワイプで制作実績を切り替え"
+  },
+  "labels": {
+    "pcTop": "PC TOP",
+    "spTop": "SP TOP",
+    "published": "公開日",
+    "period": "制作期間",
+    "roles": "担当範囲",
+    "tech": "使用技術",
+    "prPoint": "PR Point",
+    "viewSite": "View Site",
+    "noLink": "Classroom / Internal Tool"
+  },
+  "techLabels": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "infrastructure": "Infra / Tools"
+  },
+  "imageAlt": {
+    "pc": "{title} のPCトップページ",
+    "sp": "{title} のスマートフォントップページ"
+  },
+  "items": [
+    {
+      "id": "dqx-tool",
+      "title": "DQX Tool",
+      "category": "Web App",
+      "url": "https://www.dqx-tool.com/",
+      "publishedAt": "2026.05",
+      "period": "約3ヶ月〜継続改善中",
+      "pcImage": "/images/works/dqx-tool-pc.webp",
+      "spImage": "/images/works/dqx-tool-sp.webp",
+      "summary": "個人の趣味の一つである『ドラゴンクエストX オンライン』をより快適に遊ぶために制作した便利ツール集です。自分や友人がゲームをプレイする中で不便に感じたことを、Webアプリとして解決できるようにしました。",
+      "pr": "趣味の課題をきっかけに、企画、UI設計、フロントエンド、バックエンド、データベース設計、デプロイまで一貫して制作。実際に使うユーザーの目線で改善を重ね、ゲーム内の確認作業や計算を効率化できるツールとして運用しています。",
+      "roles": ["企画", "UI設計", "フロントエンド", "バックエンド", "DB設計", "管理画面制作", "デプロイ", "運用改善"],
+      "tech": {
+        "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
+        "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
+        "database": ["MySQL"],
+        "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
+      },
+      "points": [
+        "自分や友人がサービス中に不便に感じたことをもとに、実用的なWebアプリとして制作",
+        "アクセサリ検索、装備検索、モンスター検索、職人計算、輝晶獣分散など複数の便利ツールを実装",
+        "ゲーム内の複雑なデータを、検索・比較・確認しやすいUIに整理",
+        "管理画面を制作し、データを自分で追加・編集できる構成に",
+        "日本語・英語対応、ライト/ダークモード、スマートフォン対応を実装",
+        "実際の利用者のフィードバックをもとに、機能追加やUI改善を継続"
+      ]
+    },
+    {
+      "id": "shimonada-shoten",
+      "title": "下灘商店",
+      "category": "Website",
+      "url": "https://shimonada-shoten.com/",
+      "publishedAt": "2024.02",
+      "period": "約3週間",
+      "pcImage": "/images/works/shimonada-shoten-pc.webp",
+      "spImage": "/images/works/shimonada-shoten-sp.webp",
+      "summary": "地域おこし協力隊の取り組みの一つとして、愛媛県伊予市の観光名所である下灘駅近くに小売店をオープンするにあたり、店舗のPRと情報発信を目的に制作したWebサイトです。",
+      "pr": "下灘駅は国内外から観光客が訪れるスポットであるため、日本語・英語・中国語に対応。Instagramと連携し、店舗の雰囲気や商品情報を発信しながら販促につなげる設計にしました。",
+      "roles": ["Webデザイン", "コーディング", "多言語対応", "Instagram連携", "レスポンシブ対応", "情報設計"],
+      "tech": {
+        "frontend": ["React"],
+        "backend": ["なし"],
+        "database": ["なし"],
+        "infrastructure": ["ConoHa Server"]
+      },
+      "points": [
+        "地域おこし協力隊の活動として、地域店舗のPRサイトを制作",
+        "下灘駅を訪れる外国人観光客に向けて英語・中国語に対応",
+        "Instagramと連携し、日々の投稿を販促・集客につなげる構成に",
+        "観光客がスマートフォンから店舗情報を確認しやすい導線を設計"
+      ]
+    },
+    {
+      "id": "lindaterraza",
+      "title": "Lindaterraza",
+      "category": "Website",
+      "url": "https://lindaterraza.com/",
+      "publishedAt": "2024.03",
+      "period": "約3週間",
+      "pcImage": "/images/works/lindaterraza-pc.webp",
+      "spImage": "/images/works/lindaterraza-sp.webp",
+      "summary": "オリーブを専門に扱う店舗のWebサイト。商品や店舗の魅力を伝えながら、オーナー自身が記事の追加や内容修正を行えるよう、WordPressの自作テーマとして制作しました。",
+      "pr": "静的なWebサイトではなく、運用後も本人が情報発信を続けられるように設計。フロントエンドはHTML、CSS、JavaScriptで実装し、バックエンドにはWordPressを採用しました。",
+      "roles": ["Webデザイン", "コーディング", "WordPress自作テーマ制作", "投稿機能設計", "レスポンシブ対応", "本番環境構築"],
+      "tech": {
+        "frontend": ["HTML", "CSS", "JavaScript"],
+        "backend": ["WordPress", "PHP"],
+        "database": ["MySQL"],
+        "infrastructure": ["ConoHa Server"]
+      },
+      "points": [
+        "オリーブ専門店の雰囲気や商品イメージが伝わるWebサイトを制作",
+        "オーナー自身が記事を追加・編集できるようWordPress自作テーマを構築",
+        "HTML、CSS、JavaScriptでフロントエンドを実装",
+        "ConoHa Server上に本番環境を構築し、公開まで対応"
+      ]
+    },
+    {
+      "id": "mieko-noguchi",
+      "title": "Mieko Noguchi",
+      "category": "Portfolio",
+      "url": "https://miekonoguchi.com/",
+      "publishedAt": "2013.09",
+      "period": "約3ヶ月",
+      "pcImage": "/images/works/mieko-noguchi-pc.webp",
+      "spImage": "/images/works/mieko-noguchi-sp.webp",
+      "summary": "個人アーティストの活動や作品を国内外に向けて発信するために制作したポートフォリオサイトです。作品、プロフィール、活動情報を整理し、アーティスト本人の世界観が伝わる構成を意識しました。",
+      "pr": "日本語・英語・中国語に対応し、国内だけでなく海外の閲覧者にも活動内容が伝わるように設計。作品の魅力を引き立てるシンプルなデザインと、プロフィールや活動実績を見やすく整理した情報設計を行いました。",
+      "roles": ["Webデザイン", "コーディング", "多言語対応", "コンテンツ設計", "作品ページ設計", "レスポンシブ対応"],
+      "tech": {
+        "frontend": ["HTML", "CSS", "JavaScript"],
+        "backend": ["なし"],
+        "database": ["なし"],
+        "infrastructure": ["エックスサーバー"]
+      },
+      "points": [
+        "個人アーティストの作品や活動内容を伝えるポートフォリオサイトを制作",
+        "日本語・英語・中国語の3言語に対応し、海外ユーザーにも情報を届けられる構成に",
+        "作品の世界観を邪魔しない、シンプルで見やすいデザインを意識",
+        "プロフィール、作品紹介、活動情報を整理し、閲覧者が活動内容を理解しやすい導線を設計",
+        "制作期間を約3ヶ月確保し、コンテンツ整理からデザイン・実装まで丁寧に対応"
+      ]
+    }
+  ]
+  },
+  "NotFound": {
+    "badge": "PAGE NOT FOUND",
+    "titleLine1": "ページが",
+    "titleLine2": "見つかりませんでした",
+    "lead": "お探しのページは移動、削除、またはURLが変更された可能性があります。",
+    "backHome": "ホームへ戻る"
   }
-
 }

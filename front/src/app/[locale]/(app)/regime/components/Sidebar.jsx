@@ -1,7 +1,6 @@
 import {
   FaCode,
   FaStar,
-  FaCheckCircle,
   FaTools,
   FaLanguage,
   FaAward,
@@ -32,9 +31,8 @@ export default function Sidebar() {
           <SkillBlock title="ツール・環境" icon={<FaTools />}>
             <li>Git / GitHub</li>
             <li>Google Workspace</li>
-            <li>Figma</li>
             <li>GA4 / Google Search Console</li>
-            <li>Slack / Notion / Trello</li>
+            <li>Slack</li>
           </SkillBlock>
 
           <SkillBlock title="強み・得意領域" icon={<FaLightbulb />}>
@@ -47,8 +45,8 @@ export default function Sidebar() {
               "プロジェクト管理・ディレクション",
               "チームコミュニケーション・調整力",
             ].map((item) => (
-              <li className={styles.checkItem} key={item}>
-                <FaCheckCircle />
+              <li  key={item}>
+               
                 {item}
               </li>
             ))}
@@ -62,8 +60,8 @@ export default function Sidebar() {
 
           <SkillBlock title="資格・スコア" icon={<FaAward />}>
             <li>普通自動車免許</li>
-            <li>TOEFL iBT 95点</li>
-            <li>TOEIC 920点</li>
+            <li>TOEFL iBT 80点(2014)</li>
+            <li>TOEIC 920点(2014)</li>
           </SkillBlock>
 
           <SkillBlock title="その他" icon={<FaRocket />}>
@@ -82,10 +80,10 @@ export default function Sidebar() {
 
         <div className={styles.missionBody}>
           <p>
-            教育は、人の可能性を広げ、人生を変える力があると信じています。
+            ルワンダで初めて教職に携わった経験を通じて、教育が人の可能性を広げ、将来の選択肢を増やす力を持つことを実感しました。
           </p>
           <p>
-            テクノロジーと教育を掛け合わせ、すべての学習者が自信を持って未来を切り開ける世界をつくることを目指しています。
+            これまで培ってきたWeb開発・業務改善の実務経験と英語力を活かし、テクノロジーと教育をつなぐ教育事業に関わっていきたいと考えています。
           </p>
         </div>
       </section>

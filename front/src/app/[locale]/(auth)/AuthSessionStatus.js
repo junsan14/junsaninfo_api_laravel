@@ -1,13 +1,13 @@
-const AuthSessionStatus = ({ status, className, ...props }) => (
-    <>
-        {status && (
-            <div
-                className={`${className} font-medium text-sm text-green-600`}
-                {...props}>
-                {status}
-            </div>
-        )}
-    </>
-)
+import styles from "./Auth.module.css";
 
-export default AuthSessionStatus
+const AuthSessionStatus = ({ status, className = "", ...props }) => {
+  if (!status) return null;
+
+  return (
+    <div className={`${styles.status} ${className}`} {...props}>
+      {status}
+    </div>
+  );
+};
+
+export default AuthSessionStatus;

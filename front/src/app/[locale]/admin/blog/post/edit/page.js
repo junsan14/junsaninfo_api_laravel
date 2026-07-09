@@ -1,6 +1,6 @@
 'use client'
 import { useSearchParams } from 'next/navigation'
-import BlogEditor from '@/components/BlogEditor'
+import BlogEditor from '@/components/posts/BlogEditor'
 import { useEffect,useState } from 'react'
 
 export default function EditBlog(){

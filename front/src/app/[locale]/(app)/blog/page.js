@@ -1,23 +1,26 @@
+import PostsList from "@/components/posts/PostsList";
+import { Suspense } from "react";
+import SectionHeading from "@/components/common/SectionHeading";
 
-import PostsList from '@/components/PostsList'
-import { Suspense } from 'react'
-export default function Posts (){
+export default function Posts() {
+  return (
+    <main>
+      <section className="section blog">
+        <div className="inner">
+          <SectionHeading
+            title="Notes"
+            lead="Web開発、教育活動、ルワンダでの経験を記録しています。"
+          />
 
-    return (
-        <>
-        <section className="section blog wrap">
-            <h1 className="section_title">
-                <p className="section_title_jp">Blog</p>
-            </h1>
-            <Suspense>
-                <PostsList postLimit={10} pagination={true} searchBar={true} />
-            </Suspense>
-        </section>
-    </>
-    )
+          <Suspense>
+            <PostsList postLimit={10} pagination={true} searchBar={true} />
+          </Suspense>
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export const metadata = {
-    title: 'junsan14｜BLOG',
-}
-
+  title: "junsan14｜BLOG",
+};

@@ -1,10 +1,13 @@
-import {defineRouting} from 'next-intl/routing'
- 
+import { defineRouting } from "next-intl/routing";
+
 export const routing = defineRouting({
-  // A list of all locales that are supported
-  locales: ['en', 'ja'],
- 
-  // Used when no locale matches
-  defaultLocale: 'ja',
+  locales: ["en", "ja"],
+
+  defaultLocale: "ja",
+
   localeDetection: false,
-})
+
+  // ja は /ja を付けない
+  // en は /en を付ける
+  localePrefix: "as-needed",
+});

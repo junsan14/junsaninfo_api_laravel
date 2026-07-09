@@ -6,91 +6,421 @@
     "title": "Hello world!",
     "about": "Go to the about page"
   },
+  "Top": {
+    "FeaturedWorks": {
+      "title": "Works",
+      "lead": "A selection of websites and web applications I have created.",
+      "more": "View More Works",
+      "aria": {
+        "open": "Open {title}",
+        "thumbnail": "{title} thumbnail"
+      },
+      "items": [
+        {
+          "id": "shimonada-shoten",
+          "title": "Shimonada Shoten",
+          "category": "Website",
+          "tech": ["React", "Multilingual", "Instagram"],
+          "url": "https://shimonada-shoten.com/",
+          "image": "/images/works/shimonada-shoten.webp",
+          "description": "A PR website for a retail shop opened near Shimonada Station, a famous sightseeing spot in Iyo City, Ehime. The site supports Japanese, English, and Chinese, and is connected with Instagram for promotion."
+        },
+        {
+          "id": "dqx-tool",
+          "title": "DQX Tool",
+          "category": "Web App",
+          "tech": ["Next.js", "Laravel", "MySQL"],
+          "url": "https://www.dqx-tool.com/",
+          "image": "/images/works/dqx-tool.webp",
+          "description": "A set of useful tools for Dragon Quest X Online. I created this web app to solve small frustrations that I and my friends experienced while playing, such as searching, comparing, and calculating game data."
+        },
+        {
+          "id": "lindaterraza",
+          "title": "Lindaterraza",
+          "category": "Website",
+          "tech": ["WordPress", "PHP", "MySQL"],
+          "url": "https://lindaterraza.com/",
+          "image": "/images/works/lindaterraza.webp",
+          "description": "A website for an olive specialty shop. I created a custom WordPress theme so the owner could add articles and update content independently after launch."
+        },
+        {
+          "id": "mieko-noguchi",
+          "title": "Mieko Noguchi",
+          "category": "Portfolio",
+          "tech": ["HTML", "CSS", "JavaScript"],
+          "url": "https://miekonoguchi.com/",
+          "image": "/images/works/noguchi-mieko.webp",
+          "description": "A portfolio website created to promote the activities and works of an individual artist. The site supports Japanese, English, and Chinese, with a simple structure that highlights the artist's world view."
+        }
+      ]
+    },
+    "HomeAbout": {
+    "title": "Skills",
+    "lead": "I work across frontend, backend, design tools, deployment, and workflow improvement for practical web production and development.",
+    "more": "Learn More",
+    "skillCategories": [
+      {
+        "title": "Frontend",
+        "skills": [
+          { "name": "JavaScript", "iconKey": "JavaScript" },
+          { "name": "TypeScript", "iconKey": "TypeScript" },
+          { "name": "React", "iconKey": "React" },
+          { "name": "Next.js", "iconKey": "Next.js" },
+          { "name": "HTML", "iconKey": "HTML" },
+          { "name": "CSS", "iconKey": "CSS" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "skills": [
+          { "name": "PHP", "iconKey": "PHP" },
+          { "name": "Laravel", "iconKey": "Laravel" },
+          { "name": "MySQL", "iconKey": "MySQL" },
+          { "name": "REST API", "iconKey": "REST API" }
+        ]
+      },
+      {
+        "title": "Design / Tools",
+        "skills": [
+          { "name": "Figma", "iconKey": "Figma" },
+          { "name": "Adobe XD", "iconKey": "Adobe XD" },
+          { "name": "Photoshop", "iconKey": "Photoshop" },
+          { "name": "GitHub", "iconKey": "GitHub" },
+          { "name": "Vercel", "iconKey": "Vercel" },
+          { "name": "Google Apps", "iconKey": "Google Apps" }
+        ]
+      }
+    ]
+  },
+  "HomeBlog": {
+    "title": "Notes",
+    "lead": "Notes on web development, education, and my experiences in Rwanda.",
+    "more": "View All Posts"
+  }
+  },
   "About": {
-    "title": "ABOUT",
-    "name": "junsan14",
-    "job": "Ex-hotelier / Web Engineer",
-    "jica": "JICA Volunteer - Rwanda, Batch 1 (2024)",
-    "likes_title": "Things I Like",
-    "likes": "Basketball, Mac, Dragon Quest, Nature, Ocean, Alcohol, Hot Springs",
-    "biography": {
-      "1992": {
-        "title": "1992",
-        "value": "Born in Osaka, lived there until high school"
+  "title": "ABOUT",
+  "name": "junsan14",
+  "job": "Former hotel staff / Web Engineer",
+  "jica": "JICA Overseas Cooperation Volunteer",
+  "likes_title": "Things I Like",
+  "likes": "Basketball, Mac, Dragon Quest, nature, the sea, drinks, hot springs",
+  "biography": {
+    "1992": {
+      "title": "1992",
+      "value": "Born in the Kansai area of Japan and spent my student years there."
+    },
+    "2011": {
+      "title": "2011",
+      "value": "Moved to the Kanto area for university and began studying information systems."
+    },
+    "2014": {
+      "title": "2014",
+      "value": "Developed a strong interest in overseas cultures and international exchange, then changed my field of study."
+    },
+    "2016": {
+      "title": "2016",
+      "value": "Studied in Europe and helped run a community for exchange through Japanese language and culture."
+    },
+    "2018": {
+      "title": "2018",
+      "value": "Started working in the tourism and hospitality industry, while also supporting internal system improvements."
+    },
+    "2022": {
+      "title": "2022",
+      "value": "Moved into web production and development, working across planning, direction, and implementation."
+    },
+    "2024 Jan-Mar": {
+      "title": "2024.01-03",
+      "value": "Joined a domestic training program focused on local community issues and experienced fieldwork in regional Japan."
+    },
+    "2024 April-July": {
+      "title": "2024.04-07",
+      "value": "Joined the JICA Overseas Cooperation Volunteer training program."
+    },
+    "2024 Sep-Now": {
+      "title": "2024.09-",
+      "value": "Currently supporting programming education and ICT use at a technical school in Africa."
+    }
+  },
+  "skills": {
+    "skillLevel": "Skill Level",
+    "groups": {
+      "front": {
+        "label": "Frontend",
+        "desc": [
+          "I mainly work with HTML/CSS, JavaScript, React, and Next.js to build practical web interfaces.",
+          "I focus not only on visual design, but also on responsive layouts, multilingual support, SEO, and maintainable component structure."
+        ]
       },
-      "2011": {
-        "title": "2011",
-        "value": "Moved to Tokyo to study info systems in university"
+      "back": {
+        "label": "Backend",
+        "desc": [
+          "I have experience building admin pages, CRUD features, and data management functions with Laravel, MySQL, and REST APIs.",
+          "I enjoy connecting the frontend and backend to create web applications that are actually useful in real situations."
+        ]
       },
-      "2014": {
-        "title": "2014",
-        "value": "Transferred to International Liberal Arts for study abroad dream"
+      "tools": {
+        "label": "DevOps / Tools",
+        "desc": [
+          "I use tools such as GitHub, Vercel, server environments, and Google Workspace throughout development and operation.",
+          "Google Apps Script automation is one of my strengths, based on my experience improving internal systems in the hospitality industry."
+        ]
       },
-      "2016": {
-        "title": "2016",
-        "value": "Studied in London, founded JLCE (cultural exchange group), stayed ~2 years"
-      },
-      "2018": {
-        "title": "2018",
-        "value": "Joined a resort company in Kawaguchiko"
-      },
-      "2022": {
-        "title": "2022",
-        "value": "Became a web engineer in Tokyo"
-      },
-      "2024 Jan-Mar": {
-        "title": "2024 Jan-Mar",
-        "value": "JICA Glocal Program in Iyo City, Ehime"
-      },
-      "2024 April-July": {
-        "title": "2024 April-July",
-        "value": "JICA Volunteer Training in Nihonmatsu"
-      },
-      "2024 Sep-Now": {
-        "title": "2024 Sep-Now",
-        "value": "Serving as Computer Tech Volunteer in Rwanda (Gatsibo, Muhura), at St. Alexandre Sauli TVET School"
+      "education": {
+        "label": "Education / Direction",
+        "desc": [
+          "I have strengths beyond development, including programming education, learning material creation, project coordination, and issue organization.",
+          "I value explaining technology clearly and helping learners or teams move forward."
+        ]
       }
     },
-    "skills":{
-      "front":{
-        "5": "5: Able to handle basically any task",
-        "4": "4: Extensive practical experience and able to teach others",
-        "3": "3: Can implement alone while referring to documentation",
-        "2": "2: Understands basic tasks but struggles to handle alone",
-        "1": "1: Limited experience, with much room for skill improvement"
+    "items": {
+      "htmlCss": {
+        "label": "HTML / CSS / Sass",
+        "note": "I can build semantic HTML, responsive layouts, CSS Modules, Sass-based styles, and UI animations."
       },
-      "other":{
-        "5": "5: Tool master",
-        "4": "4: Practical experience, able to use complex features",
-        "3": "3: Understands most features, can operate mostly alone",
-        "2": "2: Uses basic functions, but limited beyond that",
-        "1": "1: Limited exposure, with much room to understand features"
+      "javascript": {
+        "label": "JavaScript",
+        "note": "I can implement practical UI behavior using DOM manipulation, events, async processing, API calls, and form handling."
       },
-      "comment": {
-        "html": "Utilize HTML5 semantic elements with attention to SEO and performance. Manage CSS efficiently using Sass with variables, mixins, and nesting for readable code. Experienced in layouts using Flexbox and Grid, as well as animations and transitions.",
-        "JavaScript": "Regularly develop web frontends using JavaScript, experienced with DOM manipulation, event handling, and asynchronous processing (async-await). Familiar with arrays, objects, and modern ES6+ syntax such as Map, Set, destructuring, and spread operators.",
-        "GAS": "Automated workflows integrating with Google Sheets and Forms. Experienced with time-based triggers for periodic report generation and email notifications. Developed web apps using doGet/doPost, building UI-enabled business tools combining GAS with HTML/CSS/JavaScript.",
-        "reactjs": "Experienced with JSX, Babel, useState, useEffect, SPA architecture, and rendering. Understand class components but mainly use hooks since v16.8. Implement asynchronous API calls and cache management with fetch, axios, and SWR. Built page navigation and dynamic routing using React Router v6.",
-        "nextjs": "Developed with Next.js (App Router), proficient in using server and client components, and implementing dynamic/static routing. Utilized useSWR and fetch, integrated authenticated APIs via Laravel Breeze. Used next/image for image optimization and Head/metadata API for SEO. Experience deploying on Vercel.",
-        "API": "Integrated external APIs using JavaScript fetch and axios for data fetching and sending. Utilized async-await and Promises for efficient asynchronous data handling.",
-        "CI/CO": "Version control using Git and deployment with Vercel. Experience manually deploying Laravel projects to web servers.",
-        "PHP": "Implemented full user CRUD functionality from scratch, including basic security implementations.",
-        "Laravel": "Built the web app <a href='https://hotelier-front.com/'>Hotelier</a>.",
-        "Wordpress": "Experience creating custom themes and understanding of WordPress-specific PHP coding.",
-        "mySQL": "Experience with SQL syntax and Laravel Eloquent ORM operations.",
-        "firebase": "Integrated React Native with Firebase database.",
-        "API2": "Experience embedding Twitter and Instagram APIs.",
-        "psd": "Understands layers and basic operations like slicing.",
-        "xd": "Understands animations, layers, and components at an intermediate level.",
-        "ai": "No experience beyond PSD.",
-        "gulp": "Created functions for hot reload and compiling Sass/JS without frameworks.",
-        "webpack": "Less experienced than gulp but has used it following documentation.",
-        "git": "Experienced with both SourceTree GUI and command line."
+      "react": {
+        "label": "React",
+        "note": "I can build reusable UI components using props, state, hooks, and component-based design."
+      },
+      "nextjs": {
+        "label": "Next.js",
+        "note": "I can work with the App Router, metadata, Server and Client Components, next-intl, and Vercel deployment."
+      },
+      "i18n": {
+        "label": "i18n",
+        "note": "I have experience implementing Japanese and English routing, translation file management, and multilingual UI."
+      },
+      "uiDesign": {
+        "label": "UI Design",
+        "note": "I design and implement readable and user-friendly interfaces, including dark mode, card UI, spacing, and animation."
+      },
+      "php": {
+        "label": "PHP",
+        "note": "I can implement form handling, CRUD features, and basic authentication logic needed for web applications."
+      },
+      "laravel": {
+        "label": "Laravel",
+        "note": "I have experience with routing, controllers, Eloquent, validation, admin pages, and API implementation."
+      },
+      "mysql": {
+        "label": "MySQL",
+        "note": "I can work with table design, SQL, relationships, and data operations using Laravel Eloquent."
+      },
+      "restApi": {
+        "label": "REST API",
+        "note": "I have experience connecting Next.js and Laravel to fetch, create, update, and manage data through APIs."
+      },
+      "auth": {
+        "label": "Authentication",
+        "note": "I can work with login flows, protected admin pages, authenticated APIs, Laravel Breeze, and Sanctum basics."
+      },
+      "wordpress": {
+        "label": "WordPress",
+        "note": "I have experience creating custom themes, editing templates, and maintaining WordPress as a CMS."
+      },
+      "gitGithub": {
+        "label": "Git / GitHub",
+        "note": "I can manage projects using Git commands, branches, GitHub repositories, and multi-environment workflows."
+      },
+      "vercel": {
+        "label": "Vercel",
+        "note": "I have experience deploying Next.js apps, setting environment variables, publishing production sites, and handling build errors."
+      },
+      "linuxServer": {
+        "label": "Linux / Server",
+        "note": "I have experience placing Laravel projects on web servers and handling basic environment setup and troubleshooting."
+      },
+      "googleWorkspace": {
+        "label": "Google Workspace",
+        "note": "I have built automation tools using Google Apps Script, Forms, Sheets, and workflow improvement systems."
+      },
+      "cicd": {
+        "label": "CI / CD",
+        "note": "I understand the basic flow of deployment, builds, and release operations using GitHub and Vercel."
+      },
+      "figmaXd": {
+        "label": "Figma / XD",
+        "note": "I can read design files and implement layouts with attention to spacing, structure, and reusable components."
+      },
+      "teaching": {
+        "label": "Teaching",
+        "note": "I have taught HTML, CSS, JavaScript, React, PHP, and Laravel in English."
+      },
+      "curriculum": {
+        "label": "Curriculum Design",
+        "note": "I can design learning materials, exercises, quiz apps, and review content for programming students."
+      },
+      "direction": {
+        "label": "Project Direction",
+        "note": "I have experience in planning, progress management, issue organization, and schedule coordination for web projects."
+      },
+      "documentation": {
+        "label": "Documentation",
+        "note": "I can create clear technical notes, learning materials, operation manuals, and explanatory documents."
+      },
+      "problemSolving": {
+        "label": "Problem Solving",
+        "note": "I have continued development and teaching activities in environments with limited network and device resources."
+      },
+      "english": {
+        "label": "English",
+        "note": "I can handle classes, emails, basic workplace communication, and technical explanations in English."
       }
-
     }
+  }
   },
   "Blog":{
     "title":"hello"
+  },
+  "Works": {
+    "title": "WORKS",
+    "lead": "A selection of websites, web applications, and educational tools I have created.",
+    "meta": {
+      "title": "junsan14｜WORKS",
+      "description": "A portfolio of websites, web applications, and educational tools created by junsan14."
+    },
+    "aria": {
+      "navigation": "Works navigation",
+      "swipe": "Swipe to switch works"
+    },
+    "labels": {
+      "pcTop": "PC TOP",
+      "spTop": "SP TOP",
+      "published": "Published",
+      "period": "Production Period",
+      "roles": "Role",
+      "tech": "Tech Stack",
+      "prPoint": "PR Point",
+      "viewSite": "View Site",
+      "noLink": "Classroom / Internal Tool"
+    },
+    "techLabels": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "infrastructure": "Infra / Tools"
+    },
+    "imageAlt": {
+      "pc": "{title} PC top page",
+      "sp": "{title} smartphone top page"
+    },
+    "items": [
+      {
+        "id": "dqx-tool",
+        "title": "DQX Tool",
+        "category": "Web App",
+        "url": "https://www.dqx-tool.com/",
+        "publishedAt": "2026.05",
+        "period": "About 3 months / ongoing improvements",
+        "pcImage": "/images/works/dqx-tool-pc.webp",
+        "spImage": "/images/works/dqx-tool-sp.webp",
+        "summary": "A set of useful tools for Dragon Quest X Online, created to make the game more comfortable to play. I built this web app to solve small frustrations that I and my friends experienced while playing.",
+        "pr": "Starting from a personal hobby and real user needs, I handled planning, UI design, frontend development, backend development, database design, deployment, and ongoing improvements. The project is operated as a practical tool that helps users check information and perform calculations more efficiently in the game.",
+        "roles": ["Planning", "UI Design", "Frontend", "Backend", "Database Design", "Admin UI", "Deployment", "Operation Improvement"],
+        "tech": {
+          "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
+          "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
+          "database": ["MySQL"],
+          "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
+        },
+        "points": [
+          "Created a practical web app based on problems I and my friends experienced while playing the game",
+          "Implemented multiple tools such as accessory search, equipment search, monster search, crafting calculation, and Kishoju room sharing",
+          "Organized complex game data into an interface that is easy to search, compare, and check",
+          "Built an admin interface so that data can be added and edited independently",
+          "Implemented Japanese and English support, light/dark mode, and responsive design",
+          "Continuously improve features and UI based on actual user feedback"
+        ]
+      },
+      {
+        "id": "shimonada-shoten",
+        "title": "Shimonada Shoten",
+        "category": "Website",
+        "url": "https://shimonada-shoten.com/",
+        "publishedAt": "2024.02",
+        "period": "About 3 weeks",
+        "pcImage": "/images/works/shimonada-shoten-pc.webp",
+        "spImage": "/images/works/shimonada-shoten-sp.webp",
+        "summary": "A website created to promote and share information about a retail shop opened near Shimonada Station, a famous sightseeing spot in Iyo City, Ehime Prefecture, as part of a local community revitalization initiative.",
+        "pr": "Because Shimonada Station attracts both Japanese and international visitors, the site supports Japanese, English, and Chinese. It is connected with Instagram to help communicate the shop atmosphere and product information, leading to promotion and customer visits.",
+        "roles": ["Web Design", "Coding", "Multilingual Support", "Instagram Integration", "Responsive Design", "Information Architecture"],
+        "tech": {
+          "frontend": ["React"],
+          "backend": ["None"],
+          "database": ["None"],
+          "infrastructure": ["ConoHa Server"]
+        },
+        "points": [
+          "Created a PR website for a local retail shop as part of a community revitalization project",
+          "Supported English and Chinese for international visitors to Shimonada Station",
+          "Connected the website with Instagram to support promotion and customer attraction",
+          "Designed a mobile-friendly flow so tourists can easily check shop information"
+        ]
+      },
+      {
+        "id": "lindaterraza",
+        "title": "Lindaterraza",
+        "category": "Website",
+        "url": "https://lindaterraza.com/",
+        "publishedAt": "2024.03",
+        "period": "About 3 weeks",
+        "pcImage": "/images/works/lindaterraza-pc.webp",
+        "spImage": "/images/works/lindaterraza-sp.webp",
+        "summary": "A website for a shop specializing in olives. I created a custom WordPress theme so the owner could add articles and update content independently while communicating the appeal of the products and the shop.",
+        "pr": "Rather than creating a static website, I designed it so the owner could continue publishing information after launch. The frontend was implemented with HTML, CSS, and JavaScript, while WordPress was used as the backend CMS.",
+        "roles": ["Web Design", "Coding", "Custom WordPress Theme", "Post Feature Design", "Responsive Design", "Production Setup"],
+        "tech": {
+          "frontend": ["HTML", "CSS", "JavaScript"],
+          "backend": ["WordPress", "PHP"],
+          "database": ["MySQL"],
+          "infrastructure": ["ConoHa Server"]
+        },
+        "points": [
+          "Created a website that communicates the atmosphere and product image of an olive specialty shop",
+          "Built a custom WordPress theme so the owner can add and edit articles independently",
+          "Implemented the frontend with HTML, CSS, and JavaScript",
+          "Set up and released the production environment on ConoHa Server"
+        ]
+      },
+      {
+        "id": "mieko-noguchi",
+        "title": "Mieko Noguchi",
+        "category": "Portfolio",
+        "url": "https://miekonoguchi.com/",
+        "publishedAt": "2013.09",
+        "period": "About 3 months",
+        "pcImage": "/images/works/mieko-noguchi-pc.webp",
+        "spImage": "/images/works/mieko-noguchi-sp.webp",
+        "summary": "A portfolio website created to promote the activities and works of an individual artist to both domestic and international audiences. I organized the artwork, profile, and activity information so the artist's world view could be communicated clearly.",
+        "pr": "The site supports Japanese, English, and Chinese so that the artist's activities can reach international viewers as well as domestic audiences. I focused on a simple design that highlights the artwork and a clear information structure for the profile and activity history.",
+        "roles": ["Web Design", "Coding", "Multilingual Support", "Content Design", "Artwork Page Design", "Responsive Design"],
+        "tech": {
+          "frontend": ["HTML", "CSS", "JavaScript"],
+          "backend": ["None"],
+          "database": ["None"],
+          "infrastructure": ["Xserver"]
+        },
+        "points": [
+          "Created a portfolio website to communicate the artist's works and activities",
+          "Supported Japanese, English, and Chinese to reach international audiences",
+          "Focused on a simple design that does not distract from the artwork",
+          "Organized the profile, artwork, and activity information into an easy-to-understand flow",
+          "Handled content organization, design, and implementation carefully over about three months"
+        ]
+      }
+    ]
+  },
+  "NotFound": {
+    "badge": "PAGE NOT FOUND",
+    "titleLine1": "Page",
+    "titleLine2": "not found.",
+    "lead": "The page you are looking for may have moved, been deleted, or the URL may have changed.",
+    "backHome": "Back to Home"
   }
 }

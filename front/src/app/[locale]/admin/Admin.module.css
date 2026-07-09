@@ -1,0 +1,147 @@
+.shell {
+  min-height: 100vh;
+  background: var(--gradient-page);
+  color: var(--color-text);
+}
+
+.shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(129, 140, 248, 0.1), transparent 30%),
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--color-bg-soft) 38%, transparent) 100%
+    );
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 120px 0 96px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.heading {
+  margin: 0;
+}
+
+.kicker {
+  margin: 0 0 10px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 950;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.createLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-soft) 100%
+  );
+  color: #020617;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.createLink:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--color-primary) 28%, transparent);
+}
+
+.createLink:focus-visible {
+  outline: 3px solid var(--color-primary-bg);
+  outline-offset: 3px;
+}
+
+.content {
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(18px);
+  padding: 28px;
+}
+
+@media (max-width: 760px) {
+  .page {
+    width: min(100% - 28px, 1120px);
+    padding: 96px 0 72px;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 26px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .createLink {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+
+  .content {
+    padding: 18px;
+    border-radius: 22px;
+  }
+}

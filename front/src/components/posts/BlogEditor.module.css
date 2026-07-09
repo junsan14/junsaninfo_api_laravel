@@ -1,0 +1,882 @@
+.form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 28px;
+  align-items: start;
+  width: 100%;
+}
+
+.main,
+.sub {
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(18px);
+}
+
+.main {
+  padding: 28px;
+}
+
+.sub {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field + .field {
+  margin-top: 22px;
+}
+
+.contentField {
+  margin-top: 26px;
+}
+
+.label {
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-bg) 62%, transparent);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input,
+.select {
+  min-height: 44px;
+  padding: 0 14px;
+}
+
+.textarea {
+  min-height: 44px;
+  padding: 12px 14px;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-primary-soft);
+  background: color-mix(in srgb, var(--color-bg) 78%, transparent);
+  box-shadow: 0 0 0 4px var(--color-primary-bg);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-muted) 50%),
+    linear-gradient(135deg, var(--color-text-muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 13px) 50%;
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 38px;
+}
+
+.checkGroup {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--color-bg) 32%, transparent);
+}
+
+.checkLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-soft);
+  font-size: 13px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.editor {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--color-bg) 56%, transparent);
+}
+
+.thumbnailEditor {
+  min-height: 180px;
+}
+
+.reactSelect {
+  width: 100%;
+}
+
+.actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-soft) 100%
+  );
+  color: #020617;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--color-primary) 28%, transparent);
+}
+
+.submitButton:focus-visible {
+  outline: 3px solid var(--color-primary-bg);
+  outline-offset: 3px;
+}
+
+.draftButton {
+  background: color-mix(in srgb, var(--color-bg-card-strong) 82%, transparent);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.loading {
+  margin: 0;
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-bg-card);
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* =========================
+   React Select
+========================= */
+
+.field :global(.blogEditorSelect__control) {
+  min-height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-bg) 62%, transparent);
+  box-shadow: none;
+  cursor: text;
+}
+
+.field :global(.blogEditorSelect__control:hover) {
+  border-color: var(--color-border-strong);
+}
+
+.field :global(.blogEditorSelect__control--is-focused) {
+  border-color: var(--color-primary-soft);
+  background: color-mix(in srgb, var(--color-bg) 78%, transparent);
+  box-shadow: 0 0 0 4px var(--color-primary-bg);
+}
+
+.field :global(.blogEditorSelect__value-container) {
+  padding: 4px 10px;
+}
+
+.field :global(.blogEditorSelect__input-container),
+.field :global(.blogEditorSelect__single-value) {
+  color: var(--color-text);
+}
+
+.field :global(.blogEditorSelect__placeholder) {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.field :global(.blogEditorSelect__multi-value) {
+  border-radius: 999px;
+  background: var(--color-primary-bg);
+  overflow: hidden;
+}
+
+.field :global(.blogEditorSelect__multi-value__label) {
+  color: var(--color-primary-soft);
+  font-size: 12px;
+  font-weight: 850;
+  padding: 4px 7px 4px 9px;
+}
+
+.field :global(.blogEditorSelect__multi-value__remove) {
+  color: var(--color-primary-soft);
+  cursor: pointer;
+}
+
+.field :global(.blogEditorSelect__multi-value__remove:hover) {
+  background: color-mix(in srgb, var(--color-primary-bg) 72%, var(--color-primary) 20%);
+  color: var(--color-text);
+}
+
+.field :global(.blogEditorSelect__indicator-separator) {
+  background: var(--color-border);
+}
+
+.field :global(.blogEditorSelect__dropdown-indicator),
+.field :global(.blogEditorSelect__clear-indicator) {
+  color: var(--color-text-muted);
+}
+
+.field :global(.blogEditorSelect__menu) {
+  z-index: 30;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-bg-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.field :global(.blogEditorSelect__menu-list) {
+  padding: 6px;
+}
+
+.field :global(.blogEditorSelect__option) {
+  border-radius: 10px;
+  color: var(--color-text-soft);
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.field :global(.blogEditorSelect__option--is-focused) {
+  background: var(--color-primary-bg);
+  color: var(--color-text);
+}
+
+.field :global(.blogEditorSelect__option--is-selected) {
+  background: var(--color-primary);
+  color: #020617;
+}
+
+/* =========================
+   CKEditor Shell
+========================= */
+
+.editor :global(.ck.ck-editor) {
+  width: 100%;
+}
+
+.editor :global(.ck.ck-editor__top) {
+  border-radius: 18px 18px 0 0;
+}
+
+.editor :global(.ck.ck-toolbar) {
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-bg-soft) 76%, transparent);
+  color: var(--color-text);
+  padding: 8px;
+}
+
+.editor :global(.ck.ck-toolbar__separator) {
+  background: var(--color-border);
+}
+
+.editor :global(.ck.ck-button),
+.editor :global(.ck.ck-dropdown__button) {
+  color: var(--color-text-soft);
+  border-radius: 10px;
+}
+
+.editor :global(.ck.ck-button:hover),
+.editor :global(.ck.ck-button.ck-on),
+.editor :global(.ck.ck-dropdown__button:hover),
+.editor :global(.ck.ck-dropdown__button.ck-on) {
+  background: var(--color-primary-bg);
+  color: var(--color-primary-soft);
+}
+
+.editor :global(.ck.ck-button:focus),
+.editor :global(.ck.ck-dropdown__button:focus) {
+  box-shadow: 0 0 0 3px var(--color-primary-bg);
+}
+
+.editor :global(.ck.ck-editor__main > .ck-editor__editable) {
+  min-height: 560px;
+  border: 0;
+  background: color-mix(in srgb, var(--color-bg) 76%, transparent);
+  color: var(--color-text-soft);
+  padding: 28px;
+  font-size: 15px;
+  line-height: 1.9;
+  box-shadow: none;
+}
+
+.editor :global(.ck.ck-editor__main > .ck-editor__editable:focus) {
+  box-shadow: inset 0 0 0 1px var(--color-border-strong);
+}
+
+.thumbnailEditor :global(.ck.ck-editor__main > .ck-editor__editable) {
+  min-height: 170px;
+  padding: 18px;
+}
+
+/* =========================
+   CKEditor Content
+========================= */
+
+.editor :global(.ck-content h2) {
+  margin: 42px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 28px;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+}
+
+.editor :global(.ck-content h3) {
+  margin: 34px 0 14px;
+  color: var(--color-text);
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.editor :global(.ck-content p) {
+  margin: 0 0 1.2em;
+}
+
+.editor :global(.ck-content a) {
+  color: var(--color-primary-soft);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.editor :global(.ck-content ul),
+.editor :global(.ck-content ol) {
+  margin: 1.2em 0;
+  padding-left: 1.4em;
+}
+
+.editor :global(.ck-content li) {
+  margin: 0.4em 0;
+}
+
+.editor :global(.ck-content blockquote) {
+  margin: 26px 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--color-primary-soft);
+  border-radius: 0 16px 16px 0;
+  background: var(--color-primary-bg);
+  color: var(--color-text-soft);
+  font-style: normal;
+}
+
+.editor :global(.ck-content code) {
+  padding: 0.16em 0.42em;
+  border: 1px solid var(--inline-code-border);
+  border-radius: 0.45em;
+  background: var(--inline-code-bg);
+  color: var(--inline-code-text);
+  font-size: 0.92em;
+  font-weight: 800;
+}
+
+.editor :global(.ck-content pre) {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 26px 0;
+  padding: 16px;
+  border: 1px solid var(--code-border);
+  border-radius: 3px;
+  background: var(--code-bg);
+  color: var(--code-text);
+  -webkit-overflow-scrolling: touch;
+}
+
+.editor :global(.ck-content pre code) {
+  display: block;
+  min-width: max-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+.editor :global(.ck-content figure),
+.editor :global(.ck-content figure.image),
+.editor :global(.ck-content .image),
+.editor :global(.ck-content .image_resized),
+.editor :global(.ck-content .ck-widget.image),
+.editor :global(.ck-content .image-style-side),
+.editor :global(.ck-content .image-style-align-left),
+.editor :global(.ck-content .image-style-align-right),
+.editor :global(.ck-content .image-style-align-center),
+.editor :global(.ck-content .image-style-block-align-left),
+.editor :global(.ck-content .image-style-block-align-right) {
+  max-width: 100% !important;
+  margin: 24px auto !important;
+  text-align: center !important;
+}
+
+.editor :global(.ck-content img),
+.editor :global(.ck-content figure img),
+.editor :global(.ck-content figure.image img),
+.editor :global(.ck-content .image img),
+.editor :global(.ck-content .image_resized img),
+.editor :global(.ck-content .ck-widget.image img),
+.editor :global(.ck-content picture img) {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  border-radius: 14px;
+}
+
+.editor :global(.ck-content figcaption) {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.editor :global(.ck-content .table) {
+  display: table;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.editor :global(.ck-content table) {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-bg) 62%, transparent);
+}
+
+.editor :global(.ck-content th),
+.editor :global(.ck-content td) {
+  min-width: 2em;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-soft);
+  line-height: 1.6;
+}
+
+.editor :global(.ck-content th) {
+  background: var(--color-primary-bg);
+  color: var(--color-text);
+  font-weight: 900;
+}
+
+/* =========================
+   CKEditor Dropdown / Balloon
+========================= */
+
+.editor :global(.ck.ck-dropdown__panel),
+.editor :global(.ck.ck-balloon-panel) {
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-bg-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.editor :global(.ck.ck-list) {
+  background: var(--color-bg-soft);
+}
+
+.editor :global(.ck.ck-list__item .ck-button) {
+  color: var(--color-text-soft);
+}
+
+.editor :global(.ck.ck-list__item .ck-button:hover),
+.editor :global(.ck.ck-list__item .ck-button.ck-on) {
+  background: var(--color-primary-bg);
+  color: var(--color-primary-soft);
+}
+
+.editor :global(.ck.ck-input),
+.editor :global(.ck.ck-labeled-field-view__input-wrapper input) {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.editor :global(.ck.ck-input:focus),
+.editor :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
+  box-shadow: 0 0 0 3px var(--color-primary-bg);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1025px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    position: sticky;
+    bottom: 16px;
+    z-index: 10;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--color-bg-card-strong) 88%, transparent);
+    backdrop-filter: blur(18px);
+  }
+}
+
+@media (max-width: 760px) {
+  .form {
+    gap: 20px;
+  }
+
+  .main,
+  .sub {
+    border-radius: 22px;
+  }
+
+  .main,
+  .sub {
+    padding: 18px;
+  }
+
+  .field + .field {
+    margin-top: 18px;
+  }
+
+  .input,
+  .select {
+    min-height: 42px;
+    padding: 0 12px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .textarea {
+    padding: 11px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+
+  .editor {
+    border-radius: 16px;
+  }
+
+  .editor :global(.ck.ck-toolbar) {
+    padding: 6px;
+  }
+
+  .editor :global(.ck.ck-editor__main > .ck-editor__editable) {
+    min-height: 460px;
+    padding: 18px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .thumbnailEditor :global(.ck.ck-editor__main > .ck-editor__editable) {
+    min-height: 150px;
+  }
+
+  .editor :global(.ck-content h2) {
+    margin-top: 34px;
+    font-size: 23px;
+  }
+
+  .editor :global(.ck-content h3) {
+    margin-top: 28px;
+    font-size: 19px;
+  }
+
+  .editor :global(.ck-content figure),
+  .editor :global(.ck-content figure.image),
+  .editor :global(.ck-content .image),
+  .editor :global(.ck-content .image_resized),
+  .editor :global(.ck-content .ck-widget.image),
+  .editor :global(.ck-content .image-style-side),
+  .editor :global(.ck-content .image-style-align-left),
+  .editor :global(.ck-content .image-style-align-right),
+  .editor :global(.ck-content .image-style-align-center),
+  .editor :global(.ck-content .image-style-block-align-left),
+  .editor :global(.ck-content .image-style-block-align-right) {
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 22px auto !important;
+    text-align: center !important;
+  }
+
+  .editor :global(.ck-content img),
+  .editor :global(.ck-content figure img),
+  .editor :global(.ck-content figure.image img),
+  .editor :global(.ck-content .image img),
+  .editor :global(.ck-content .image_resized img),
+  .editor :global(.ck-content .ck-widget.image img),
+  .editor :global(.ck-content picture img) {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    object-fit: contain;
+  }
+
+  .editor :global(.ck-content pre) {
+    margin: 22px 0;
+    padding: 13px;
+    border-radius: 3px;
+  }
+
+  .editor :global(.ck-content pre code) {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .actions {
+    justify-content: stretch;
+    gap: 8px;
+    border-radius: 18px;
+  }
+
+  .submitButton {
+    flex: 1;
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+}
+/* =========================
+   CKEditor Dark UI Override
+========================= */
+
+.editor :global(.ck.ck-reset_all),
+.editor :global(.ck.ck-reset_all *) {
+  color: var(--color-text-soft);
+}
+
+.editor :global(.ck.ck-toolbar),
+.editor :global(.ck.ck-toolbar__items),
+.editor :global(.ck.ck-dropdown__panel),
+.editor :global(.ck.ck-balloon-panel),
+.editor :global(.ck.ck-list),
+.editor :global(.ck.ck-list__item),
+.editor :global(.ck.ck-button),
+.editor :global(.ck.ck-dropdown__button),
+.editor :global(.ck.ck-splitbutton),
+.editor :global(.ck.ck-splitbutton__action),
+.editor :global(.ck.ck-splitbutton__arrow),
+.editor :global(.ck.ck-labeled-field-view),
+.editor :global(.ck.ck-labeled-field-view__input-wrapper),
+.editor :global(.ck.ck-input),
+.editor :global(.ck.ck-textarea),
+.editor :global(.ck.ck-dialog),
+.editor :global(.ck.ck-dialog__content),
+.editor :global(.ck.ck-dialog__body),
+.editor :global(.ck.ck-form__row) {
+  background: var(--color-bg-soft) !important;
+  color: var(--color-text-soft) !important;
+}
+
+.editor :global(.ck.ck-dropdown__panel),
+.editor :global(.ck.ck-balloon-panel),
+.editor :global(.ck.ck-dialog) {
+  border: 1px solid var(--color-border) !important;
+  border-radius: 14px !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.editor :global(.ck.ck-button),
+.editor :global(.ck.ck-dropdown__button),
+.editor :global(.ck.ck-list__item .ck-button),
+.editor :global(.ck.ck-splitbutton__action),
+.editor :global(.ck.ck-splitbutton__arrow) {
+  border-radius: 10px !important;
+  color: var(--color-text-soft) !important;
+  background: transparent !important;
+}
+
+.editor :global(.ck.ck-button:hover),
+.editor :global(.ck.ck-button.ck-on),
+.editor :global(.ck.ck-button.ck-button_with-text:hover),
+.editor :global(.ck.ck-dropdown__button:hover),
+.editor :global(.ck.ck-dropdown__button.ck-on),
+.editor :global(.ck.ck-list__item .ck-button:hover),
+.editor :global(.ck.ck-list__item .ck-button.ck-on),
+.editor :global(.ck.ck-list__item .ck-button.ck-focused),
+.editor :global(.ck.ck-splitbutton__action:hover),
+.editor :global(.ck.ck-splitbutton__arrow:hover) {
+  background: var(--color-primary-bg) !important;
+  color: var(--color-primary-soft) !important;
+}
+
+.editor :global(.ck.ck-button .ck-icon),
+.editor :global(.ck.ck-dropdown__button .ck-icon),
+.editor :global(.ck.ck-list__item .ck-button .ck-icon) {
+  color: currentColor !important;
+}
+
+.editor :global(.ck.ck-list__item .ck-button .ck-button__label),
+.editor :global(.ck.ck-button .ck-button__label),
+.editor :global(.ck.ck-dropdown__button .ck-button__label) {
+  color: currentColor !important;
+}
+
+.editor :global(.ck.ck-list__item .ck-button.ck-on),
+.editor :global(.ck.ck-list__item .ck-button.ck-on:hover) {
+  background: color-mix(in srgb, var(--color-primary-bg) 76%, var(--color-primary) 16%) !important;
+  color: var(--color-primary-soft) !important;
+}
+
+.editor :global(.ck.ck-list__item .ck-button.ck-on .ck-button__label),
+.editor :global(.ck.ck-list__item .ck-button.ck-on .ck-icon) {
+  color: var(--color-primary-soft) !important;
+}
+
+.editor :global(.ck.ck-input),
+.editor :global(.ck.ck-textarea),
+.editor :global(.ck.ck-labeled-field-view__input-wrapper input) {
+  border: 1px solid var(--color-border) !important;
+  border-radius: 10px !important;
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+  box-shadow: none !important;
+}
+
+.editor :global(.ck.ck-input:focus),
+.editor :global(.ck.ck-textarea:focus),
+.editor :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
+  border-color: var(--color-primary-soft) !important;
+  box-shadow: 0 0 0 3px var(--color-primary-bg) !important;
+}
+
+.editor :global(.ck.ck-label),
+.editor :global(.ck.ck-labeled-field-view__status),
+.editor :global(.ck.ck-toolbar__separator) {
+  color: var(--color-text-muted) !important;
+}
+
+.editor :global(.ck.ck-toolbar__separator) {
+  background: var(--color-border) !important;
+}
+
+.editor :global(.ck.ck-tooltip .ck-tooltip__text) {
+  background: var(--color-bg-soft) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.editor :global(.ck.ck-button.ck-disabled),
+.editor :global(.ck.ck-button:disabled) {
+  opacity: 0.45 !important;
+}
+
+/* Heading / FontSize / Color dropdown preview text */
+.editor :global(.ck-heading_heading1),
+.editor :global(.ck-heading_heading2),
+.editor :global(.ck-heading_heading3),
+.editor :global(.ck-heading_paragraph) {
+  color: var(--color-text-soft) !important;
+  background: transparent !important;
+}
+
+/* Color palette panel */
+.editor :global(.ck.ck-color-grid),
+.editor :global(.ck.ck-color-selector),
+.editor :global(.ck.ck-color-table),
+.editor :global(.ck.ck-color-ui-dropdown) {
+  background: var(--color-bg-soft) !important;
+  color: var(--color-text-soft) !important;
+}
+
+.editor :global(.ck.ck-color-grid__tile) {
+  border-color: var(--color-border) !important;
+}
+
+/* Link form buttons */
+.editor :global(.ck.ck-link-form),
+.editor :global(.ck.ck-link-actions) {
+  background: var(--color-bg-soft) !important;
+  color: var(--color-text-soft) !important;
+}
+
+.editor :global(.ck.ck-link-form .ck-button),
+.editor :global(.ck.ck-link-actions .ck-button) {
+  background: transparent !important;
+  color: var(--color-text-soft) !important;
+}
+
+.editor :global(.ck.ck-link-form .ck-button:hover),
+.editor :global(.ck.ck-link-actions .ck-button:hover) {
+  background: var(--color-primary-bg) !important;
+  color: var(--color-primary-soft) !important;
+}

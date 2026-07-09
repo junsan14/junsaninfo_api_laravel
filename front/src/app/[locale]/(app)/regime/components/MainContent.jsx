@@ -17,10 +17,10 @@ const jobs = [
     tag: "教育・国際経験",
     text: "ルワンダの高校にて、学生にプログラミングを英語で指導。技術指導だけでなく、学習環境の改善や学習者のモチベーション向上にも注力しています。",
     duties: [
-      "HTML / CSS / JavaScript / React / PHP / Laravel等の授業を英語で実施",
+      "JavaScript, React, Nextjs, PHP, Laravelの授業を英語で実施",
       "教材開発・授業運営の設計",
       "実践型プロジェクト学習の指導",
-      "インフラ環境が限られる中での工夫による学習機会の最大化",
+      "限られたインフラ環境での工夫による学習機会の最大化",
     ],
     resultTitle: "指導内容・実績",
     results: [
@@ -39,15 +39,15 @@ const jobs = [
     duties: [
       "Webサイトの企画立案、要件定義、提案資料作成",
       "予算管理、スケジュール管理、進行管理",
-      "Next.js / Laravelを用いたWebサイト構築",
       "Google Workspaceを活用した社内業務改善ツールの開発",
       "クライアントとのコミュニケーション、運用サポート",
     ],
     resultTitle: "主な実績",
     results: [
-      "地域創生推進/飲料/車HP10数件やメルマガなど制作・公開ディレクション対応",
-      "50数件の見積書作成",
-      "社内業務ツール自作により工数を月平均20時間以上削減",
+      "地域創生・飲料・自動車関連など、複数業種のWebサイト制作・公開ディレクションを担当",
+      "メールマガジン制作や更新運用など、公開後の継続的な運用業務にも従事",
+      "50件以上の見積書を作成し、提案・受注前工程を支援",
+      "Google Workspaceを活用した社内業務ツールを自作し、月平均20時間以上の工数削減を実現",
     ],
   },
   {
@@ -56,11 +56,11 @@ const jobs = [
     tag: "社内SE・業務改善",
     text: "ホテル現場業務を経験した後、社内システムエンジニアとして業務改善・システム開発を担当しました。",
     duties: [
-      "ダイニング・フロント業務などホテル現場を経験し、業務理解を深める",
+      "ダイニング・フロントなどのホテル現場業務を経験し、現場視点で業務課題を把握",
       "Google Apps Scriptを用いた業務自動化・RPA化",
       "Google Workspace上での業務管理システム開発・運用",
       "イントラネットWEBサイト構築・運用",
-      "社員に対するITリテラシー塾",
+      "社員向けITリテラシー研修・勉強会の実施",
       "コロナ禍における労働力・リソース管理、シフト作成支援",
     ],
     resultTitle: "主な実績（具体例）",
@@ -77,30 +77,30 @@ const jobs = [
 const projects = [
   {
     title: "下灘商店",
-    image: "/images/shimonada-shoten.webp",
+    image: "/images/works/shimonada-shoten-pc.webp",
     url: "https://www.shimonada-shoten.com/",
     tech: "Next.js / Laravel",
     text: "地域商店の魅力を伝えるWebサイト。商品・店舗情報を見やすく整理し、ブランドイメージ向上を意識して制作。",
   },
   {
     title: "DQX Tool",
-    image: "/images/dqx-tool.webp",
+    image: "/images/works/dqx-tool.webp",
     url: "https://www.dqx-tool.com/",
     tech: "Next.js / Laravel / MySQL",
     text: "ドラクエ10向けの検索・攻略支援ツール。モンスター、アクセサリ、装備検索などを継続的に改善中。",
   },
   {
     title: "Linda Terraza",
-    image: "/images/lindaterraza.webp",
+    image: "/images/works/lindaterraza-pc.webp",
     url: "https://lindaterraza.com/",
-    tech: "Next.js / Laravel",
+    tech: "WordPress",
     text: "宿泊・施設サイトとして、写真の見せ方、予約導線、スマートフォンでの閲覧体験を意識して制作。",
   },
   {
     title: "Mieko Noguchi",
-    image: "/images/miekonoguchi.webp",
+    image: "/images/works/noguchi-mieko-pc.webp",
     url: "https://miekonoguchi.com/",
-    tech: "Next.js / Laravel",
+    tech: "HTML / CSS / JavaScript",
     text: "個人・ブランドの世界観を伝えるWebサイト。シンプルで上品な情報設計とデザインを意識して制作。",
   },
 ];
@@ -189,7 +189,7 @@ export default function MainContent() {
                   <span>{project.tech}</span>
                 </div>
 
-                <p className={styles.workUrl}>{project.url}</p>
+                <p className={styles.workUrl}><a target="_blank" rel="noreferrer" href={project.url}>{project.url}</a></p>
                 <p className={styles.workText}>{project.text}</p>
               </div>
             </article>

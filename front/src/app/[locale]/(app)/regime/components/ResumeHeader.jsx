@@ -13,7 +13,7 @@ export default function ResumeHeader() {
     <header className={styles.header}>
       <div className={styles.photoWrap}>
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile.webp"
           alt="Junichi Sunada"
           width={150}
           height={150}
@@ -42,27 +42,53 @@ export default function ResumeHeader() {
           カリキュラム・学習体験の設計に取り組んでいます。
         </p>
       </div>
-
+      
       <div className={styles.contact}>
-        <ContactItem icon={<MdEmail />} text="junsanjunsan14@gmail.com" />
-        <ContactItem icon={<MdLocationOn />} text="Kigali, Rwanda" />
-        <ContactItem icon={<FaGithub />} text="github.com/junsan14" />
-        <ContactItem icon={<MdLanguage />} text="https://junsan.info/" />
-
-        <div className={styles.updated}>
+                <div className={styles.updated}>
           <MdUpdate />
-          <span>最終更新日：2026年5月21日</span>
+          <span>最終更新日：2026年7月10日</span>
         </div>
+        <ContactItem
+          icon={<MdEmail />}
+          text="junsanjunsan14@gmail.com"
+          href="mailto:junsanjunsan14@gmail.com"
+        />
+
+        <ContactItem
+          icon={<MdLocationOn />}
+          text="Kigali, Rwanda"
+          href="https://www.google.com/maps/search/?api=1&query=Kigali%2C%20Rwanda"
+        />
+
+        <ContactItem
+          icon={<FaGithub />}
+          text="github.com/junsan14"
+          href="https://github.com/junsan14"
+        />
+
+        <ContactItem
+          icon={<MdLanguage />}
+          text="junsan.info"
+          href="https://junsan.info/"
+        />
       </div>
     </header>
   );
 }
 
-function ContactItem({ icon, text }) {
+function ContactItem({ icon, text, href }) {
   return (
     <div className={styles.contactItem}>
       <span className={styles.contactIcon}>{icon}</span>
-      <span>{text}</span>
+      <span>
+        <a
+          href={href}
+          target={href?.startsWith("http") ? "_blank" : undefined}
+          rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+        >
+          {text}
+        </a>
+      </span>
     </div>
   );
 }

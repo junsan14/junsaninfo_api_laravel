@@ -1,22 +1,19 @@
-import AuthCard from '@/app/[locale]/(auth)/AuthCard'
-import NextTopLoader from 'nextjs-toploader'
+import NextTopLoader from "nextjs-toploader";
 
+import AuthCard from "@/app/[locale]/(auth)/AuthCard";
+import styles from "./Auth.module.css";
 
 export const metadata = {
-    title: 'Admin',
-}
+  title: "Admin",
+};
 
 const Layout = ({ children }) => {
-    return (
-        <div>
-            <div className="text-gray-900 antialiased">
-            <NextTopLoader />
-                <AuthCard>
-                    {children}
-                </AuthCard>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className={styles.shell}>
+      <NextTopLoader />
+      <AuthCard>{children}</AuthCard>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

@@ -68,7 +68,27 @@
 .contact {
   border-left: 1px solid #9aa8c4;
   padding-left: 7mm;
-  padding-top: 1mm;
+  padding-top: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.updated {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.2mm;
+  margin: 0 0 3mm;
+  font-size: 6.6pt;
+  color: #9ca3af;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.updated svg {
+  font-size: 8pt;
 }
 
 .contactItem {

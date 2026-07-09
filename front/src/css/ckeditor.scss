@@ -4,6 +4,8 @@
  * For more information, check out https://ckeditor.com/docs/ckeditor5/latest/installation/advanced/content-styles.html
  */
 
+@use "sass:map";
+
  $breakpoint: (
   sp: 'screen and (max-width: 767px)',
   tab: 'screen and (max-width: 1025px)',
@@ -12,7 +14,7 @@
 
 
 @mixin mq($bp) {
-  @media #{map-get($breakpoint, $bp)} {
+  @media #{map.get($breakpoint, $bp)} {
    @content;
   }
 }

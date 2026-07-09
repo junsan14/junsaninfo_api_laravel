@@ -1,4 +1,4 @@
-import PostContent from "@/components/PostContent"
+import PostContent from "@/components/posts/PostContent"
 import { fetchPost } from "@/lib/postAPI"
 
 export default async function Page({params,searchParams}) {

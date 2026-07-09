@@ -1,16 +1,17 @@
-import RequireAuth from '@/hooks/RequireAuth'
+import RequireAuth from "@/hooks/RequireAuth";
 
-const AdminLayout = ({ children }) => { 
-
-    return (
-            <RequireAuth>
-                {children}
-            </RequireAuth>
-    )
-}
+import styles from "./Admin.module.css";
 
 export const metadata = {
-    title: 'Admin',
-}
+  title: "Admin",
+};
 
-export default AdminLayout
+const AdminLayout = ({ children }) => {
+  return (
+    <RequireAuth>
+      <div className={styles.shell}>{children}</div>
+    </RequireAuth>
+  );
+};
+
+export default AdminLayout;

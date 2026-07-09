@@ -1,9 +1,9 @@
 'use client'
 
-import Button from '@/components/Button'
-import Input from '@/components/Input'
-import InputError from '@/components/InputError'
-import Label from '@/components/Label'
+import Button from '@/components/common/form/Button'
+import Input from '@/components/common/form/Input'
+import InputError from '@/components/common/form/InputError'
+import Label from '@/components/common/form/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'

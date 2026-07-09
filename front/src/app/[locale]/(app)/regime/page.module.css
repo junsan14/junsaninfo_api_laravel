@@ -6,42 +6,47 @@
   color: #111827;
 }
 
+/* 通常表示では中身が全部見えるように height 固定しない */
 .page {
   width: 210mm;
   min-height: 297mm;
   margin: 0 auto;
   background: #fff;
-  padding: 10mm 5mm 5mm;
   position: relative;
   box-shadow: 0 10px 35px rgba(15, 23, 42, 0.18);
-  overflow: hidden;
+  overflow: visible;
+}
+
+.printScale {
+  width: 100%;
+  padding: 7mm 5mm 6mm;
+  box-sizing: border-box;
 }
 
 .body {
   display: grid;
-  grid-template-columns: 57mm 1fr;
-  gap: 8mm;
+  grid-template-columns: 54mm 1fr;
+  gap: 6mm;
 }
 
+/* 通常表示で下のデータが消えないように absolute をやめる */
 .footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  min-height: 12mm;
+  margin-top: 6mm;
+  min-height: 10mm;
   background: #eef4ff;
   display: flex;
   align-items: center;
-  gap: 4mm;
-  padding: 2.5mm 9mm;
+  gap: 3mm;
+  padding: 2mm 5mm;
   color: #0b2a6f;
-  font-size: 7.4pt;
+  font-size: 6.8pt;
   font-weight: 700;
+  box-sizing: border-box;
 }
 
 .footer strong {
   background: #fff;
-  padding: 1.4mm 3mm;
+  padding: 1.2mm 2.5mm;
   border-radius: 999px;
   white-space: nowrap;
   box-shadow: 0 2px 8px rgba(15, 47, 120, 0.12);
@@ -52,6 +57,7 @@
   color: #0b2a6f;
 }
 
+/* PDF / Print */
 @page {
   size: A4;
   margin: 0;
@@ -59,25 +65,61 @@
 
 @media print {
   .wrapper {
-    padding: 0;
-    background: #fff;
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    position: relative !important;
   }
 
   .page {
-    width: 210mm;
-    height: 297mm;
-    box-shadow: none;
-    margin: 0;
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    position: relative !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
-}
-@media print {
-  .page {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    box-shadow: none;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+
+  .printScale {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 256mm !important;
+    min-height: 362mm !important;
+    padding: 5mm 5mm 5mm !important;
+    box-sizing: border-box !important;
+
+    transform: scale(0.82);
+    transform-origin: top left;
+
+    overflow: visible !important;
+  }
+
+  .body {
+    display: grid !important;
+    grid-template-columns: 58mm 1fr !important;
+    gap: 5mm !important;
+  }
+
+  .footer {
+    position: static !important;
+    margin-top: 3mm !important;
+    min-height: 8mm !important;
+    padding: 1.6mm 4mm !important;
+    font-size: 6.2pt !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .page :global(*) {
@@ -85,9 +127,9 @@
     print-color-adjust: exact !important;
   }
 
-  .page :global(svg) {
-    display: inline-block !important;
-    visibility: visible !important;
+  .page :global(a) {
+    color: inherit;
+    text-decoration: none;
   }
 
   .page :global(img),
