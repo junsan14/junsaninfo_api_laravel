@@ -1,10 +1,4 @@
-.page {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-  color: var(--color-text);
-  background: transparent;
-}
+
 
 .page::before {
   display: none;
@@ -89,14 +83,8 @@
   width: 132px;
   height: 132px;
   padding: 5px;
-  border: 1px solid var(--color-border);
   border-radius: 999px;
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--color-primary) 24%, transparent),
-      color-mix(in srgb, var(--color-primary-soft) 10%, transparent)
-    );
+
 }
 
 .avatar {

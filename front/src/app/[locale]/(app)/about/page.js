@@ -24,8 +24,8 @@ export default function About() {
   ];
 
   return (
-    <main className={styles.page}>
-      <section className={styles.section}>
+      <main>
+      <section className="section">
         <div className="inner">
           <SectionHeading
             title="MYSELF"
