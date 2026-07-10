@@ -380,8 +380,15 @@ export default function BlogEditor({ postData }) {
         16
       );
 
+      const headerAdjust = getCssNumber(
+        "--desktop-header-adjust",
+        0
+      );
+
       const fixedTop =
-        headerBottom + topGap;
+        headerBottom +
+        topGap +
+        headerAdjust;
 
       const availableHeight = Math.max(
         window.innerHeight -

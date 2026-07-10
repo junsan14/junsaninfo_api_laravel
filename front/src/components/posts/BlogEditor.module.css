@@ -1,16 +1,25 @@
 .formShell {
   --desktop-header-height: 88px;
+
+  /* ヘッダー下との基本余白 */
   --desktop-top-gap: 12px;
+
+  /*
+   * PC表示位置の手動補正
+   *
+   * 下へ移動：プラス
+   * 上へ移動：マイナス
+   */
+  --desktop-header-adjust: 0px;
+
   --desktop-bottom-gap: 16px;
 
   --mobile-header-height: 72px;
-  --mobile-top-gap: 8px;
-  --mobile-bottom-gap: 12px;
+  --mobile-top-gap: 6px;
+  --mobile-bottom-gap: 10px;
 
   position: relative;
-
   width: 100%;
-
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -36,7 +45,7 @@
 }
 
 /*
- * BlogEditor.jsからPC時に付与
+ * BlogEditor.jsからPC時に付与されるクラス
  */
 .form.desktopFixed {
   position: fixed !important;
@@ -80,8 +89,8 @@
 }
 
 /*
- * PCでは最初にmainをスクロール。
- * タイトルが上へ消え、Contentが上端へ移動する。
+ * PCでは左パネルをスクロール。
+ * Titleが上へ消えたあとContentが上端で止まる。
  */
 .main {
   display: block;
@@ -95,6 +104,9 @@
   scrollbar-gutter: stable;
 }
 
+/*
+ * 右側は独立スクロール
+ */
 .sub {
   display: grid;
   align-content: start;
@@ -127,11 +139,13 @@
 }
 
 /*
- * PCではContentがmain上端に到達すると固定。
+ * PCではContentがmain上端に到達したら固定
  */
 .contentField {
   position: sticky;
   top: 0;
+
+  z-index: 40;
 
   display: flex;
   flex-direction: column;
@@ -322,7 +336,7 @@
 }
 
 /*
- * Content EditorはContentFieldの残り高さを使用
+ * Content EditorはContentFieldの残りの高さを使用
  */
 .contentField > .editor {
   display: flex;
@@ -593,7 +607,7 @@
 }
 
 /*
- * ContentのCKEditorを縦flex
+ * Content用CKEditorを縦flex
  */
 .contentField
   > .editor
@@ -610,7 +624,7 @@
 }
 
 /*
- * ツールバーはスクロール領域の外側
+ * ツールバーは本文スクロール領域の外側
  */
 .contentField
   > .editor
@@ -692,6 +706,8 @@
   display: flex;
   flex: 1 1 auto;
 
+  width: 100%;
+
   min-width: 0;
   min-height: 0;
 
@@ -715,7 +731,7 @@
 }
 
 /*
- * Content本文だけを縦スクロール
+ * Content本文だけ縦スクロール
  */
 .contentField
   > .editor
@@ -729,6 +745,7 @@
     .ck.ck-editor__main >
     .ck-editor__editable.ck-focused
   ) {
+  display: block;
   flex: 1 1 auto;
 
   width: 100%;
@@ -777,7 +794,7 @@
 }
 
 /*
- * Contentのみ通常の880px制限を解除
+ * Content用Editorのみmin-heightを解除
  */
 .contentField
   > .editor
@@ -798,9 +815,10 @@
     var(--color-border-strong);
 }
 
-/*
- * Thumbnail Editorは通常表示
- */
+/* =========================
+   Thumbnail Editor
+========================= */
+
 .thumbnailEditor :global(.ck.ck-editor) {
   display: block;
 
@@ -818,6 +836,8 @@
   :global(.ck.ck-editor__main) {
   display: block;
 
+  height: auto;
+
   overflow: visible;
 }
 
@@ -828,6 +848,7 @@
   ) {
   display: block;
 
+  width: 100%;
   height: auto;
 
   min-height: 170px;
@@ -1240,8 +1261,10 @@
 
 @media (max-width: 1025px) {
   .formShell {
-    min-height: 0 !important;
+    width: 100%;
+
     height: auto !important;
+    min-height: 0 !important;
   }
 
   /*
@@ -1260,12 +1283,14 @@
 
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+    align-items: start;
 
     gap: 20px;
 
     width: 100% !important;
     height: auto !important;
 
+    min-width: 0;
     min-height: 0;
 
     margin: 0;
@@ -1274,50 +1299,14 @@
   }
 
   /*
-   * スマホではページ自体を通常スクロール。
-   * mainにoverflowを付けるとstickyが効かないため解除。
+   * スマホではmain自体を画面内の高さに限定。
+   * Contentへ直接100dvhを指定しないため、
+   * ページ下部に余分な高さが残らない。
    */
-  .main,
-  .sub {
-    width: 100%;
-    height: auto;
-
-    min-height: 0;
-    max-height: none;
-
-    overflow: visible;
-
-    overscroll-behavior: auto;
-    scrollbar-gutter: auto;
-  }
-
   .main {
+    position: relative;
+
     display: block;
-  }
-
-  .sub {
-    display: grid;
-    align-content: initial;
-  }
-
-  /*
-   * スマホでもContentをヘッダー下で固定。
-   *
-   * ページをスクロールするとタイトルは上へ消え、
-   * Contentがヘッダー下で止まります。
-   */
-  .contentField {
-    position: sticky;
-
-    top: calc(
-      var(--mobile-header-height) +
-      var(--mobile-top-gap)
-    );
-
-    z-index: 40;
-
-    display: flex;
-    flex-direction: column;
 
     width: 100%;
 
@@ -1328,8 +1317,69 @@
       var(--mobile-bottom-gap)
     );
 
+    min-height: 420px;
+
+    max-height: calc(
+      100dvh -
+      var(--mobile-header-height) -
+      var(--mobile-top-gap) -
+      var(--mobile-bottom-gap)
+    );
+
+    padding: 22px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    overscroll-behavior: contain;
+    scrollbar-gutter: auto;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  /*
+   * 右側はmainの下に通常表示
+   */
+  .sub {
+    position: static;
+
+    display: grid;
+    align-content: start;
+
+    width: 100%;
+    height: auto;
+
     min-width: 0;
-    min-height: 460px;
+    min-height: 0;
+    max-height: none;
+
+    padding: 22px;
+
+    overflow: visible;
+
+    overscroll-behavior: auto;
+    scrollbar-gutter: auto;
+  }
+
+  /*
+   * main内でTitleが上へ消え、
+   * Contentが上端で止まる。
+   */
+  .contentField {
+    position: sticky;
+    top: 0;
+
+    z-index: 40;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    min-height: 100%;
 
     margin-top: 22px;
 
@@ -1367,9 +1417,6 @@
     min-height: 0;
   }
 
-  /*
-   * ツールバーはContent内に残す
-   */
   .contentField
     > .editor
     :global(.ck.ck-editor__top) {
@@ -1382,14 +1429,13 @@
     flex: 0 0 auto;
   }
 
-  /*
-   * CKEditor mainが残り高さを使用
-   */
   .contentField
     > .editor
     :global(.ck.ck-editor__main) {
     display: flex;
     flex: 1 1 auto;
+
+    width: 100%;
 
     min-width: 0;
     min-height: 0;
@@ -1398,7 +1444,7 @@
   }
 
   /*
-   * スマホでも本文部分だけ縦スクロール
+   * スマホでも本文だけ縦スクロール
    */
   .contentField
     > .editor
@@ -1412,9 +1458,8 @@
       .ck.ck-editor__main >
       .ck-editor__editable.ck-focused
     ) {
-    flex: 1 1 auto;
-
     display: block;
+    flex: 1 1 auto;
 
     width: 100%;
     height: 100%;
@@ -1439,15 +1484,19 @@
   .thumbnailEditor {
     display: block;
 
+    width: 100%;
     height: auto;
+
     min-height: 180px;
 
     overflow: hidden;
   }
 
-  .thumbnailEditor :global(.ck.ck-editor) {
+  .thumbnailEditor
+    :global(.ck.ck-editor) {
     display: block;
 
+    width: 100%;
     height: auto;
   }
 
@@ -1461,6 +1510,8 @@
   .thumbnailEditor
     :global(.ck.ck-editor__main) {
     display: block;
+
+    height: auto;
 
     overflow: visible;
   }
@@ -1510,27 +1561,7 @@
     gap: 16px;
   }
 
-  .main,
-  .sub {
-    padding: 18px;
-
-    border-radius: 22px;
-  }
-
-  .sub {
-    gap: 16px;
-  }
-
-  .field + .field {
-    margin-top: 18px;
-  }
-
-  .contentField {
-    top: calc(
-      var(--mobile-header-height) +
-      var(--mobile-top-gap)
-    );
-
+  .main {
     height: calc(
       100dvh -
       var(--mobile-header-height) -
@@ -1538,7 +1569,35 @@
       var(--mobile-bottom-gap)
     );
 
-    min-height: 420px;
+    min-height: 400px;
+
+    max-height: calc(
+      100dvh -
+      var(--mobile-header-height) -
+      var(--mobile-top-gap) -
+      var(--mobile-bottom-gap)
+    );
+
+    padding: 18px;
+
+    border-radius: 22px;
+  }
+
+  .sub {
+    gap: 16px;
+
+    padding: 18px;
+
+    border-radius: 22px;
+  }
+
+  .field + .field {
+    margin-top: 18px;
+  }
+
+  .contentField {
+    height: 100%;
+    min-height: 100%;
 
     margin-top: 20px;
   }
@@ -1591,10 +1650,6 @@
     line-height: 1.8;
   }
 
-  /*
-   * Content本文は高さを親に合わせるため
-   * min-heightを解除
-   */
   .contentField
     > .editor
     :global(
@@ -1607,6 +1662,8 @@
       .ck.ck-editor__main >
       .ck-editor__editable.ck-focused
     ) {
+    height: 100%;
+
     min-height: 0;
 
     padding: 18px 15px;
@@ -1668,19 +1725,21 @@
 
   .editor :global(.ck-content img),
   .editor :global(.ck-content figure img),
-  .editor :global(.ck-content figure.image img),
+  .editor
+    :global(.ck-content figure.image img),
   .editor :global(.ck-content .image img),
-  .editor :global(.ck-content .image_resized img),
-  .editor :global(.ck-content .ck-widget.image img),
+  .editor
+    :global(.ck-content .image_resized img),
+  .editor
+    :global(.ck-content .ck-widget.image img),
   .editor :global(.ck-content picture img) {
     display: block !important;
 
     width: 100% !important;
+    height: auto !important;
 
     min-width: 0 !important;
     max-width: 100% !important;
-
-    height: auto !important;
 
     margin-right: auto !important;
     margin-left: auto !important;
@@ -1724,6 +1783,10 @@
   }
 }
 
+/* =========================
+   Small Smartphone
+========================= */
+
 @media (max-width: 420px) {
   .formShell {
     --mobile-header-height: 68px;
@@ -1731,14 +1794,7 @@
     --mobile-bottom-gap: 8px;
   }
 
-  .main,
-  .sub {
-    padding: 14px;
-
-    border-radius: 18px;
-  }
-
-  .contentField {
+  .main {
     height: calc(
       100dvh -
       var(--mobile-header-height) -
@@ -1746,7 +1802,29 @@
       var(--mobile-bottom-gap)
     );
 
-    min-height: 380px;
+    min-height: 370px;
+
+    max-height: calc(
+      100dvh -
+      var(--mobile-header-height) -
+      var(--mobile-top-gap) -
+      var(--mobile-bottom-gap)
+    );
+
+    padding: 14px;
+
+    border-radius: 18px;
+  }
+
+  .sub {
+    padding: 14px;
+
+    border-radius: 18px;
+  }
+
+  .contentField {
+    height: 100%;
+    min-height: 100%;
 
     margin-top: 18px;
   }
