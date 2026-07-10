@@ -1,4 +1,10 @@
 .form {
+  /* 固定サイトヘッダーの高さ。重なる場合はここだけ調整 */
+  --sticky-header-offset: 88px;
+  --sticky-bottom-gap: 20px;
+
+  --panel-min-height: 840px;
+
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 28px;
@@ -14,15 +20,44 @@
   box-shadow: var(--shadow-card);
   backdrop-filter: blur(18px);
 }
-
 .main {
+  position: sticky;
+  top: var(--sticky-header-offset);
+
+  display: flex;
+  flex-direction: column;
+
+  height: max(
+    var(--panel-min-height),
+    calc(
+      100dvh - var(--sticky-header-offset) - var(--sticky-bottom-gap)
+    )
+  );
+  min-height: var(--panel-min-height);
+
   padding: 28px;
+  overflow: hidden;
 }
 
 .sub {
+  position: sticky;
+  top: var(--sticky-header-offset);
+
   display: grid;
   gap: 18px;
+
+  height: max(
+    var(--panel-min-height),
+    calc(
+      100dvh - var(--sticky-header-offset) - var(--sticky-bottom-gap)
+    )
+  );
+  min-height: var(--panel-min-height);
+
   padding: 22px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
 }
 
 .field {
@@ -35,6 +70,10 @@
 }
 
 .contentField {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
   margin-top: 26px;
 }
 
@@ -133,7 +172,9 @@
 }
 
 .editor {
-  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
   border: 1px solid var(--color-border);
   border-radius: 18px;
   background: color-mix(in srgb, var(--color-bg) 56%, transparent);
@@ -141,6 +182,7 @@
 
 .thumbnailEditor {
   min-height: 180px;
+  overflow: hidden;
 }
 
 .reactSelect {
@@ -183,7 +225,8 @@
 
 .submitButton:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--color-primary) 28%, transparent);
+  box-shadow: 0 10px 30px
+    color-mix(in srgb, var(--color-primary) 28%, transparent);
 }
 
 .submitButton:focus-visible {
@@ -192,7 +235,11 @@
 }
 
 .draftButton {
-  background: color-mix(in srgb, var(--color-bg-card-strong) 82%, transparent);
+  background: color-mix(
+    in srgb,
+    var(--color-bg-card-strong) 82%,
+    transparent
+  );
   color: var(--color-text);
   border-color: var(--color-border);
 }
@@ -265,7 +312,11 @@
 }
 
 .field :global(.blogEditorSelect__multi-value__remove:hover) {
-  background: color-mix(in srgb, var(--color-primary-bg) 72%, var(--color-primary) 20%);
+  background: color-mix(
+    in srgb,
+    var(--color-primary-bg) 72%,
+    var(--color-primary) 20%
+  );
   color: var(--color-text);
 }
 
@@ -314,19 +365,30 @@
 ========================= */
 
 .editor :global(.ck.ck-editor) {
+  position: relative;
   width: 100%;
 }
 
 .editor :global(.ck.ck-editor__top) {
+  position: relative;
+  z-index: 1000;
   border-radius: 18px 18px 0 0;
 }
 
 .editor :global(.ck.ck-toolbar) {
+  position: relative;
+  z-index: 1001;
   border: 0;
   border-bottom: 1px solid var(--color-border);
-  background: color-mix(in srgb, var(--color-bg-soft) 76%, transparent);
+  border-radius: 18px 18px 0 0 !important;
+  background: var(--color-bg-soft) !important;
   color: var(--color-text);
   padding: 8px;
+}
+
+.editor:not(.thumbnailEditor)
+  :global(.ck.ck-editor__top .ck-toolbar) {
+  box-shadow: 0 8px 18px rgb(0 0 0 / 12%);
 }
 
 .editor :global(.ck.ck-toolbar__separator) {
@@ -352,9 +414,19 @@
   box-shadow: 0 0 0 3px var(--color-primary-bg);
 }
 
+/* フォーカス時も本文をツールバーより前に出さない */
+.editor :global(.ck.ck-editor__main),
+.editor :global(.ck.ck-editor__main > .ck-editor__editable),
+.editor
+  :global(.ck.ck-editor__main > .ck-editor__editable.ck-focused) {
+  position: relative;
+  z-index: 0 !important;
+}
+
 .editor :global(.ck.ck-editor__main > .ck-editor__editable) {
-  min-height: 560px;
+  min-height: 880px;
   border: 0;
+  border-radius: 0 0 18px 18px !important;
   background: color-mix(in srgb, var(--color-bg) 76%, transparent);
   color: var(--color-text-soft);
   padding: 28px;
@@ -363,11 +435,64 @@
   box-shadow: none;
 }
 
-.editor :global(.ck.ck-editor__main > .ck-editor__editable:focus) {
+.editor
+  :global(.ck.ck-editor__main > .ck-editor__editable:focus) {
   box-shadow: inset 0 0 0 1px var(--color-border-strong);
 }
 
-.thumbnailEditor :global(.ck.ck-editor__main > .ck-editor__editable) {
+/* Content欄だけ残りの高さを使用 */
+.contentField > .editor {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: visible;
+}
+
+.contentField > .editor :global(.ck.ck-editor) {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+/* ツールバーはContent欄の上部に常時表示 */
+.contentField > .editor :global(.ck.ck-editor__top) {
+  position: relative;
+  top: auto;
+  z-index: 1000;
+  flex: 0 0 auto;
+}
+
+/* CKEditor本文部分が残りの高さを使用 */
+.contentField > .editor :global(.ck.ck-editor__main) {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* 実際に縦スクロールするのは本文だけ */
+.contentField
+  > .editor
+  :global(.ck.ck-editor__main > .ck-editor__editable),
+.contentField
+  > .editor
+  :global(.ck.ck-editor__main > .ck-editor__editable.ck-focused) {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.thumbnailEditor
+  :global(.ck.ck-editor__main > .ck-editor__editable) {
   min-height: 170px;
   padding: 18px;
 }
@@ -553,7 +678,8 @@
 }
 
 .editor :global(.ck.ck-input),
-.editor :global(.ck.ck-labeled-field-view__input-wrapper input) {
+.editor
+  :global(.ck.ck-labeled-field-view__input-wrapper input) {
   border: 1px solid var(--color-border);
   border-radius: 10px;
   background: var(--color-bg);
@@ -561,7 +687,8 @@
 }
 
 .editor :global(.ck.ck-input:focus),
-.editor :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
+.editor
+  :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
   box-shadow: 0 0 0 3px var(--color-primary-bg);
 }
 
@@ -574,6 +701,65 @@
     grid-template-columns: 1fr;
   }
 
+  /* 1カラムでは通常のページスクロールに戻す */
+  .main,
+  .sub {
+    position: static;
+    top: auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+    overscroll-behavior: auto;
+    scrollbar-gutter: auto;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .contentField {
+    display: grid;
+    min-height: 0;
+  }
+
+  .contentField > .editor {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .contentField > .editor :global(.ck.ck-editor) {
+    display: block;
+    height: auto;
+    min-height: 0;
+  }
+
+  /* ページスクロール時はツールバーをサイトヘッダー下に固定 */
+  .contentField > .editor :global(.ck.ck-editor__top) {
+    position: sticky;
+    top: var(--sticky-header-offset);
+    z-index: 1000;
+  }
+
+  .contentField > .editor :global(.ck.ck-editor__main) {
+    display: block;
+    overflow: visible;
+  }
+
+  .contentField
+    > .editor
+    :global(.ck.ck-editor__main > .ck-editor__editable),
+  .contentField
+    > .editor
+    :global(.ck.ck-editor__main > .ck-editor__editable.ck-focused) {
+    display: block;
+    height: auto;
+    min-height: 560px;
+    overflow: visible;
+    scrollbar-gutter: auto;
+  }
+
   .actions {
     position: sticky;
     bottom: 16px;
@@ -581,24 +767,27 @@
     padding: 12px;
     border: 1px solid var(--color-border);
     border-radius: 999px;
-    background: color-mix(in srgb, var(--color-bg-card-strong) 88%, transparent);
+    background: color-mix(
+      in srgb,
+      var(--color-bg-card-strong) 88%,
+      transparent
+    );
     backdrop-filter: blur(18px);
   }
 }
 
 @media (max-width: 760px) {
   .form {
+    --sticky-header-offset: 72px;
+    --sticky-bottom-gap: 12px;
+
     gap: 20px;
   }
 
   .main,
   .sub {
-    border-radius: 22px;
-  }
-
-  .main,
-  .sub {
     padding: 18px;
+    border-radius: 22px;
   }
 
   .field + .field {
@@ -627,18 +816,37 @@
     border-radius: 16px;
   }
 
-  .editor :global(.ck.ck-toolbar) {
-    padding: 6px;
+  .contentField > .editor :global(.ck.ck-editor__top) {
+    top: var(--sticky-header-offset);
   }
 
-  .editor :global(.ck.ck-editor__main > .ck-editor__editable) {
+  .editor :global(.ck.ck-toolbar) {
+    padding: 6px;
+    border-radius: 16px 16px 0 0 !important;
+  }
+
+  .editor
+    :global(.ck.ck-editor__main > .ck-editor__editable) {
     min-height: 460px;
     padding: 18px;
+    border-radius: 0 0 16px 16px !important;
     font-size: 14px;
     line-height: 1.8;
   }
 
-  .thumbnailEditor :global(.ck.ck-editor__main > .ck-editor__editable) {
+  .contentField
+    > .editor
+    :global(.ck.ck-editor__main > .ck-editor__editable),
+  .contentField
+    > .editor
+    :global(.ck.ck-editor__main > .ck-editor__editable.ck-focused) {
+    height: auto;
+    min-height: 460px;
+    overflow: visible;
+  }
+
+  .thumbnailEditor
+    :global(.ck.ck-editor__main > .ck-editor__editable) {
     min-height: 150px;
   }
 
@@ -714,6 +922,7 @@
     font-size: 11px;
   }
 }
+
 /* =========================
    CKEditor Dark UI Override
 ========================= */
@@ -784,7 +993,8 @@
   color: currentColor !important;
 }
 
-.editor :global(.ck.ck-list__item .ck-button .ck-button__label),
+.editor
+  :global(.ck.ck-list__item .ck-button .ck-button__label),
 .editor :global(.ck.ck-button .ck-button__label),
 .editor :global(.ck.ck-dropdown__button .ck-button__label) {
   color: currentColor !important;
@@ -792,18 +1002,25 @@
 
 .editor :global(.ck.ck-list__item .ck-button.ck-on),
 .editor :global(.ck.ck-list__item .ck-button.ck-on:hover) {
-  background: color-mix(in srgb, var(--color-primary-bg) 76%, var(--color-primary) 16%) !important;
+  background: color-mix(
+    in srgb,
+    var(--color-primary-bg) 76%,
+    var(--color-primary) 16%
+  ) !important;
   color: var(--color-primary-soft) !important;
 }
 
-.editor :global(.ck.ck-list__item .ck-button.ck-on .ck-button__label),
-.editor :global(.ck.ck-list__item .ck-button.ck-on .ck-icon) {
+.editor
+  :global(.ck.ck-list__item .ck-button.ck-on .ck-button__label),
+.editor
+  :global(.ck.ck-list__item .ck-button.ck-on .ck-icon) {
   color: var(--color-primary-soft) !important;
 }
 
 .editor :global(.ck.ck-input),
 .editor :global(.ck.ck-textarea),
-.editor :global(.ck.ck-labeled-field-view__input-wrapper input) {
+.editor
+  :global(.ck.ck-labeled-field-view__input-wrapper input) {
   border: 1px solid var(--color-border) !important;
   border-radius: 10px !important;
   background: var(--color-bg) !important;
@@ -813,7 +1030,8 @@
 
 .editor :global(.ck.ck-input:focus),
 .editor :global(.ck.ck-textarea:focus),
-.editor :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
+.editor
+  :global(.ck.ck-labeled-field-view__input-wrapper input:focus) {
   border-color: var(--color-primary-soft) !important;
   box-shadow: 0 0 0 3px var(--color-primary-bg) !important;
 }

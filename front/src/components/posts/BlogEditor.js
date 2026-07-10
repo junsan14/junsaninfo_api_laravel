@@ -396,29 +396,30 @@ export default function BlogEditor({ postData }) {
               maxLength={40}
             />
           </div>
+           <div className={styles.actions}>
+            <button
+              type="button"
+              className={`${styles.submitButton} ${styles.draftButton}`}
+              id="is_show"
+              value="0"
+              onClick={(event) => handleSubmit(event, 0)}
+            >
+              Draft
+            </button>
+
+            <button
+              type="button"
+              className={styles.submitButton}
+              id="is_show"
+              value="1"
+              onClick={(event) => handleSubmit(event, 1)}
+            >
+              {isNew ? "Publish" : "Update"}
+            </button>
+          </div>
         </aside>
 
-        <div className={styles.actions}>
-          <button
-            type="button"
-            className={`${styles.submitButton} ${styles.draftButton}`}
-            id="is_show"
-            value="0"
-            onClick={(event) => handleSubmit(event, 0)}
-          >
-            Draft
-          </button>
-
-          <button
-            type="button"
-            className={styles.submitButton}
-            id="is_show"
-            value="1"
-            onClick={(event) => handleSubmit(event, 1)}
-          >
-            {isNew ? "Publish" : "Update"}
-          </button>
-        </div>
+       
       </form>
     </>
   );
