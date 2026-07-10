@@ -204,20 +204,47 @@
   z-index: 2;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.28));
 }
+@keyframes newBounce {
+  0%,
+  75%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
 
+  82% {
+    transform: translateY(-5px) scale(1.08);
+  }
+
+  88% {
+    transform: translateY(0) scale(0.98);
+  }
+
+  93% {
+    transform: translateY(-2px) scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newIcon {
+    animation: none;
+  }
+}
 .featuredIcon {
-  top: 12px;
-  left: 12px;
-  color: #facc15;
-  font-size: 23px;
+  top: 5px;
+  right: 5px;
+  color: var(--color-primary);
+  font-size: 30px;
 }
 
 .newIcon {
-  top: 12px;
+  bottom: 22px;
   right: 12px;
   color: var(--color-primary);
   font-size: 28px;
+  transform-origin: center bottom;
+  animation: newBounce 1.8s ease-in-out infinite;
 }
+
 
 .hiddenPost {
   opacity: 0.55;
