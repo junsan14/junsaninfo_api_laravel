@@ -59,7 +59,7 @@
   color: var(--color-text);
   outline: none;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px; /* iPhone Safariの自動ズーム対策 */
   font-weight: 600;
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);

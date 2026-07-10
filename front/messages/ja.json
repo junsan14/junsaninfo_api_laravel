@@ -22,7 +22,7 @@
           "category": "Website",
           "tech": ["React", "Multilingual", "Instagram"],
           "url": "https://shimonada-shoten.com/",
-          "image": "/images/works/shimonada-shoten.webp",
+          "image": "/images/works/shimonada-shoten-pc.webp",
           "description": "愛媛県伊予市の観光名所・下灘駅近くにオープンした小売店のPRサイト。日本語・英語・中国語に対応し、Instagram連携による販促導線も意識して制作。"
         },
         {
@@ -49,7 +49,7 @@
           "category": "Portfolio",
           "tech": ["HTML", "CSS", "JavaScript"],
           "url": "https://miekonoguchi.com/",
-          "image": "/images/works/noguchi-mieko.webp",
+          "image": "/images/works/noguchi-mieko-pc.webp",
           "description": "個人アーティストの活動や作品を国内外に向けて発信するポートフォリオサイト。日本語・英語・中国語に対応し、作品の世界観が伝わる構成。"
         }
       ]
@@ -164,7 +164,7 @@
         "label": "DevOps / Tools",
         "desc": [
           "GitHub、Vercel、サーバー環境、Google Workspaceなど、開発から運用までに必要なツールを扱っています。",
-          "特にGoogle Apps Scriptを使った業務改善・自動化は、ホテル業界での社内システム改善経験と相性の良い強みです。"
+          "特にGoogle Apps Scriptを使った業務改善・自動化の実務経験があります。"
         ]
       },
       "education": {

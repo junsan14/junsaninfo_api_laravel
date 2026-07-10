@@ -22,7 +22,7 @@
           "category": "Website",
           "tech": ["React", "Multilingual", "Instagram"],
           "url": "https://shimonada-shoten.com/",
-          "image": "/images/works/shimonada-shoten.webp",
+          "image": "/images/works/shimonada-shoten-pc.webp",
           "description": "A PR website for a retail shop opened near Shimonada Station, a famous sightseeing spot in Iyo City, Ehime. The site supports Japanese, English, and Chinese, and is connected with Instagram for promotion."
         },
         {
@@ -40,7 +40,7 @@
           "category": "Website",
           "tech": ["WordPress", "PHP", "MySQL"],
           "url": "https://lindaterraza.com/",
-          "image": "/images/works/lindaterraza.webp",
+          "image": "/images/works/lindaterraza-pc.webp",
           "description": "A website for an olive specialty shop. I created a custom WordPress theme so the owner could add articles and update content independently after launch."
         },
         {
@@ -49,7 +49,7 @@
           "category": "Portfolio",
           "tech": ["HTML", "CSS", "JavaScript"],
           "url": "https://miekonoguchi.com/",
-          "image": "/images/works/noguchi-mieko.webp",
+          "image": "/images/works/noguchi-mieko-pc.webp",
           "description": "A portfolio website created to promote the activities and works of an individual artist. The site supports Japanese, English, and Chinese, with a simple structure that highlights the artist's world view."
         }
       ]
