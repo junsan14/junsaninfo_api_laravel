@@ -51,21 +51,21 @@ export default function Header() {
     localStorage.setItem("theme", nextTheme);
   };
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
+ useEffect(() => {
+  const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "light" || savedTheme === "dark") {
-      setTheme(savedTheme);
-      document.documentElement.dataset.theme = savedTheme;
-      return;
-    }
+  if (savedTheme === "light" || savedTheme === "dark") {
+    setTheme(savedTheme);
+    document.documentElement.dataset.theme = savedTheme;
+    return;
+  }
 
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = prefersDark ? "dark" : "light";
+  // 保存がなければブラウザ設定に任せる
+  document.documentElement.removeAttribute("data-theme");
 
-    setTheme(initialTheme);
-    document.documentElement.dataset.theme = initialTheme;
-  }, []);
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  setTheme(prefersDark ? "dark" : "light");
+}, []);
 
   useEffect(() => {
     if (!isShowMenu) {

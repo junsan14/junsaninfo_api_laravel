@@ -1,28 +1,121 @@
 
 [
     {
-        "":[
+        "1 Develop React.js application":[
             {
-                "name": "",
-                "url": ""
+                "name": "1.1 React Introduction",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQD-t_sWQDM3QLghUT1Ym7AzATxZvR7hXcwfSCbAfqtA-Es?e=wWpBWL"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "1.2 First React App",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQD-t_sWQDM3QLghUT1Ym7AzATxZvR7hXcwfSCbAfqtA-Es?e=wWpBWL"
+            },
+            {
+                "name": "1.3 Rendering",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQC53zzzjS3aRqe7SZ_KbCtoAVlFBqmuB24JEXQk_-wMzVc?e=egnyYp"
+            },
+            {
+                "name": "1.4 JSX_Attributes",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAFbvjkh_ruQ4vFbZZX9K9VAZHapKM-CqWopQyxDPaShG4?e=rkoGo2"
+            },
+            {
+                "name": "1.4 JSX",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQC53zzzjS3aRqe7SZ_KbCtoAVixdPZBFQPM4_VXNVhbZ-I?e=oPHSjs"
+            },
+            {
+                "name": "1.5 JSX_If Statements",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAFbvjkh_ruQ4vFbZZX9K9VAQ99TxsWa9XCTCQrC909094?e=ePvXkl"
+            },
+            {
+                "name": "1.6 React Components",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQB4tBamqCDaSpNQ6nyoWzcTASVX6FjHJh5M1M0W18cYn0o?e=lf4ZEy"
+            },
+            {
+                "name": "1.8 React Router",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCwRdUP0-NFTJYYdQ-75iGjAaM8AOw5AKV4dxMcfa08Kbo?e=sYBW0h"
+            },
+            {
+                "name": "1.9 React Props",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQBX72ziiKDARqH7UQWwPegNAd-9trH0LbvtXKOVH8N2BWY?e=CTwlEf"
+            },
+            {
+                "name": "1.10 React Hooks",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQBXJMCSNhJJTIvgqV3waD-xAQjRjo23HLpHAjaBxPa386M?e=tDkaUL"
+            },
+            {
+                "name": "1.11 React useState",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQBXJMCSNhJJTIvgqV3waD-xAVXwYudb6EYMMXLSew5FLDk?e=Bfxe4k"
+            },
+            {
+                "name": "1.12 React useEffect",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDuYYl9m5haTpaGaAxXA6GwAc5owVCluSMeNzQBFeGdAHc?e=ehqYDf"
+            },
+            {
+                "name": "1.13 React useContext Hook",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQChU10-cF1MTJFL03SfS8ZeAYoPiYValgAvag7eM0a8L1Y?e=g6vIkz"
+            },
+            {
+                "name": "1.14 React useRef Hook",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQChU10-cF1MTJFL03SfS8ZeAcW_4lJXgBjfZIU69SGYMqM?e=7r3Yhy"
+            },
+            {
+                "name": "1.15 React Event",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDtgc1vAezHRbEsYvlsmVWPAXRWjeb7UKuth8Ex8nga3ZU?e=6yRZpu"
+            },
+            {
+                "name": "1.16 React Form",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDQqys9BQalQ6apLseGcMR9AULlq-8ax21elzOwCJ0p9Jg?e=JcsZWR"
             }
         ]
     },
     {
-        "":[
+        "2 Apply Tailwind CSS framework":[
             {
-                "name": "",
-                "url": ""
+                "name": "2.1 TypeScript Introduction",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCp4Q1cq_eUQqr-mPi3ZCM8AbrJ0Ny1aX6-1Q-CpRdkPDc?e=O4qiXJ"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "2.2 TypeScript Exercise",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCp4Q1cq_eUQqr-mPi3ZCM8AXVDKGBsjZNOPeD_N5M5Eww?e=p3hq2k"
             }
+        ]
+    },
+    {
+        "3 Develop Next.JS Application":[
+            {
+                "name": "3.1 Introduction to Nextjs",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAFBnrddc2PRoz_k7tJ9KyBAVpTxLs9k03_1vDhVbxZk48?e=6NrsIQ"
+            },
+            {
+                "name": "3.2 Types of Rendering",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQASHEEcrhGGQqPxrhYn7z_tAZABzhXYlyA7uQzgVC4y_JU?e=iqHi2L"
+            },
+            {
+                "name": "3.3 Page & Routing",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCnHv8qrbCzTYMRu4dIOCQnAS4aeOTkgIroC-AyEU4h6C4?e=1KKsDa"
+            },
+            {
+                "name": "3.4 Link",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAtrf-WQFirQ5HWJIz3twarAc98a55uXr5TWQ65nVCUc5Y?e=SOx8hI"
+            },
+            {
+                "name": "3.5 Client vs Server Components",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDX77Z7BVC3SrwF7Dd2KdMwAZhi_xJH8jytgJ4b9aR3fDU?e=TMXXgd"
+            },
+            {
+                "name": "3.6 useState & Events (in Next.js)",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQBkNAoXHyH7TKsF3i1zS4IwAcHCfbAnFHVnUiVDbVLSArA?e=pujMQx"
+            },
+            {
+                "name": "3.7 Loading & Error UI",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCeLLQymfLiTJ8-9ah4pICbARoNWeWXQdQ7hyfX1ONeW-s?e=tIxueW"
+            },
+            {
+                "name": "3.8 Fetching Data",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCeLLQymfLiTJ8-9ah4pICbARoNWeWXQdQ7hyfX1ONeW-s?e=LjoE3i"
+            }
+            
         ]
     }
 ]
-    */
+    

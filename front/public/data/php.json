@@ -66,5 +66,85 @@
                 "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/EYg1emu7gtxAnZEVykIk02MBCwWzKIAgih_aiVCsPW2TyA?e=KPbrXH"
             }
         ]
+    },
+    {
+        "3. Build a CMS using PHP":[
+            {
+                "name": "3.1 CMS Introduction",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDwqEw1eoPKR6Q597caD1KxAZGeM5Le5biX7aVtuK8NHfY?e=Kj1RSv"
+            },
+            {
+                "name": "3.2 Installing WordPresss",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAAE3bqW3sMRaRNJgYFvqyUAWFH2pDaFmF6YiQmEhArRmg?e=XrSeb5"
+            },
+            {
+                "name": "3.3 Themes & Plugins",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDKSAYN0gK0RrnkG_kaWzVbAaL_ggNCqAaVro4eYXDPT9Q?e=NekEqL"
+            },
+            {
+                "name": "3.4 Database&Maintainance",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQB6A8vcpyJdSJ5eGCj5X3b4ASPS304FL7Khj-4rWs5cITQ?e=8nkgTR"
+            }
+        ]
+    },
+        {
+        "4. Build a web app using MVC Framework":[
+            {
+                "name": "4.1 Introduction to Laravel",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDt8LHGUFkcR49ng3-dtN-BAeWAx91VETsXkkP9Iw-Doi0?e=EeRTxc"
+            },
+            {
+                "name": "4.2 Laravel Basics",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAxr09piTMgQLrOoOQ5sPAaAcSrEEwuL5RCn9s5wrD4Xmo?e=ETRp2K"
+            },
+            {
+                "name": "4.3 MVC",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCECpW_4ZwAQ4vVIL9IAe0nAYp7CDQ43EnC_QmUcDrm3Ac?e=MvVR3p"
+            },
+            {
+                "name": "4.4 Routing",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQB_8MUB1IMCSp0afn2lEnK6AZtG2nrOZQzSc9kx1mXfBII?e=mqjcgf"
+            },
+            {
+                "name": "4.5 Views",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQBT7_QIYkEsTaiw8Elj2indASjqwMm72oA0PRTelsoHWXo?e=FccUqK"
+            },
+            {
+                "name": "4.6 Controllers",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDV9HJkHf6cTqfw2P7BKYhoAbLYsw1TfzNyD7iSBFfkZJU?e=W8DQNR"
+            },
+            {
+                "name": "4.7 Models",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCLtTFJTcW_SIa6IOVHjA8aAaHHbu9Oz8lgbvku9oGaHe0?e=VR6CwH"
+            },
+            {
+                "name": "4.8 Migrations",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAKI8eJNlRpT7vIDdo9r5WJAYCeG8CTTrucxIAfd72UcMA?e=xChgJn"
+            },
+            {
+                "name": "4.9 Eloquent ORM",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAOsyWq6l8AR4DXRbFH6ugjAeYocFe09dv5g05X8BFjN8A?e=Tp7Y8U"
+            },
+            {
+                "name": "4.10 Forms & Requests",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDPPnl1o-2ARKJrBBLGFiApAeOks3thmRTaFw5HcgRPZYY?e=CtsVhm"
+            },
+            {
+                "name": "4.11 Validation",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQAOvAB5hkFzR7MsNuWEm90fAZ_cbFsfm0w8tLFYB541xEo?e=cmMfSf"
+            },
+            {
+                "name": "4.12 Full CRUD Operations",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQDedAGDWo0dRIjmGDB42H0eAV5_fmXF-crMefkyyKo8n58?e=RdXY9p"
+            },
+            {
+                "name": "4.13 Authentication",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQCk7u9UtEEgRL4tBeQkUB5ZAWI-QbrRWvNJYxsaKgAr9rg?e=a1aIo5"
+            },
+            {
+                "name": "4.14 Authorization",
+                "url": "https://1drv.ms/p/c/c8eb9938b1272e9e/IQB2c9UJtP3xTYhcgQPnRAa8Aaw_8CDu2qJqrLj6WDMTnF0?e=OwAzAp"
+            }
+        ]
     }
 ]
