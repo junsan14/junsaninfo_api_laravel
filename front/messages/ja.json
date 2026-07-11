@@ -312,33 +312,6 @@
   },
   "items": [
     {
-      "id": "dqx-tool",
-      "title": "DQX Tool",
-      "category": "Web App",
-      "url": "https://www.dqx-tool.com/",
-      "publishedAt": "2026.05",
-      "period": "約3ヶ月〜継続改善中",
-      "pcImage": "/images/works/dqx-tool-pc.webp",
-      "spImage": "/images/works/dqx-tool-sp.webp",
-      "summary": "個人の趣味の一つである『ドラゴンクエストX オンライン』をより快適に遊ぶために制作した便利ツール集です。自分や友人がゲームをプレイする中で不便に感じたことを、Webアプリとして解決できるようにしました。",
-      "pr": "趣味の課題をきっかけに、企画、UI設計、フロントエンド、バックエンド、データベース設計、デプロイまで一貫して制作。実際に使うユーザーの目線で改善を重ね、ゲーム内の確認作業や計算を効率化できるツールとして運用しています。",
-      "roles": ["企画", "UI設計", "フロントエンド", "バックエンド", "DB設計", "管理画面制作", "デプロイ", "運用改善"],
-      "tech": {
-        "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
-        "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
-        "database": ["MySQL"],
-        "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
-      },
-      "points": [
-        "自分や友人がサービス中に不便に感じたことをもとに、実用的なWebアプリとして制作",
-        "アクセサリ検索、装備検索、モンスター検索、職人計算、輝晶獣分散など複数の便利ツールを実装",
-        "ゲーム内の複雑なデータを、検索・比較・確認しやすいUIに整理",
-        "管理画面を制作し、データを自分で追加・編集できる構成に",
-        "日本語・英語対応、ライト/ダークモード、スマートフォン対応を実装",
-        "実際の利用者のフィードバックをもとに、機能追加やUI改善を継続"
-      ]
-    },
-    {
       "id": "shimonada-shoten",
       "title": "下灘商店",
       "category": "Website",
@@ -389,14 +362,93 @@
       ]
     },
     {
+      "id": "dqx-tool",
+      "title": "DQX Tool",
+      "category": "Web App",
+      "url": "https://www.dqx-tool.com/",
+      "publishedAt": "2026.05",
+      "period": "約3ヶ月〜継続改善中",
+      "pcImage": "/images/works/dqx-tool-pc.webp",
+      "spImage": "/images/works/dqx-tool-sp.webp",
+      "summary": "個人の趣味の一つである『ドラゴンクエストX オンライン』をより快適に遊ぶために制作した便利ツール集です。自分や友人がゲームをプレイする中で不便に感じたことを、Webアプリとして解決できるようにしました。",
+      "pr": "趣味の課題をきっかけに、企画、UI設計、フロントエンド、バックエンド、データベース設計、デプロイまで一貫して制作。実際に使うユーザーの目線で改善を重ね、ゲーム内の確認作業や計算を効率化できるツールとして運用しています。",
+      "roles": ["企画", "UI設計", "フロントエンド", "バックエンド", "DB設計", "管理画面制作", "デプロイ", "運用改善"],
+      "tech": {
+        "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
+        "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
+        "database": ["MySQL"],
+        "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
+      },
+      "points": [
+        "自分や友人がサービス中に不便に感じたことをもとに、実用的なWebアプリとして制作",
+        "アクセサリ検索、装備検索、モンスター検索、職人計算、輝晶獣分散など複数の便利ツールを実装",
+        "ゲーム内の複雑なデータを、検索・比較・確認しやすいUIに整理",
+        "管理画面を制作し、データを自分で追加・編集できる構成に",
+        "日本語・英語対応、ライト/ダークモード、スマートフォン対応を実装",
+        "実際の利用者のフィードバックをもとに、機能追加やUI改善を継続"
+      ]
+    },
+    {
+      "id": "webdev-learning",
+      "title": "WebDev Learning",
+      "category": "Educational Web App",
+      "url": "https://rwanda-ict.vercel.app/",
+      "publishedAt": "2026.07",
+      "period": "1ヶ月",
+      "pcImage": "/images/works/webdev-learning-pc.webp",
+      "spImage": "/images/works/webdev-learning-sp.webp",
+      "summary": "ルワンダのICT教育現場で使用していた教材をもとに、Web開発を基礎から体系的に学べる英語対応の学習アプリを制作しました。HTML・CSS、JavaScript、PHP・Laravel、React・Tailwind CSS、Next.jsの5コースを収録し、学習ページとインタラクティブな演習を組み合わせています。",
+      "pr": "授業用に作成したPowerPoint教材を、Web上で段階的に学べるカリキュラムとして再設計。各Criterionに詳しい解説、コード例、実践課題、ミニプロジェクト、10問の演習を用意しました。教材データを共通構造で管理することで、今後も新しいコースや問題を追加しやすい構成にしています。",
+      "roles": [
+      "企画",
+      "教材設計",
+      "カリキュラム設計",
+      "情報設計",
+      "UI設計",
+      "フロントエンド",
+      "問題・採点機能設計",
+      "進捗管理機能",
+      "デプロイ",
+      "運用改善"
+      ],
+      "tech": {
+      "frontend": [
+      "Next.js"
+      ],
+      "backend": [
+      "なし（教材データをアプリ内で管理）"
+      ],
+      "database": [
+      "なし（LocalStorageで進捗を保存）"
+      ],
+      "infrastructure": [
+      "Vercel"
+      ]
+      },
+      "points": [
+      "ルワンダのICT教育現場で使用した授業資料を、体系的なWeb学習アプリとして再構成",
+      "HTML・CSS、JavaScript、PHP・Laravel、React・Tailwind CSS、Next.jsの5コースを収録",
+      "全21セクション、104 Criteria、1,040問の演習コンテンツを実装",
+      "各Criterionに詳しい解説、コード例、Guided Practice、Mini Project、Quick Checkを用意",
+      "Multiple Choice、True / False、Matching、Code Input、Written Responseの5形式に対応",
+      "元教材に含まれていたコードミスや古い記述を修正し、実践的な内容へアップデート",
+      "PHP、Laravel、Routing、MVC、DOM、React Hooks、Next.js App Routerなどを段階的に学べる構成に",
+      "コース・Section・Criterion単位で演習を選択できるExercise Libraryを実装",
+      "LocalStorageを使用し、ログインなしで学習進捗をブラウザに保存",
+      "英語でのプログラミング教育を想定し、教材・問題・解答・フィードバックをすべて英語で作成",
+      "PC・スマートフォンの両方で学習しやすいレスポンシブUIを実装",
+      "Vercelを利用してデモアプリとして公開"
+      ]
+    },
+    {
       "id": "mieko-noguchi",
       "title": "Mieko Noguchi",
       "category": "Portfolio",
       "url": "https://miekonoguchi.com/",
       "publishedAt": "2013.09",
       "period": "約3ヶ月",
-      "pcImage": "/images/works/mieko-noguchi-pc.webp",
-      "spImage": "/images/works/mieko-noguchi-sp.webp",
+      "pcImage": "/images/works/noguchi-mieko.webp",
+      "spImage": "/images/works/noguchi-mieko-sp.webp",
       "summary": "個人アーティストの活動や作品を国内外に向けて発信するために制作したポートフォリオサイトです。作品、プロフィール、活動情報を整理し、アーティスト本人の世界観が伝わる構成を意識しました。",
       "pr": "日本語・英語・中国語に対応し、国内だけでなく海外の閲覧者にも活動内容が伝わるように設計。作品の魅力を引き立てるシンプルなデザインと、プロフィールや活動実績を見やすく整理した情報設計を行いました。",
       "roles": ["Webデザイン", "コーディング", "多言語対応", "コンテンツ設計", "作品ページ設計", "レスポンシブ対応"],

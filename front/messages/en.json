@@ -312,33 +312,6 @@
     },
     "items": [
       {
-        "id": "dqx-tool",
-        "title": "DQX Tool",
-        "category": "Web App",
-        "url": "https://www.dqx-tool.com/",
-        "publishedAt": "2026.05",
-        "period": "About 3 months / ongoing improvements",
-        "pcImage": "/images/works/dqx-tool-pc.webp",
-        "spImage": "/images/works/dqx-tool-sp.webp",
-        "summary": "A set of useful tools for Dragon Quest X Online, created to make the game more comfortable to play. I built this web app to solve small frustrations that I and my friends experienced while playing.",
-        "pr": "Starting from a personal hobby and real user needs, I handled planning, UI design, frontend development, backend development, database design, deployment, and ongoing improvements. The project is operated as a practical tool that helps users check information and perform calculations more efficiently in the game.",
-        "roles": ["Planning", "UI Design", "Frontend", "Backend", "Database Design", "Admin UI", "Deployment", "Operation Improvement"],
-        "tech": {
-          "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
-          "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
-          "database": ["MySQL"],
-          "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
-        },
-        "points": [
-          "Created a practical web app based on problems I and my friends experienced while playing the game",
-          "Implemented multiple tools such as accessory search, equipment search, monster search, crafting calculation, and Kishoju room sharing",
-          "Organized complex game data into an interface that is easy to search, compare, and check",
-          "Built an admin interface so that data can be added and edited independently",
-          "Implemented Japanese and English support, light/dark mode, and responsive design",
-          "Continuously improve features and UI based on actual user feedback"
-        ]
-      },
-      {
         "id": "shimonada-shoten",
         "title": "Shimonada Shoten",
         "category": "Website",
@@ -389,14 +362,93 @@
         ]
       },
       {
+        "id": "webdev-learning",
+        "title": "WebDev Learning",
+        "category": "Educational Web App",
+        "url": "https://rwanda-ict.vercel.app/",
+        "publishedAt": "2026.07",
+        "period": "1 month",
+        "pcImage": "/images/works/webdev-learning-pc.webp",
+        "spImage": "/images/works/webdev-learning-sp.webp",
+        "summary": "An English-language learning application designed to help students study web development systematically from the fundamentals. It was created based on teaching materials used in ICT education in Rwanda and includes five courses: HTML & CSS, JavaScript, PHP & Laravel, React & Tailwind CSS, and Next.js. The application combines structured learning pages with interactive exercises.",
+        "pr": "PowerPoint materials originally created for classroom lessons were redesigned as a step-by-step web development curriculum. Each criterion includes detailed explanations, code examples, practical tasks, mini projects, and ten exercises. The learning content is managed through a shared data structure, making it easy to add new courses, lessons, and exercises in the future.",
+        "roles": [
+        "Planning",
+        "Learning Material Design",
+        "Curriculum Design",
+        "Information Architecture",
+        "UI Design",
+        "Frontend Development",
+        "Exercise and Scoring System Design",
+        "Learning Progress System",
+        "Deployment",
+        "Continuous Improvement"
+        ],
+        "tech": {
+        "frontend": [
+        "Next.js"
+        ],
+        "backend": [
+        "None — learning content is managed within the application"
+        ],
+        "database": [
+        "None — learning progress is stored in LocalStorage"
+        ],
+        "infrastructure": [
+        "Vercel"
+        ]
+        },
+        "points": [
+        "Reorganized classroom materials used in ICT education in Rwanda into a structured web development learning application",
+        "Includes five courses: HTML & CSS, JavaScript, PHP & Laravel, React & Tailwind CSS, and Next.js",
+        "Implemented 21 sections, 104 criteria, and 1,040 exercise questions",
+        "Added detailed explanations, code examples, guided practice, mini projects, and quick checks to each criterion",
+        "Supports five exercise formats: Multiple Choice, True / False, Matching, Code Input, and Written Response",
+        "Corrected code errors and outdated explanations in the original materials and updated the content for practical learning",
+        "Created a progressive curriculum covering PHP, Laravel, Routing, MVC, the DOM, React Hooks, and the Next.js App Router",
+        "Implemented an Exercise Library that allows users to select exercises by course, section, and criterion",
+        "Uses LocalStorage to save learning progress without requiring users to create an account",
+        "Designed all learning materials, questions, answers, and feedback in English for programming education",
+        "Implemented a responsive interface that is easy to use on both desktop and smartphone devices",
+        "Deployed the application as a publicly accessible demo using Vercel"
+        ]
+      },
+      {
+        "id": "dqx-tool",
+        "title": "DQX Tool",
+        "category": "Web App",
+        "url": "https://www.dqx-tool.com/",
+        "publishedAt": "2026.05",
+        "period": "About 3 months / ongoing improvements",
+        "pcImage": "/images/works/dqx-tool-pc.webp",
+        "spImage": "/images/works/dqx-tool-sp.webp",
+        "summary": "A set of useful tools for Dragon Quest X Online, created to make the game more comfortable to play. I built this web app to solve small frustrations that I and my friends experienced while playing.",
+        "pr": "Starting from a personal hobby and real user needs, I handled planning, UI design, frontend development, backend development, database design, deployment, and ongoing improvements. The project is operated as a practical tool that helps users check information and perform calculations more efficiently in the game.",
+        "roles": ["Planning", "UI Design", "Frontend", "Backend", "Database Design", "Admin UI", "Deployment", "Operation Improvement"],
+        "tech": {
+          "frontend": ["Next.js", "React", "CSS Modules", "next-intl"],
+          "backend": ["Laravel", "REST API", "Auth", "Admin UI"],
+          "database": ["MySQL"],
+          "infrastructure": ["Vercel", "ConoHa Server", "GA4"]
+        },
+        "points": [
+          "Created a practical web app based on problems I and my friends experienced while playing the game",
+          "Implemented multiple tools such as accessory search, equipment search, monster search, crafting calculation, and Kishoju room sharing",
+          "Organized complex game data into an interface that is easy to search, compare, and check",
+          "Built an admin interface so that data can be added and edited independently",
+          "Implemented Japanese and English support, light/dark mode, and responsive design",
+          "Continuously improve features and UI based on actual user feedback"
+        ]
+      },
+      {
         "id": "mieko-noguchi",
         "title": "Mieko Noguchi",
         "category": "Portfolio",
         "url": "https://miekonoguchi.com/",
         "publishedAt": "2013.09",
         "period": "About 3 months",
-        "pcImage": "/images/works/mieko-noguchi-pc.webp",
-        "spImage": "/images/works/mieko-noguchi-sp.webp",
+        "pcImage": "/images/works/noguchi-mieko-pc.webp",
+        "spImage": "/images/works/noguchi-mieko-sp.webp",
         "summary": "A portfolio website created to promote the activities and works of an individual artist to both domestic and international audiences. I organized the artwork, profile, and activity information so the artist's world view could be communicated clearly.",
         "pr": "The site supports Japanese, English, and Chinese so that the artist's activities can reach international viewers as well as domestic audiences. I focused on a simple design that highlights the artwork and a clear information structure for the profile and activity history.",
         "roles": ["Web Design", "Coding", "Multilingual Support", "Content Design", "Artwork Page Design", "Responsive Design"],
