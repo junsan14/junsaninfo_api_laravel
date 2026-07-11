@@ -392,14 +392,13 @@
   position: relative;
   z-index: 3;
   display: grid;
-  top:-5px;
   grid-template-columns:
     minmax(0, 1fr)
     auto
     minmax(0, 1fr);
   align-items: center;
-  height: 27px;
-  padding: 4px 8px 2px;
+  height: 20px;
+  padding: 0px 8px 2px;
   background: #f7f7f8;
 }
 
@@ -1096,13 +1095,11 @@ html[data-theme="light"] .pcStandBase {
     right: -3px;
     height: 40px;
   }
+.spAddressBar {
+  padding-bottom: 2px;
+}
 
 
-
-  .spStatusBar {
-    height: 23px;
-    padding: 9px 5px 1px;
-  }
 
   .spTime {
     font-size: 0.38rem;
@@ -1125,21 +1122,8 @@ html[data-theme="light"] .pcStandBase {
     transform-origin: right center;
   }
 
-  .spBrowserBar {
-    grid-template-columns:
-      12px
-      minmax(0, 1fr)
-      10px;
-    gap: 2px;
-    min-height: 23px;
-    padding: 2px 4px 4px;
-  }
 
-  .spAddressBar {
-    height: 17px;
-    padding: 0 4px;
-    border-radius: 6px;
-  }
+
 
   .browserTextSize,
   .addressText {
