@@ -1,12 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function RegimeAuthGate({ children }) {
   const [password, setPassword] = useState("");
   const [isAuthed, setIsAuthed] = useState(false);
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const res = await fetch("/api/regime", {
+          method: "GET",
+          cache: "no-store",
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.ok) {
+          setIsAuthed(true);
+        }
+      } catch (error) {
+        console.error("Auth check error:", error);
+      } finally {
+        setIsCheckingAuth(false);
+      }
+    };
+
+    checkAuth();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,7 +44,9 @@ export default function RegimeAuthGate({ children }) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({
+          password,
+        }),
       });
 
       const data = await res.json();
@@ -31,12 +57,36 @@ export default function RegimeAuthGate({ children }) {
       }
 
       setIsAuthed(true);
+      setPassword("");
     } catch (error) {
+      console.error("Authentication error:", error);
       setError("通信エラーが発生しました");
     } finally {
       setIsLoading(false);
     }
   };
+
+  if (isCheckingAuth) {
+    return (
+      <main
+        style={{
+          minHeight: "100vh",
+          display: "grid",
+          placeItems: "center",
+          padding: "24px",
+        }}
+      >
+        <p
+          style={{
+            color: "#64748b",
+            fontSize: "14px",
+          }}
+        >
+          認証状態を確認しています...
+        </p>
+      </main>
+    );
+  }
 
   if (isAuthed) {
     return children;
@@ -89,6 +139,7 @@ export default function RegimeAuthGate({ children }) {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
           autoComplete="current-password"
+          required
           style={{
             width: "100%",
             padding: "12px 14px",

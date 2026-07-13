@@ -62,6 +62,7 @@ export default function Sidebar() {
             <li>普通自動車免許</li>
             <li>TOEFL iBT 80点(2014)</li>
             <li>TOEIC 920点(2014)</li>
+            <li>基本情報技術者試験(2022)</li>
           </SkillBlock>
 
           <SkillBlock title="その他" icon={<FaRocket />}>
@@ -80,7 +81,8 @@ export default function Sidebar() {
 
         <div className={styles.missionBody}>
           <p>
-            ルワンダで初めて教職に携わった経験を通じて、教育が人の可能性を広げ、将来の選択肢を増やす力を持つことを実感しました。
+            ルワンダで初めて教職に携わった経験を通じて、今後も教育事業に携わりたいと考えています。
+            教えるためには自らの知識を深め、常に学び続ける必要があり、それが自身の成長にもつながる点に大きな魅力を感じています。
           </p>
           <p>
             これまで培ってきたWeb開発・業務改善の実務経験と英語力を活かし、テクノロジーと教育をつなぐ教育事業に関わっていきたいと考えています。
