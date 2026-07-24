@@ -1,11 +1,12 @@
 // src/app/api/regime/pdf/route.js
 
 import { cookies } from "next/headers";
-import fs from "fs/promises";
-import path from "path";
+import { get } from "@vercel/blob";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const PDF_PATHNAME = "documents/rirekisyo.pdf";
 
 export async function GET() {
   const cookieStore = await cookies();
@@ -25,37 +26,36 @@ export async function GET() {
     );
   }
 
-  const filePath = path.join(
-    process.cwd(),
-    "src",
-    "private",
-    "documents",
-    "rirekisyo.pdf"
-  );
-
   try {
-    console.log("PDF path:", filePath);
+    const result = await get(PDF_PATHNAME, {
+      access: "private",
+    });
 
-    await fs.access(filePath);
+    if (!result || result.statusCode !== 200) {
+      return Response.json(
+        {
+          ok: false,
+          message: "履歴書PDFが見つかりません",
+        },
+        {
+          status: 404,
+        }
+      );
+    }
 
-    const pdfBuffer = await fs.readFile(filePath);
-
-    return new Response(pdfBuffer, {
+    return new Response(result.stream, {
       status: 200,
       headers: {
-        "Content-Type": "application/pdf",
+        "Content-Type":
+          result.blob.contentType || "application/pdf",
         "Content-Disposition":
           'inline; filename="rirekisyo.pdf"',
-        "Cache-Control":
-          "private, no-store, max-age=0",
+        "Cache-Control": "private, no-store",
+        "X-Content-Type-Options": "nosniff",
       },
     });
   } catch (error) {
-    console.error("PDF loading error:", {
-      message: error.message,
-      code: error.code,
-      path: filePath,
-    });
+    console.error("PDF loading error:", error);
 
     return Response.json(
       {
@@ -64,10 +64,6 @@ export async function GET() {
         error:
           process.env.NODE_ENV === "development"
             ? error.message
-            : undefined,
-        code:
-          process.env.NODE_ENV === "development"
-            ? error.code
             : undefined,
       },
       {
