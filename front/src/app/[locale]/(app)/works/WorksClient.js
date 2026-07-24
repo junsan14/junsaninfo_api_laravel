@@ -241,7 +241,7 @@ export default function WorksClient() {
                     fill
                     sizes="160px"
                     className={styles.previewImage}
-                    priority
+                    unoptimized
                   />
 
                   <span

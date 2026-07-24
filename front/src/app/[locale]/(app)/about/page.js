@@ -41,7 +41,7 @@ export default function About() {
                   alt="junsan14 profile"
                   width={150}
                   height={150}
-                  priority
+                  unoptimized
                 />
               </div>
 
