@@ -14,6 +14,7 @@ const options = {
                 height={640}
                 className="posts_item_link_image_src"
                 alt="画像"
+                unoptimized
                 //style={{ aspectRatio: `${width || 640} / ${height || 640}` }}
               />
             )
