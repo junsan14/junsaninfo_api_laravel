@@ -59,7 +59,7 @@ export default function Header() {
     document.documentElement.dataset.theme = savedTheme;
     return;
   }
-
+  //new commit
   // 保存がなければブラウザ設定に任せる
   document.documentElement.removeAttribute("data-theme");
 
