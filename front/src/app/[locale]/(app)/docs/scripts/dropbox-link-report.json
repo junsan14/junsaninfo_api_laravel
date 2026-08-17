@@ -1,0 +1,820 @@
+{
+  "generatedAt": "2026-08-17T09:46:02.864Z",
+  "dropboxRoot": "/junsan-info",
+  "dryRun": true,
+  "dropboxFileCount": 356,
+  "updated": [],
+  "unchanged": [],
+  "unmatched": [
+    {
+      "json": "js.json",
+      "name": "Requirement",
+      "expectedExtension": null
+    },
+    {
+      "json": "js.json",
+      "name": "index.html",
+      "expectedExtension": ".html"
+    },
+    {
+      "json": "js.json",
+      "name": "style.css",
+      "expectedExtension": ".css"
+    },
+    {
+      "json": "js.json",
+      "name": "script.js",
+      "expectedExtension": ".js"
+    },
+    {
+      "json": "js.json",
+      "name": "Requirement",
+      "expectedExtension": null
+    },
+    {
+      "json": "js.json",
+      "name": "index.html",
+      "expectedExtension": ".html"
+    },
+    {
+      "json": "js.json",
+      "name": "style.css",
+      "expectedExtension": ".css"
+    },
+    {
+      "json": "js.json",
+      "name": "script.js",
+      "expectedExtension": ".js"
+    },
+    {
+      "json": "js.json",
+      "name": "Requirement",
+      "expectedExtension": null
+    },
+    {
+      "json": "js.json",
+      "name": "index.html",
+      "expectedExtension": ".html"
+    },
+    {
+      "json": "js.json",
+      "name": "style.css",
+      "expectedExtension": ".css"
+    },
+    {
+      "json": "js.json",
+      "name": "script.js",
+      "expectedExtension": ".js"
+    },
+    {
+      "json": "js.json",
+      "name": "Requirement",
+      "expectedExtension": null
+    },
+    {
+      "json": "js.json",
+      "name": "index.html",
+      "expectedExtension": ".html"
+    },
+    {
+      "json": "js.json",
+      "name": "style.css",
+      "expectedExtension": ".css"
+    },
+    {
+      "json": "js.json",
+      "name": "script.js",
+      "expectedExtension": ".js"
+    },
+    {
+      "json": "php.json",
+      "name": "4.8 Migrations",
+      "expectedExtension": null
+    }
+  ],
+  "ambiguous": [
+    {
+      "json": "html.json",
+      "name": "4.6 Hyperlink",
+      "candidates": [
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_6_hyperlink.pptx",
+        "/junsan-info/01_WebsiteDev/_old/02_html/241010_useOfHyperlinks.pptx"
+      ]
+    },
+    {
+      "json": "html.json",
+      "name": "4.9 Optimizing Webpage in HTML",
+      "candidates": [
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/3_9_Optimizing Webpage in HTML.pptx",
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_9_Optimizing Webpage in HTML - Copy.pptx"
+      ]
+    },
+    {
+      "json": "css.json",
+      "name": "2.3 Use CSS Display and positioning",
+      "candidates": [
+        "/junsan-info/01_WebsiteDev/_old/03_css/241030_Use CSS Display and positioning.pptx",
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/2_Creating CSS files/3_Use CSS Display and positioning.pptx"
+      ]
+    },
+    {
+      "json": "css.json",
+      "name": "Optimizing Webpage in HTML",
+      "candidates": [
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/3_9_Optimizing Webpage in HTML.pptx",
+        "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_9_Optimizing Webpage in HTML - Copy.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.7 Use of operators in Javascript ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/7_Use of operators in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/_old/5_Operators/08_Use of operators in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.8 Using string in Javascript ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/8_Using string in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/1_Using string in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.9 Using conditional statement ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/4_Using conditional statement.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/9_Using conditional statement.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.10 Using Loop functions in Javascript ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/5_Using Loop functions in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/10_Using Loop functions in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.11 Using Loop functions in Javascript2 ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/6_Using Loop functions in Javascript2.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/10_Using Loop functions in Javascript2.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.12 Using Functions in Javascript [Practical] ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/7_Using Functions in Javascript [Practical].pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/11_Using Functions in Javascript [Practical].pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.13 Using Arrays in JavaScript ",
+      "candidates": [
+        "/junsan-info/03_React/02_docs/2_Using Arrays in JavaScript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/2_Using Arrays in JavaScript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/Using Arrays in JavaScript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "1.14 Using objects in Javascript ",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/3_Using objects in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/Using objects in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.1 Using string in Javascript",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/8_Using string in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/1_Using string in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.2 Using Arrays in JavaScript",
+      "candidates": [
+        "/junsan-info/03_React/02_docs/2_Using Arrays in JavaScript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/2_Using Arrays in JavaScript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/Using Arrays in JavaScript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.3 Using objects in Javascript",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/3_Using objects in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/Using objects in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.4 Using conditional statement",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/4_Using conditional statement.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/9_Using conditional statement.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.5 Using Loop functions in Javascript",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/5_Using Loop functions in Javascript.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/10_Using Loop functions in Javascript.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.6 Using Loop functions in Javascript2",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/6_Using Loop functions in Javascript2.pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/10_Using Loop functions in Javascript2.pptx"
+      ]
+    },
+    {
+      "json": "js.json",
+      "name": "2.7 Using Functions in Javascript [Practical]",
+      "candidates": [
+        "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/7_Using Functions in Javascript [Practical].pptx",
+        "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/11_Using Functions in Javascript [Practical].pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "1.5 Use of Function",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/5_Function.pptx",
+        "/junsan-info/02_JavaScript/02_docs/_old/8_functions/12_function.pptx",
+        "/junsan-info/02_PHP/02_docs/_old/1st/241008_function.pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "2.5 Errors and Exceptions in PHP",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/4_ Errors and Exceptions in PHP.pptx",
+        "/junsan-info/02_PHP/02_docs/_old/2_Connect PHP to the Database/2.3_Errors and exceptions in PHP.pdf",
+        "/junsan-info/02_PHP/02_docs/_old/2nd/2.4_Errors and exceptions in PHP.pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "2.6 Implementation of User Authentication",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/5_Implementation of User Authentication.pptx",
+        "/junsan-info/02_PHP/02_docs/_old/2_Connect PHP to the Database/2.4_Implementation of user authentication.pdf",
+        "/junsan-info/02_PHP/02_docs/_old/2nd/2.5_Implementation of user authentication.pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "3.2 Installing WordPresss",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome3 Build a CMS using PHP/2_Installing WordPress.pptx",
+        "/junsan-info/03_React/02_docs/_old/2nd/1_Installing.pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "4.1 Introduction to Laravel",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/1_Laravel Setup & Structure/1_Introduction to Laravel.pptx",
+        "/junsan-info/02_PHP/02_docs/_old/4_Build a web app using MVC Framework (LARAVEL)/Laravel Balde/1. Introduction to Laravel.pptx"
+      ]
+    },
+    {
+      "json": "php.json",
+      "name": "4.4 Routing",
+      "candidates": [
+        "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/2_Routing, Controllers & Views/4_Routing.pptx",
+        "/junsan-info/02_PHP/02_docs/_old/4_Build a web app using MVC Framework (LARAVEL)/Laravel Balde/4_Routing.pptx"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "json": "html.json",
+      "name": "Apply Keyboard Skills",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome1 Apply keyboard skills/Apply Keyboard Skills.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "Definition of general key terms",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/1_Definition of general key terms/1_Definition of general key terms.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "Setting up of text editor and web browser",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/2_Setting up of text editor and web browser/2_Setting up of text editor and web browser.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.1 Developing First Simple Webpage",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_1_Developing First Simple Webpage.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.2 Formatting, Table, Form Tags",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_2_Formatting, Table, Form Tags.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.3 Heading, List tags",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_3_Heading, List tags.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.4 Media Code tags",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_4_Media Code tags.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.5 iframe Comment Groupung tags",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_5_iframe Comment Groupung tags.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.7 Use of HTML Graphics",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_7_Use of HTML Graphics.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "html.json",
+      "name": "4.8 Managing Page Layout in HTML",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome2 Create web structures/3_Creating a Web Page in HTML/3_8_Managing Page Layout in HTML.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "Introduction to CSS",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/1_Introduction to CSS/1_Introduction to CSS.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "2.1 CSS syntax & Use of CSS style types",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/2_Creating CSS files/1_CSS syntax & Use of CSS style types.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "2.2 Use CSS Visual rules",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/2_Creating CSS files/2_Use CSS Visual rules.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "2.4 Use CSS Box model",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/2_Creating CSS files/4_Use CSS Box model.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "Applying Typography on webpage",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/3_Applying Typography on webpage/Applying Typography on webpage.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "Setting media query rules",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/4_Setting media query rules/Setting media query rules.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "flex&grid",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/5_flex&grid/5_flex&grid.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "CSS Child Selectors",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/6_animation/CSS Child Selectors.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "css.json",
+      "name": "CSS Hover Animation",
+      "dropboxFile": "/junsan-info/01_WebsiteDev/02_docs/Learning outcome3 Style web elements/6_animation/CSS Hover Animation.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.1 Introduction to JavaScript ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/1_Introduction to JavaScript.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.2 JAVASCRIPT key concepts ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/2_JAVASCRIPT key concepts.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.3 JavaScript libraries & frameworks ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/3_JavaScript libraries & frameworks.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.4 Integration of JavaScript into HTML ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/4_ Integration of JavaScript into HTML.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.5 Use of Variables in JavaScript ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/5_Use of Variables in JavaScript.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "1.6 Use of Data Types in JavaScript ",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome1 Apply JavaScript Basic Concepts/6_Use of Data Types in JavaScript.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.1 Javascript HTML DOM",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/1_Javascript HTML DOM.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.2 HTML Events",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/2_HTML Events.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.3 Core JavaScript DOM Methods & Properties",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/3_Core JavaScript DOM Methods & Properties.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.4 JavaScript window object",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/4_JavaScript window object.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.5 JavaScript Form Validation",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/5_JavaScript Form Validation.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.6 Error Handling in JavaScript",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/6_Error Handling in JavaScript.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.7 Regular Expressions (RegEx) Basics",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/7_Regular Expressions (RegEx) Basics.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.8 How to make slides",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/How to make slides.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "js.json",
+      "name": "2.8.9 JavaScript Animation",
+      "dropboxFile": "/junsan-info/02_JavaScript/02_docs/outcome2 Manipulate data with JavaScript/8_Using JavaScript in HTML/JavaScript Animation.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.1 Definition of key terms",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/1_Definition of key terms.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.2 Installation of XAMPP",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/2_Installation of XAMPP.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.3 Application of PHP concepts",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/3_Application of PHP concepts.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.4 Application of PHP concepts 2",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/4_Application of PHP concepts  2.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.6 File handling",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/6_PHP file handling.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.7 Form Submission",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/7_Form Submission.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.8 Cookies and Sessions",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome1 Apply  PHP fundamentals/8_Cookies and Sessions.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "1.9 OOP",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/_old/1st/241028_OOP.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "2.1 Use of MySQL",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/1_Use of MySQL.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "2.2 Application of Database Connection drives",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/2_Application of Database Connection drives.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "2.3 Import and Export Data",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/2.1_Import and Export Data.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "2.4 Application of PHP Basic Security Concepts",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome2 Connect PHP to the database/3_ Application of PHP Basic Security Concepts.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "3.1 CMS Introduction",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome3 Build a CMS using PHP/1_CMS Introduction.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "3.3 Themes & Plugins",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome3 Build a CMS using PHP/3_Themes & Plugins.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "3.4 Database&Maintainance",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome3 Build a CMS using PHP/4_Database&Maintainance.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.2 Laravel Basics",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/1_Laravel Setup & Structure/2_Laravel Basics.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.3 MVC",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/2_Routing, Controllers & Views/3_MVC.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.5 Views",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/2_Routing, Controllers & Views/5_Views.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.6 Controllers",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/2_Routing, Controllers & Views/6_Controllers.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.7 Models",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/2_Routing, Controllers & Views/7_Models.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.9 Eloquent ORM",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/3_Database & Eloquent ORM/9_Eloquent ORM.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.10 Forms & Requests",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/4_Forms, Validation & CRUD/10_Forms & Requests.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.11 Validation",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/4_Forms, Validation & CRUD/11_Validation.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.12 Full CRUD Operations",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/4_Forms, Validation & CRUD/12_Full CRUD Operations.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.13 Authentication",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/5_Authentication & Authorization/13_Authentication.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "php.json",
+      "name": "4.14 Authorization",
+      "dropboxFile": "/junsan-info/02_PHP/02_docs/outcome4 Build a web app using MVC Framework/5_Authentication & Authorization/14_Authorization.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.1 React Introduction",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/1_React Introduction.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.2 First React App",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/2_First React App.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.3 Rendering",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/3_Rendering.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.4 JSX_Attributes",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/4_JSX_Attributes.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.4 JSX",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/4_JSX.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.5 JSX_If Statements",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/5_JSX_If Statements.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.6 React Components",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/6_React Components.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.8 React Router",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/8_React Router.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.9 React Props",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/9_React Props.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.10 React Hooks",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/10_React Hooks.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.11 React useState",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/11_React useState.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.12 React useEffect",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/12_React useEffect.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.13 React useContext Hook",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/13_React useContext Hook.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.14 React useRef Hook",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/14_React useRef Hook.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.15 React Event",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/15_React Event.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "1.16 React Form",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome1 Develop React.js application/16_React Form.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "2.1 TypeScript Introduction",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/1_TypeScript Introduction.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "2.2 TypeScript Exercise",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/2_TypeScript Exercise.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.1 Introduction to Nextjs",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/3_Introduction to Nextjs.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.2 Types of Rendering",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/3.1_Types of Rendering.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.3 Page & Routing",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/4_Page & Routing.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.4 Link",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/5_Link.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.5 Client vs Server Components",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/6_Client vs Server Components.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.6 useState & Events (in Next.js)",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/7_useState & Events (in Next.js).pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.7 Loading & Error UI",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/8_Loading & Error UI.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    },
+    {
+      "json": "react.json",
+      "name": "3.8 Fetching Data",
+      "dropboxFile": "/junsan-info/03_React/02_docs/outcome3 Develop Next.JS Application/9_Fetching Data.pptx",
+      "error": "Dropbox API sharing/list_shared_links: Error in call to API function \"sharing/list_shared_links\": Your app (ID: 8118115) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
+    }
+  ]
+}

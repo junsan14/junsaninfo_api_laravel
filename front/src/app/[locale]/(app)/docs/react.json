@@ -1,0 +1,118 @@
+[
+  {
+    "1 Develop React.js application": [
+      {
+        "name": "1.1 React Introduction",
+        "url": "https://www.dropbox.com/scl/fi/jbsm160nghin0yrazrwyn/1_React-Introduction.pptx?rlkey=av49emex6hdh22o5npnmy6thj&dl=0"
+      },
+      {
+        "name": "1.2 First React App",
+        "url": "https://www.dropbox.com/scl/fi/u9ylo7q4pv1umhl9atmhv/2_First-React-App.pptx?rlkey=1tmsb7xdcuh60h7pqntk1uxpi&dl=0"
+      },
+      {
+        "name": "1.3 Rendering",
+        "url": "https://www.dropbox.com/scl/fi/i8bzm4xvmcms42976g5yv/3_Rendering.pptx?rlkey=8nc4vv2gwqypwa2sswi0htuyn&dl=0"
+      },
+      {
+        "name": "1.4 JSX_Attributes",
+        "url": "https://www.dropbox.com/scl/fi/ra2myrqsme3rs9151u64x/4_JSX_Attributes.pptx?rlkey=jknasysw93lqkfc3657st885l&dl=0"
+      },
+      {
+        "name": "1.4 JSX",
+        "url": "https://www.dropbox.com/scl/fi/er2vktdd2m322bq67jrme/4_JSX.pptx?rlkey=00ptterzlfho5j4juoklwkm1g&dl=0"
+      },
+      {
+        "name": "1.5 JSX_If Statements",
+        "url": "https://www.dropbox.com/scl/fi/t503rflvxrro2o5k4ymea/5_JSX_If-Statements.pptx?rlkey=z9ok6xiggbx2jo9zrm2xlrafw&dl=0"
+      },
+      {
+        "name": "1.6 React Components",
+        "url": "https://www.dropbox.com/scl/fi/sgbfppr88b0b87jmjl777/6_React-Components.pptx?rlkey=vegwd5v619tqrlovmydwk5zop&dl=0"
+      },
+      {
+        "name": "1.8 React Router",
+        "url": "https://www.dropbox.com/scl/fi/kqso3vzxoxf7ffhps2mye/8_React-Router.pptx?rlkey=frmjbk5vf2mea5tm6jq16bany&dl=0"
+      },
+      {
+        "name": "1.9 React Props",
+        "url": "https://www.dropbox.com/scl/fi/ev1224pk91f6a1a7jv3oq/9_React-Props.pptx?rlkey=tb3towvkulcrn0rhd1ghh1nsj&dl=0"
+      },
+      {
+        "name": "1.10 React Hooks",
+        "url": "https://www.dropbox.com/scl/fi/8oldfwlksnmfuqmo0g1z2/10_React-Hooks.pptx?rlkey=1z0ykos89g3aqblbq524gremh&dl=0"
+      },
+      {
+        "name": "1.11 React useState",
+        "url": "https://www.dropbox.com/scl/fi/5goanq94jri81uyqlkz78/11_React-useState.pptx?rlkey=lfqyio8h72d9h0kyjflzx2and&dl=0"
+      },
+      {
+        "name": "1.12 React useEffect",
+        "url": "https://www.dropbox.com/scl/fi/hx87ovpimenf36yygc078/12_React-useEffect.pptx?rlkey=upgabqo6cg5ttodmgx90kllr9&dl=0"
+      },
+      {
+        "name": "1.13 React useContext Hook",
+        "url": "https://www.dropbox.com/scl/fi/we0izbf0pnvlp2blz0p5b/13_React-useContext-Hook.pptx?rlkey=q1pgir7wiwhuunh85vjx6tuve&dl=0"
+      },
+      {
+        "name": "1.14 React useRef Hook",
+        "url": "https://www.dropbox.com/scl/fi/xnr2azuomo33f3uq8qyee/14_React-useRef-Hook.pptx?rlkey=vi6d0kh1rq7iiwzn9enkhexre&dl=0"
+      },
+      {
+        "name": "1.15 React Event",
+        "url": "https://www.dropbox.com/scl/fi/ooy8ysb3jokon0k02jksr/15_React-Event.pptx?rlkey=koxloxmltsxlynighq4bglqom&dl=0"
+      },
+      {
+        "name": "1.16 React Form",
+        "url": "https://www.dropbox.com/scl/fi/yf6vtmcrd3kg8hjk4mm1h/16_React-Form.pptx?rlkey=pj86l7qbptca6xtxu1c9rgccw&dl=0"
+      }
+    ]
+  },
+  {
+    "2 Apply Tailwind CSS framework": [
+      {
+        "name": "2.1 TypeScript Introduction",
+        "url": "https://www.dropbox.com/scl/fi/jr56nm4ryob3jzklji9xv/1_TypeScript-Introduction.pptx?rlkey=a2p1i3pqpb87amv0sscdea2s6&dl=0"
+      },
+      {
+        "name": "2.2 TypeScript Exercise",
+        "url": "https://www.dropbox.com/scl/fi/zxkv0dcrn88zr7xfc1751/2_TypeScript-Exercise.pptx?rlkey=37ss1ie4ro2gblcr9qjd0xr2f&dl=0"
+      }
+    ]
+  },
+  {
+    "3 Develop Next.JS Application": [
+      {
+        "name": "3.1 Introduction to Nextjs",
+        "url": "https://www.dropbox.com/scl/fi/y8koibaiud2t3ici9x309/3_Introduction-to-Nextjs.pptx?rlkey=reyydfigmffacov43uvnr64ay&dl=0"
+      },
+      {
+        "name": "3.2 Types of Rendering",
+        "url": "https://www.dropbox.com/scl/fi/a4l6toqv04b4rqk5hj9d4/3.1_Types-of-Rendering.pptx?rlkey=ijvzftwd9dvuukcm5howcgvqw&dl=0"
+      },
+      {
+        "name": "3.3 Page & Routing",
+        "url": "https://www.dropbox.com/scl/fi/11g47kqkj8butavuz8ceg/4_Page-Routing.pptx?rlkey=n8j7ywu6364hux268tzavxi8u&dl=0"
+      },
+      {
+        "name": "3.4 Link",
+        "url": "https://www.dropbox.com/scl/fi/ywmzanjua33tlfvdzpeq6/5_Link.pptx?rlkey=4u7z60242s0xpfz12uuz5z5az&dl=0"
+      },
+      {
+        "name": "3.5 Client vs Server Components",
+        "url": "https://www.dropbox.com/scl/fi/1mmq2xksgbicvuvcylhox/6_Client-vs-Server-Components.pptx?rlkey=n74s5bnvr83f7tntbj682bkzu&dl=0"
+      },
+      {
+        "name": "3.6 useState & Events (in Next.js)",
+        "url": "https://www.dropbox.com/scl/fi/fvbw6l5oq179phki5lrn4/7_useState-Events-in-Next.js.pptx?rlkey=8bba0hhnvktn045mq5tg4gc21&dl=0"
+      },
+      {
+        "name": "3.7 Loading & Error UI",
+        "url": "https://www.dropbox.com/scl/fi/kndmryl8gtpi5r3mav122/8_Loading-Error-UI.pptx?rlkey=8trjh1gyp1v42zxg0646irty2&dl=0"
+      },
+      {
+        "name": "3.8 Fetching Data",
+        "url": "https://www.dropbox.com/scl/fi/1mh5pg8s0bg171n74ty6r/9_Fetching-Data.pptx?rlkey=cck6mfp2hfcbrkw1j2cc7c88e&dl=0"
+      }
+    ]
+  }
+]

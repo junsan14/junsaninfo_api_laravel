@@ -1,0 +1,230 @@
+[
+  {
+    "1. Apply JavaScript Basic Concepts": [
+      {
+        "name": "1.1 Introduction to JavaScript ",
+        "url": "https://www.dropbox.com/scl/fi/ti25gsyn6lwtzzycpmr6h/1_Introduction-to-JavaScript.pptx?rlkey=psi4hzkbp63emage4kp4mxi1l&dl=0"
+      },
+      {
+        "name": "1.2 JAVASCRIPT key concepts ",
+        "url": "https://www.dropbox.com/scl/fi/eja14r3dup3ya1xzljoc8/2_JAVASCRIPT-key-concepts.pptx?rlkey=xm4r0fau4sspcp694cxk4hb6y&dl=0"
+      },
+      {
+        "name": "1.3 JavaScript libraries & frameworks ",
+        "url": "https://www.dropbox.com/scl/fi/v6r6w2ou4cahgb70myiwt/3_JavaScript-libraries-frameworks.pptx?rlkey=tn0tmfonn4piz567ntnqiuxac&dl=0"
+      },
+      {
+        "name": "1.4 Integration of JavaScript into HTML ",
+        "url": "https://www.dropbox.com/scl/fi/bgac6oorncork5harng6l/4_-Integration-of-JavaScript-into-HTML.pptx?rlkey=o7uha348acv3z7g9eal0jbwvs&dl=0"
+      },
+      {
+        "name": "1.5 Use of Variables in JavaScript ",
+        "url": "https://www.dropbox.com/scl/fi/8648p4bp76kd9c4y5bw3n/5_Use-of-Variables-in-JavaScript.pptx?rlkey=g6cbv059txpxu1bgadp62eova&dl=0"
+      },
+      {
+        "name": "1.6 Use of Data Types in JavaScript ",
+        "url": "https://www.dropbox.com/scl/fi/ar2aet2s41tk8s2yeaw8e/6_Use-of-Data-Types-in-JavaScript.pptx?rlkey=fsbg45lt59n0ip3hx4u233l25&dl=0"
+      },
+      {
+        "name": "1.7 Use of operators in Javascript ",
+        "url": "https://www.dropbox.com/scl/fi/7vfo0cyhjzsvl93hmkvej/7_Use-of-operators-in-Javascript.pptx?rlkey=w1eja551rk8cdc0yrorvsfr80&dl=0"
+      },
+      {
+        "name": "1.8 Using string in Javascript ",
+        "url": "https://www.dropbox.com/scl/fi/qt6es1f9j4pwgog3jfl1f/8_Using-string-in-Javascript.pptx?rlkey=tdb1ori4d4fivjteagccmvqe7&dl=0"
+      },
+      {
+        "name": "1.9 Using conditional statement ",
+        "url": "https://www.dropbox.com/scl/fi/pgeh6fav0s8otzrilcxbs/9_Using-conditional-statement.pptx?rlkey=uqibu8j8eu8ixph0h4uhv71s0&dl=0"
+      },
+      {
+        "name": "1.10 Using Loop functions in Javascript ",
+        "url": "https://www.dropbox.com/scl/fi/wh6enlem1rdaz1qg2fgxj/10_Using-Loop-functions-in-Javascript.pptx?rlkey=gx4o34j64yw6fy74skn7ekk0w&dl=0"
+      },
+      {
+        "name": "1.11 Using Loop functions in Javascript2 ",
+        "url": "https://www.dropbox.com/scl/fi/3wl4plv10wmad77mgopjl/10_Using-Loop-functions-in-Javascript2.pptx?rlkey=xmnverhmp9rg83fs5hnbrtrc4&dl=0"
+      },
+      {
+        "name": "1.12 Using Functions in Javascript [Practical] ",
+        "url": "https://www.dropbox.com/scl/fi/2xxxp1ve2pflvoe1dvura/11_Using-Functions-in-Javascript-Practical.pptx?rlkey=wa3zu3i9kcxrztnwro95ewd91&dl=0"
+      },
+      {
+        "name": "1.13 Using Arrays in JavaScript ",
+        "url": "https://www.dropbox.com/scl/fi/6gllfz8tcszd6pjzyxa6c/Using-Arrays-in-JavaScript.pptx?rlkey=dbhsxi4hi6132t5h5pz693x0i&dl=0"
+      },
+      {
+        "name": "1.14 Using objects in Javascript ",
+        "url": "https://www.dropbox.com/scl/fi/tq6uxepq4sbxmazslitr4/Using-objects-in-Javascript.pptx?rlkey=oeoe9n6lfy8mmx1yunthcl02s&dl=0"
+      }
+    ]
+  },
+  {
+    "2. Manipulate data with JavaScript": [
+      {
+        "name": "2.1 Using string in Javascript",
+        "url": "https://www.dropbox.com/scl/fi/6ubevzqm432wg7kqaafic/1_Using-string-in-Javascript.pptx?rlkey=8r3a1xgbh943np50sg4f7l1y2&dl=0"
+      },
+      {
+        "name": "2.2 Using Arrays in JavaScript",
+        "url": "https://www.dropbox.com/scl/fi/0vg5u3sctv5csqf0a59au/2_Using-Arrays-in-JavaScript.pptx?rlkey=204p9fo0xk0arej56twvdcy9v&dl=0"
+      },
+      {
+        "name": "2.3 Using objects in Javascript",
+        "url": "https://www.dropbox.com/scl/fi/o5284je4gzjd2cgf53oqi/3_Using-objects-in-Javascript.pptx?rlkey=bu6xy97tc0crgu27m7r6m0qo4&dl=0"
+      },
+      {
+        "name": "2.4 Using conditional statement",
+        "url": "https://www.dropbox.com/scl/fi/o0mbdnmejgmqmund0eppa/4_Using-conditional-statement.pptx?rlkey=0dgx7x4eoop5vpsu34mt2tyjm&dl=0"
+      },
+      {
+        "name": "2.5 Using Loop functions in Javascript",
+        "url": "https://www.dropbox.com/scl/fi/ma0xemej0kkxt5u13b8ry/5_Using-Loop-functions-in-Javascript.pptx?rlkey=cvznxjh9rioqtq4nbtyp8nihv&dl=0"
+      },
+      {
+        "name": "2.6 Using Loop functions in Javascript2",
+        "url": "https://www.dropbox.com/scl/fi/wcg2n0yp8gzndu473jno0/6_Using-Loop-functions-in-Javascript2.pptx?rlkey=gx6uhv6qe6qlrzfwc9m1ke7jz&dl=0"
+      },
+      {
+        "name": "2.7 Using Functions in Javascript [Practical]",
+        "url": "https://www.dropbox.com/scl/fi/ryefqkdmr7xzw75vsznz2/7_Using-Functions-in-Javascript-Practical.pptx?rlkey=xmsy6mj36aw9l6ghff11q46t7&dl=0"
+      },
+      {
+        "2.8 Using JavaScript in HTML": [
+          {
+            "name": "2.8.1 Javascript HTML DOM",
+            "url": "https://www.dropbox.com/scl/fi/vxzsxllzicbqpro8rgl6e/1_Javascript-HTML-DOM.pptx?rlkey=v6as6mum1fda91xqn0u5qxyij&dl=0"
+          },
+          {
+            "name": "2.8.2 HTML Events",
+            "url": "https://www.dropbox.com/scl/fi/2idblctd16ps3yn45e0o9/2_HTML-Events.pptx?rlkey=w9d8xnzlheuqvdzjwnynnslpg&dl=0"
+          },
+          {
+            "name": "2.8.3 Core JavaScript DOM Methods & Properties",
+            "url": "https://www.dropbox.com/scl/fi/u49y913dcfx6h9j95c1bz/3_Core-JavaScript-DOM-Methods-Properties.pptx?rlkey=wtflka7p3ben4z2d4v0wbdzps&dl=0"
+          },
+          {
+            "name": "2.8.4 JavaScript window object",
+            "url": "https://www.dropbox.com/scl/fi/8rs2f43xx37wyka8f2ej1/4_JavaScript-window-object.pptx?rlkey=m0f9hnuzo2rn1jh1lwujrnvg5&dl=0"
+          },
+          {
+            "name": "2.8.5 JavaScript Form Validation",
+            "url": "https://www.dropbox.com/scl/fi/vo4vtkxu24d1trzsfxn0q/5_JavaScript-Form-Validation.pptx?rlkey=hn8lw2lnn3a839fc66kdj1e0e&dl=0"
+          },
+          {
+            "name": "2.8.6 Error Handling in JavaScript",
+            "url": "https://www.dropbox.com/scl/fi/79xid4p83l65u6n9j7rkn/6_Error-Handling-in-JavaScript.pptx?rlkey=wrfvfc393sghryfkiu1xxxzk5&dl=0"
+          },
+          {
+            "name": "2.8.7 Regular Expressions (RegEx) Basics",
+            "url": "https://www.dropbox.com/scl/fi/s1mramovlwboyypn087j0/7_Regular-Expressions-RegEx-Basics.pptx?rlkey=cte35mw4bi396xmb52nwtg87f&dl=0"
+          },
+          {
+            "name": "2.8.8 How to make slides",
+            "url": "https://www.dropbox.com/scl/fi/nx6wyb165jywcjwrpd2ht/How-to-make-slides.pptx?rlkey=m39rkoklql21ada7qn6pqgy5c&dl=0"
+          },
+          {
+            "name": "2.8.9 JavaScript Animation",
+            "url": "https://www.dropbox.com/scl/fi/4w4rgmun79p1wveu7p84c/JavaScript-Animation.pptx?rlkey=h4fhtlhotowsf9l4l6ot00yce&dl=0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "3. Apply JavaScript in Project": [
+      {
+        "3.1 To-Do List App Overview": [
+          {
+            "name": "Requirement",
+            "url": "https://www.dropbox.com/scl/fi/4ng275wybmwsn4bwoatpm/Explanation.pptx?rlkey=jlt6xbqu0m30jqkvhgpt3jcbi&dl=0"
+          },
+          {
+            "name": "index.html",
+            "url": "https://www.dropbox.com/scl/fi/mnts3doyc4trwkt6ez3g2/index.html?rlkey=697dtso2ct0z9iyr7hob3zhhn&dl=0",
+            "format": "html"
+          },
+          {
+            "name": "style.css",
+            "url": "https://www.dropbox.com/scl/fi/m72dw7wefgt4bz0squpi1/style.css?rlkey=df91kb3do5sb30nflyjyk7ilr&dl=0",
+            "format": "css"
+          },
+          {
+            "name": "script.js",
+            "url": "https://www.dropbox.com/scl/fi/nctm7pbso5l5u4gll1riq/script.js?rlkey=5u4xzs3bnp9cwk31c68iyvhgm&dl=0",
+            "format": "js"
+          }
+        ]
+      },
+      {
+        "3.2 Tip Calculator": [
+          {
+            "name": "Requirement",
+            "url": "https://www.dropbox.com/scl/fi/s8nr6hfbmla7wxvyynadc/Explanation.pptx?rlkey=lto5c8ovq83l0q3bvx0ep7sup&dl=0"
+          },
+          {
+            "name": "index.html",
+            "url": "https://www.dropbox.com/scl/fi/3y9g3gd1ibk11uhnvikyj/index.html?rlkey=3tbjki8v0os90snbgfivvuu4x&dl=0",
+            "format": "html"
+          },
+          {
+            "name": "style.css",
+            "url": "https://www.dropbox.com/scl/fi/gbaxtv06i6hvvpg4eutik/style.css?rlkey=mu5782g92ipf623v0lsr4u2zl&dl=0",
+            "format": "css"
+          },
+          {
+            "name": "script.js",
+            "url": "https://www.dropbox.com/scl/fi/xcqz51qliyx00bcy6i098/script.js?rlkey=xgwiw7q05yxzc1ga696dgktmb&dl=0",
+            "format": "js"
+          }
+        ]
+      },
+      {
+        "3.3. Temperature Converter": [
+          {
+            "name": "Requirement",
+            "url": "https://www.dropbox.com/scl/fi/boue322p72dqjxxg2jogq/Explanation.pptx?rlkey=42b2uk1viav1t4p6dvaantt0x&dl=0"
+          },
+          {
+            "name": "index.html",
+            "url": "https://www.dropbox.com/scl/fi/wbi8zt3alfdb1b2jgsxi6/index.html?rlkey=bvvcvmypqh04bh4c07tjs3cbi&dl=0",
+            "format": "html"
+          },
+          {
+            "name": "style.css",
+            "url": "https://www.dropbox.com/scl/fi/gmi4m6zutypbwdjriwt4c/style.css?rlkey=mvltg3impydd1uodqhdlsdgs2&dl=0",
+            "format": "css"
+          },
+          {
+            "name": "script.js",
+            "url": "https://www.dropbox.com/scl/fi/adfm7ahmom6hq2ob3kq8o/script.js?rlkey=upq9i0602pg5trhv15um82dgy&dl=0",
+            "format": "js"
+          }
+        ]
+      },
+      {
+        "3.4 Simple Calculator": [
+          {
+            "name": "Requirement",
+            "url": "https://www.dropbox.com/scl/fi/vcnp2exluoiw8elvfg4op/Explanation.pptx?rlkey=4vq3oh79zynph9rd8z36c7p6t&dl=0"
+          },
+          {
+            "name": "index.html",
+            "url": "https://www.dropbox.com/scl/fi/inbaqkneps68rwtelvuif/index.html?rlkey=7fqw9nmsgktzmkv3qktwf3tnh&dl=0",
+            "format": "html"
+          },
+          {
+            "name": "style.css",
+            "url": "https://www.dropbox.com/scl/fi/4srslgqrriev4hw9nzkv0/style.css?rlkey=cqd2k03idvjpgh6yy9oyifhu7&dl=0",
+            "format": "css"
+          },
+          {
+            "name": "script.js",
+            "url": "https://www.dropbox.com/scl/fi/2tbvido62796wgwyf3wh0/script.js?rlkey=adt3vl0ji9c728g9s7xanpsqp&dl=0",
+            "format": "js"
+          }
+        ]
+      }
+    ]
+  }
+]

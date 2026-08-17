@@ -1,0 +1,150 @@
+[
+  {
+    "1. Apply  PHP fundamentals": [
+      {
+        "name": "1.1 Definition of key terms",
+        "url": "https://www.dropbox.com/scl/fi/by3qhd0mvqf0plyuymhm0/1_Definition-of-key-terms.pptx?rlkey=wt5pm1d2u1k0rv4ug5k3a3nto&dl=0"
+      },
+      {
+        "name": "1.2 Installation of XAMPP",
+        "url": "https://www.dropbox.com/scl/fi/3gmahip2la3fzx87sm9jy/2_Installation-of-XAMPP.pptx?rlkey=2ukni8s76d1wsobnezdyc7vwh&dl=0"
+      },
+      {
+        "name": "1.3 Application of PHP concepts",
+        "url": "https://www.dropbox.com/scl/fi/u8wprx659jo7r56nh1juq/3_Application-of-PHP-concepts.pptx?rlkey=bqxtj8rxh2z0k57c6pkefky6g&dl=0"
+      },
+      {
+        "name": "1.4 Application of PHP concepts 2",
+        "url": "https://www.dropbox.com/scl/fi/3kcmh7g81fisi05z53c44/4_Application-of-PHP-concepts-2.pptx?rlkey=6pevnkcjw6f9yu1wgbuo3fr0t&dl=0"
+      },
+      {
+        "name": "1.5 Use of Function",
+        "url": "https://www.dropbox.com/scl/fi/4utzsvnts013nc3m46arj/5_Function.pptx?rlkey=6i6jxxo9zng9n6tmkuypiine8&dl=0"
+      },
+      {
+        "name": "1.6 File handling",
+        "url": "https://www.dropbox.com/scl/fi/0g09sf5f703hlnmz237re/6_PHP-file-handling.pptx?rlkey=q8dc4l9gk1wh43uqm92f7pvmg&dl=0"
+      },
+      {
+        "name": "1.7 Form Submission",
+        "url": "https://www.dropbox.com/scl/fi/zpmf4ccugn870r6xdksbu/7_Form-Submission.pptx?rlkey=y9gcc2jvwzoolh1h6z469bfva&dl=0"
+      },
+      {
+        "name": "1.8 Cookies and Sessions",
+        "url": "https://www.dropbox.com/scl/fi/ip390uve1uojss49a3au1/8_Cookies-and-Sessions.pptx?rlkey=6pz18stcklxpnnosl95x9wd0o&dl=0"
+      },
+      {
+        "name": "1.9 OOP",
+        "url": "https://www.dropbox.com/scl/fi/a38wxnp9ch9tjgmvbw830/9_Implementation-of-Object-oriented-programming-OOP-in-PHP.pptx?rlkey=7o1u7fh5equo9sp6fijyi8qfc&dl=0"
+      }
+    ]
+  },
+  {
+    "2. Connect PHP to the database": [
+      {
+        "name": "2.1 Use of MySQL",
+        "url": "https://www.dropbox.com/scl/fi/fmpmj67mq18q27qvod02j/1_Use-of-MySQL.pptx?rlkey=j1tla4ibtzbc9pc1kixeaztfz&dl=0"
+      },
+      {
+        "name": "2.2 Application of Database Connection drives",
+        "url": "https://www.dropbox.com/scl/fi/k1zid9oad94v6w6v0f59i/2_Application-of-Database-Connection-drives.pptx?rlkey=ioeaw568ty1jw9q8awfhykvmb&dl=0"
+      },
+      {
+        "name": "2.3 Import and Export Data",
+        "url": "https://www.dropbox.com/scl/fi/02izc03t8j2yxklfmnl00/2.1_Import-and-Export-Data.pptx?rlkey=cxkrfrqv7d0lffdwujyq8u43h&dl=0"
+      },
+      {
+        "name": "2.4 Application of PHP Basic Security Concepts",
+        "url": "https://www.dropbox.com/scl/fi/01k3bt5wn07zy147d65z7/3_-Application-of-PHP-Basic-Security-Concepts.pptx?rlkey=1gtsqgqo6ri91gpvu2mnotdy0&dl=0"
+      },
+      {
+        "name": "2.5 Errors and Exceptions in PHP",
+        "url": "https://www.dropbox.com/scl/fi/440yz1s4ak9t8d5eijtw5/4_-Errors-and-Exceptions-in-PHP.pptx?rlkey=nzst2ymh9s2v4pxcq17mqakie&dl=0"
+      },
+      {
+        "name": "2.6 Implementation of User Authentication",
+        "url": "https://www.dropbox.com/scl/fi/u0gh28mt8ynnkcxuakqn4/5_Implementation-of-User-Authentication.pptx?rlkey=bqaa4v8si5qp79dt8u5elecnr&dl=0"
+      }
+    ]
+  },
+  {
+    "3. Build a CMS using PHP": [
+      {
+        "name": "3.1 CMS Introduction",
+        "url": "https://www.dropbox.com/scl/fi/w3nq15dkaqjz5gwy7urwv/1_CMS-Introduction.pptx?rlkey=u10xomz3z1grquowmfk7nl3up&dl=0"
+      },
+      {
+        "name": "3.2 Installing WordPresss",
+        "url": "https://www.dropbox.com/scl/fi/3e9t0zycvqg6cc3o7ehdj/2_Installing-WordPress.pptx?rlkey=6v52cppyniq75madckd99hepo&dl=0"
+      },
+      {
+        "name": "3.3 Themes & Plugins",
+        "url": "https://www.dropbox.com/scl/fi/l8etcp3ltl6dw746mjr9v/3_Themes-Plugins.pptx?rlkey=91peyuhozngdnolhmq1duawkq&dl=0"
+      },
+      {
+        "name": "3.4 Database&Maintainance",
+        "url": "https://www.dropbox.com/scl/fi/loy3fi7cmqkx6iqzrxtl4/4_Database-Maintainance.pptx?rlkey=q1f7407jh0ywocvmkz2fovnin&dl=0"
+      }
+    ]
+  },
+  {
+    "4. Build a web app using MVC Framework": [
+      {
+        "name": "4.1 Introduction to Laravel",
+        "url": "https://www.dropbox.com/scl/fi/3j5pxzcry9c5k59wc4fey/1_Introduction-to-Laravel.pptx?rlkey=lyo7h14i9oaxdaw1m68ih972s&dl=0"
+      },
+      {
+        "name": "4.2 Laravel Basics",
+        "url": "https://www.dropbox.com/scl/fi/hhaefxfebjunbrhnxz4wx/2_Laravel-Basics.pptx?rlkey=jds1jfoxzhs08jql8x64dlkgt&dl=0"
+      },
+      {
+        "name": "4.3 MVC",
+        "url": "https://www.dropbox.com/scl/fi/nz970ta1uifvieqt7onog/3_MVC.pptx?rlkey=lhxdytdjr0rsogx2zvihwblvl&dl=0"
+      },
+      {
+        "name": "4.4 Routing",
+        "url": "https://www.dropbox.com/scl/fi/g4vnreixflubg6ekx57n1/4_Routing.pptx?rlkey=fyjjgsb4az6fdzluqeibifpe7&dl=0"
+      },
+      {
+        "name": "4.5 Views",
+        "url": "https://www.dropbox.com/scl/fi/bjdywi6kmpo5ibtbl162s/5_Views.pptx?rlkey=p2t8plnnfkkkj18u1erlt5aa1&dl=0"
+      },
+      {
+        "name": "4.6 Controllers",
+        "url": "https://www.dropbox.com/scl/fi/zepe6aplebtlsv1u549xz/6_Controllers.pptx?rlkey=akckefubh6cvrklpktdr9ipxh&dl=0"
+      },
+      {
+        "name": "4.7 Models",
+        "url": "https://www.dropbox.com/scl/fi/328o3xo1a0jw5clb22v65/7_Models.pptx?rlkey=abetu7v9lyuug5f0ub3kslkjh&dl=0"
+      },
+      {
+        "name": "4.8 Migrations",
+        "url": "https://www.dropbox.com/scl/fi/btgvz1y5bgw48bhobnpd8/8_Migraions.pptx?rlkey=ikoc9l2zt58lmr5a04evsk0d0&dl=0"
+      },
+      {
+        "name": "4.9 Eloquent ORM",
+        "url": "https://www.dropbox.com/scl/fi/4x47nejvwcfs7osek172t/9_Eloquent-ORM.pptx?rlkey=dhtel8pn52lk5tq0364pl8mc3&dl=0"
+      },
+      {
+        "name": "4.10 Forms & Requests",
+        "url": "https://www.dropbox.com/scl/fi/sowp3zv0k6inaoki54bph/10_Forms-Requests.pptx?rlkey=vlqxe5uafly825glfjm8kvc6q&dl=0"
+      },
+      {
+        "name": "4.11 Validation",
+        "url": "https://www.dropbox.com/scl/fi/4529qautysjg35tdofkic/11_Validation.pptx?rlkey=x609h744wtbo4hlhu1oyknm0u&dl=0"
+      },
+      {
+        "name": "4.12 Full CRUD Operations",
+        "url": "https://www.dropbox.com/scl/fi/xw268u9dlrot54uvi5bmu/12_Full-CRUD-Operations.pptx?rlkey=azg8etdsi26wg7u024nsk7c02&dl=0"
+      },
+      {
+        "name": "4.13 Authentication",
+        "url": "https://www.dropbox.com/scl/fi/53wt76k3irvu8v2dtgujc/13_Authentication.pptx?rlkey=suoz38lno42jd9nbigqaz0rvw&dl=0"
+      },
+      {
+        "name": "4.14 Authorization",
+        "url": "https://www.dropbox.com/scl/fi/0z404mehv1eyqm2xov2os/14_Authorization.pptx?rlkey=0igm3eoo5wveoj8bbdgznn039&dl=0"
+      }
+    ]
+  }
+]

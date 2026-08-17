@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   BsFiletypePpt,
   BsFiletypeHtml,
@@ -10,40 +10,30 @@ import {
   BsFiletypePhp,
 } from "react-icons/bs";
 import { FaChevronRight } from "react-icons/fa6";
-import { useTranslations } from "next-intl";
 
 import SectionHeading from "@/components/common/SectionHeading";
 import styles from "./Docs.module.css";
 
+import htmlData from "./html.json";
+import cssData from "./css.json";
+import jsData from "./js.json";
+import phpData from "./php.json";
+import reactData from "./react.json";
+
+const MATERIALS = {
+  html: htmlData,
+  css: cssData,
+  js: jsData,
+  php: phpData,
+  react: reactData,
+};
+
+const CATEGORIES = ["html", "css", "js", "php", "react"];
+
 export default function Docs() {
-  const t = useTranslations("Common");
+  const [selectedCategory, setSelectedCategory] = useState("html");
 
-  const [sections, setSections] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
-
-  const categories = ["html", "css", "js", "php", "react"];
-
-  const handleCategoryClick = async (category) => {
-    setSelectedCategory(category);
-
-    try {
-      const res = await fetch(`/data/${category}.json`);
-
-      if (!res.ok) {
-        throw new Error("Fetch failed");
-      }
-
-      const data = await res.json();
-      setSections(data);
-    } catch (err) {
-      console.error(err);
-      setSections([]);
-    }
-  };
-
-  useEffect(() => {
-    handleCategoryClick("html");
-  }, []);
+  const sections = MATERIALS[selectedCategory] ?? [];
 
   const getFileIcon = (format) => {
     if (format === "html") return <BsFiletypeHtml />;
@@ -61,7 +51,10 @@ export default function Docs() {
         <ul className={styles.fileList}>
           {item.map((subItem, i) => (
             <li key={i} className={styles.fileItem}>
-              {"name" in subItem && "url" in subItem ? (
+              {subItem &&
+              typeof subItem === "object" &&
+              "name" in subItem &&
+              "url" in subItem ? (
                 <a
                   href={subItem.url}
                   target="_blank"
@@ -88,8 +81,8 @@ export default function Docs() {
     }
 
     if (item && typeof item === "object") {
-      return Object.entries(item).map(([title, content], idx) => (
-        <div key={idx} className={styles.docsSection}>
+      return Object.entries(item).map(([title, content]) => (
+        <div key={title} className={styles.docsSection}>
           <h3 className={styles.docsSectionTitle}>{title}</h3>
           {renderSection(content)}
         </div>
@@ -109,14 +102,14 @@ export default function Docs() {
           />
 
           <ul className={styles.categoryTabs}>
-            {categories.map((cat) => (
+            {CATEGORIES.map((cat) => (
               <li key={cat}>
                 <button
                   type="button"
                   className={`${styles.categoryButton} ${
                     selectedCategory === cat ? styles.active : ""
                   }`}
-                  onClick={() => handleCategoryClick(cat)}
+                  onClick={() => setSelectedCategory(cat)}
                 >
                   {cat.toUpperCase()}
                 </button>
@@ -125,10 +118,6 @@ export default function Docs() {
           </ul>
 
           <div className={styles.docsFiles}>
-            {sections.length === 0 && selectedCategory && (
-              <p className={styles.empty}>{t("error")}</p>
-            )}
-
             {sections.map((sectionObj, idx) => (
               <div key={idx} className={styles.docsSection}>
                 {renderSection(sectionObj)}

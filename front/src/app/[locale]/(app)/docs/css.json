@@ -1,0 +1,74 @@
+[
+  {
+    "1. Introduction to CSS": [
+      {
+        "name": "Introduction to CSS",
+        "url": "https://www.dropbox.com/scl/fi/db3281fydk94rpj6zad5a/1_Introduction-to-CSS.pptx?rlkey=qpt20fx234abqr92rlm33ngeh&dl=0"
+      }
+    ]
+  },
+  {
+    "2. Creating CSS files": [
+      {
+        "name": "2.1 CSS syntax & Use of CSS style types",
+        "url": "https://www.dropbox.com/scl/fi/etfo3i66411yqv2h354oq/1_CSS-syntax-Use-of-CSS-style-types.pptx?rlkey=m8lnpr1v1lgfi7sro7t8vo5zc&dl=0"
+      },
+      {
+        "name": "2.2 Use CSS Visual rules",
+        "url": "https://www.dropbox.com/scl/fi/4hrmq1gd5avabijuq847y/2_Use-CSS-Visual-rules.pptx?rlkey=hbrj7w3xkfy6327xm77wm23q3&dl=0"
+      },
+      {
+        "name": "2.3 Use CSS Display and positioning",
+        "url": "https://www.dropbox.com/scl/fi/d1xkbolz3rw3rkdw6mik5/3_Use-CSS-Display-and-positioning.pptx?rlkey=nyc28w5v92fva76c64m4as9m8&dl=0"
+      },
+      {
+        "name": "2.4 Use CSS Box model",
+        "url": "https://www.dropbox.com/scl/fi/9ukv8iuw7bqxp93yuu4cx/4_Use-CSS-Box-model.pptx?rlkey=ohzb6pq4cf9qlmtk1762a5tdv&dl=0"
+      }
+    ]
+  },
+  {
+    "3. Applying Typography on webpage": [
+      {
+        "name": "Applying Typography on webpage",
+        "url": "https://www.dropbox.com/scl/fi/pmu2ktg01l2arjtpax3di/Applying-Typography-on-webpage.pptx?rlkey=mkoe960ivj1d5y1sx9iq8h36w&dl=0"
+      }
+    ]
+  },
+  {
+    "4. Setting media query rules": [
+      {
+        "name": "Setting media query rules",
+        "url": "https://www.dropbox.com/scl/fi/4gts893lljzit2xcu3jsz/Setting-media-query-rules.pptx?rlkey=8kkwxb4v56rn5x6xkien4fyii&dl=0"
+      }
+    ]
+  },
+  {
+    "5. flex&grid": [
+      {
+        "name": "flex&grid",
+        "url": "https://www.dropbox.com/scl/fi/kqdccaishf1jci1lsjht9/5_flex-grid.pptx?rlkey=gxuxnbg8908b33xtpxbj5oclk&dl=0"
+      }
+    ]
+  },
+  {
+    "6. animation": [
+      {
+        "name": "CSS Child Selectors",
+        "url": "https://www.dropbox.com/scl/fi/v6n1urupuejfof2qnkrv7/CSS-Child-Selectors.pptx?rlkey=8jl7p16m0h942vnjhk83pe50d&dl=0"
+      },
+      {
+        "name": "CSS Hover Animation",
+        "url": "https://www.dropbox.com/scl/fi/6ied36u8px2bvtum4qtyd/CSS-Hover-Animation.pptx?rlkey=3oqancb47v9gze7p9nglt85r5&dl=0"
+      }
+    ]
+  },
+  {
+    "7. Optimizing Webpage in HTML": [
+      {
+        "name": "Optimizing Webpage in HTML",
+        "url": "https://www.dropbox.com/scl/fi/9lug73z6m53flgs5myz67/3_9_Optimizing-Webpage-in-HTML.pptx?rlkey=nsmhvvte1zxrsqg93q5lz589a&dl=0"
+      }
+    ]
+  }
+]
